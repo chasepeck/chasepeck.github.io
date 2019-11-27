@@ -6,11 +6,44 @@ body {
   background-image: url("https://i.postimg.cc/sgSwBc80/githubbanner.png");
   background-repeat: repeat;
 }
+a:link {
+  color: lightblue;
+}
+a:visited {
+  color: lightblue;
+}
+a:hover {
+  color: lightblue;
+}
+a:active {
+  color: white;
+}
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  text-align: center;
+}
 </style>
-<h1>
-<font color="white">chasepeck.github.io</font>
-</h1>
-<h2>
-<font color="white">this is the website where i host my repositories</font>
-</h2>
+<font face = "source code pro,helvetica,arial" color = "white">
+  <center>
+    <h1>chasepeck.github.io</h1>
+    <h2 id = "randomthing"></h2>
+    <script>
+      var things = ["sorry we don't have any food", "i like to code if you couldn't tell","what do i put here","mint?",
+      "the chicken's cooking right now","MICHAEL!","happy birthday","morty you destroyed the internet","welcome to my home page please sign the guestbook",
+      "there were no websites when i was young y'know","what's your netflix password","spare some change?","do you want any cheese? there's some left over from the party last night",
+      "ifunny logo","haHAHhHAhahAhaHahA","you need to laugh at me"];
+      var item = things[Math.floor(Math.random()*things.length)];
+      document.getElementById("randomthing").innerHTML = item;
+    </script>
+  </center>
+  <h2>things</h2>
+  <a href="https://gist.github.com/chasepeck/1d765e0b61e5389dc68044e33a7e7b35">weird sonic pi thing</a><br>
+  <a href="https://github.com/chasepeck/chasepeck.github.io">this website</a><br>
+  <footer>
+    <h3><a href="https://chasepeck.com">chasepeck.com</a> - <a href="https://github.com/chasepeck">github</a> - <a href = "https://chasepeck.com/contact">contact me</a></h3>
+  </footer>
+</font>
 </html>
