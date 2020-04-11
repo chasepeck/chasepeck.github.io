@@ -1,0 +1,141 @@
+@font-face {
+    font-family: dos_vga_437;
+    src: url('perfect_dos_vga_437-webfont.woff2') format('woff2'),
+         url('perfect_dos_vga_437-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+.normal a:link{
+    color:white;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+}
+.normal a:hover{
+    color:white;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+}
+.normal a:visited{
+    color:lightgray;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+}
+.normal .normal a:active{
+    color:lightblue;
+    font-family: franklin-gothic-urw, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    font-size: 40px;
+}
+.normal p{
+font-family: franklin-gothic-urw, sans-serif;
+font-weight: 400;
+font-style: normal;
+}
+.normal p.italic{
+font-family: franklin-gothic-urw, sans-serif;
+font-weight: 400;
+font-style: italic;
+}
+.normal h1{
+font-family: franklin-gothic-urw, sans-serif;
+font-weight: 900;
+font-style: normal;
+font-size: 100px;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 0px;
+margin-left: 0px;
+}
+.normal h1.italic{
+font-family: franklin-gothic-urw, sans-serif;
+font-weight: 900;
+font-style: italic;
+font-size: 100px;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 0px;
+margin-left: 0px;
+}
+.normal h2{
+font-family: franklin-gothic-urw, sans-serif;
+font-weight: 700;
+font-style: normal;
+font-size: 50px;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 0px;
+margin-left: 0px;
+}
+.normal h2.italic{
+font-family: franklin-gothic-urw, sans-serif;
+font-weight: 700;
+font-style: italic;
+font-size: 50px;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 0px;
+margin-left: 0px;
+}
+.normal h3{
+font-family: franklin-gothic-urw, sans-serif;
+font-weight: 900;
+font-style: normal;
+font-size: 80px;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 0px;
+margin-left: 0px;
+}
+.normal h3.italic{
+font-family: franklin-gothic-urw, sans-serif;
+font-weight: 900;
+font-style: italic;
+font-size: 80px;
+margin-top: 0px;
+margin-bottom: 0px;
+margin-right: 0px;
+margin-left: 0px;
+}
+
+.dosfont a:link{
+    font-family: dos_vga_437;
+    color:white;
+    font-style: normal;
+    font-size: 50px;
+    text-decoration: none;
+}
+.dosfont a:hover{
+    font-family: dos_vga_437;
+    color:black !important;
+    background-color: white;
+    font-style: normal;
+    font-size: 50px;
+    text-decoration: none;
+}
+.dosfont a:visited{
+    font-family: dos_vga_437;
+    color: white;
+    font-style: normal;
+    font-size: 30px;
+    text-decoration: none;
+}
+.dosfont h1{
+    font-family: dos_vga_437;
+    color:white;
+    font-style: normal;
+    font-size: 50px;
+}
+.dosfont h2{
+    font-family: dos_vga_437;
+    color:white;
+    font-style: normal;
+    font-size: 30px;
+}
