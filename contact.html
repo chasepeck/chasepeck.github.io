@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>chasepeck - contact</title>
+        <link rel="stylesheet" href="stylesheets/stylesheet_contactform.css">
+        <link rel="icon" href="assets/favicon.png" type="image/gif">
+        <link rel="stylesheet" href="https://use.typekit.net/fym7jvp.css">
+    </head>
+    <style>
+        body {
+            background-color: black;
+        }
+    </style>
+    <!--Header (all black bg)-->
+    <div id="header" style="padding: 10px; border-bottom: 1px solid white; background-color: black; font-family: dos_vga_437; font-size:30px">
+        <style scoped>
+            a:link{
+            font-family: dos_vga_437;
+            color:white;
+            font-style: normal;
+            font-size: 30px;
+            text-decoration: none;
+            }
+            a:hover{
+            font-family: dos_vga_437;
+            color:black !important;
+            background-color: white;
+            font-style: normal;
+            font-size: 30px;
+            text-decoration: none;
+            }
+            a:visited{
+            font-family: dos_vga_437;
+            color: white;
+            font-style: normal;
+            font-size: 30px;
+            text-decoration: none;
+            }
+            *{
+                color:white;
+            }
+        </style>
+        <a style="text-decoration: none;" href="index.html">chasepeck.com</a>/contact
+    </div>
+    <h1>CONTACT.TXT</h1>
+    <form method="post" action="sendcontactform.php">
+        <input type="text" name="name" placeholder="<name>"><br>
+        <input type="text" name="email" placeholder="<email>"><br>
+        <textarea name="message" placeholder="<message>" style="height:300px"></textarea><br>
+        <input type="submit" value="submit">
+</html>

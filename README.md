@@ -1,5 +1,3 @@
-# chasepeck.github.io
+# chasepeck.com
 
-My GitHub Pages website for hosting my repositories.
-
-Go to my [normal website](https://chasepeck.com)
+This is the source code for my website! Feel free to take any ideas or snippets from the code.

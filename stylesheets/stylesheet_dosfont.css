@@ -1,0 +1,39 @@
+@font-face {
+    font-family: dos_vga_437;
+    src: url('perfect_dos_vga_437-webfont.woff2') format('woff2'),
+         url('perfect_dos_vga_437-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+a:link{
+    font-family: dos_vga_437;
+    color:white;
+    font-style: normal;
+    font-size: 30px;
+}
+a:visited{
+    font-family: dos_vga_437;
+    color:white;
+    font-style: normal;
+    font-size: 30px;
+}
+
+h1{
+    font-family: dos_vga_437;
+    color:white;
+    font-style: normal;
+    font-size: 50px;
+}
+h2{
+    font-family: dos_vga_437;
+    color:white;
+    font-style: normal;
+    font-size: 30px;
+}
+p{
+    font-family: dos_vga_437;
+    color:white;
+    font-style: normal;
+    font-size: 25px;
+}
