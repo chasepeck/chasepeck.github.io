@@ -47,14 +47,38 @@ background-repeat: repeat;
   <a style="text-decoration: none;" href="/">chasepeck.com</a>/games
 </div>
 <div style="text-align: center;">
-<img style="height: auto;width: 50%;vertical-align: top;" src="/assets/logos/chase peck games.png" alt="chase peck games">
+<style scoped>
+  .image1{
+    transform-origin: center center;
+    transition: .5s ease;
+  }
+  .image1:hover{
+    transform: scale(1.1,1.1) rotate(3deg);
+  }
+  .image2{
+    transform-origin: center center;
+    transition: .5s ease;
+  }
+  .image2:hover{
+    transform: scale(1.1,1.1) rotate(-3deg);
+  }
+</style>
+<img id="cpglogo" style="height: auto;width: 60%;vertical-align: top;margin-top:100px;margin-bottom:100px;" alt="chase peck games">
+<script>
+  var cpglogos = ["/assets/logos/cpg/rainbow helvetica.png","/assets/logos/cpg/wonkyR.png","/assets/logos/cpg/wonkyR2.png"];
+  var insert = cpglogos[Math.floor(Math.random()*cpglogos.length)];
+  document.getElementById("cpglogo").src = insert;
+</script>
 <h2>games! i make them!</h2>
 <p style="text-align: center;">>ls games</p>
 <div style="margin-top: 100px;">
   <figure style="display: inline-block;">
-    <a href="https://gamejolt.com/games/ydks/462267"><img style="vertical-align: top;" src="/games/YDKS.png" alt="You Don't Know Scratch" height="300px"></img></a>
+    <a href="https://gamejolt.com/games/ydks/462267"><img class="image1" style="vertical-align: top;" src="/games/YDKS.png" alt="You Don't Know Scratch" height="300px"></img></a>
     <figcaption style="text-align: center;"><p>You Don't Know Scratch</p></figcaption>
   </figure>
 </div>
+</div>
+<div style="height: 1000px; overflow: hidden;">
+<img style="padding: 0px;" src="/assets/dump.png" height="1000px">
 </div>
 </html>

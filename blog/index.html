@@ -48,7 +48,12 @@
     <a style="text-decoration: none;" href="/">chasepeck.com</a>/blog
 </div>
 <div class="normal" style="text-align:center;color:yellow;">
-    <h1 style="color:yellow;">blog</h1>
+    <h1 id="blogtitle" style="color:yellow;"></h1>
+    <script>
+        var blogtitles = ["blog","blog","blog","blog","blog","blog","blog","bogl","blig","bagle"]
+        var insert = blogtitles[Math.floor(Math.random()*blogtitles.length)];
+        document.getElementById("blogtitle").innerHTML = insert;
+    </script>
 </div>
 <div style="margin-top: 50px;padding: 20px; background-color: white;color:black;font-family: pixel_arial_11regular;">
     <figure style="display: inline-block;">
