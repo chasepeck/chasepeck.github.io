@@ -16,7 +16,7 @@ background-repeat: repeat;
 }
 </style>
 <div class="normal" style="text-align:center;color:yellow;">
-  <img src="assets/logos/blocky.png" alt="chasepeck.com" style="width:70%;height:auto"></img>
+  <img src="assets/logos/blocky.png" alt="chasepeck.com" style="width:80%;height:auto"></img>
   <h2><i id="subtitle"></i></h2>
   <script>
     //Subtitles
@@ -32,6 +32,7 @@ background-repeat: repeat;
     //End
     var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
     document.getElementById("subtitle").innerHTML = insert;
+    console.log("Hello from home!")
   </script>
 </div>
 <div class="dosfont" style="background-color: black; margin: auto; margin-top: 50px; padding:10px 50px; overflow: hidden;">
@@ -53,7 +54,16 @@ background-repeat: repeat;
 <button title="refresh" onclick='document.getElementById("news").src = "https:\/\/gamejolt.com/@chasepeck"'><img width="50px" height="50px" src="assets/refresh.png"></button>
 </div>
 <div class="normal" style="margin-top:100px;text-align:center;color:yellow;">
-  <a title="chasepeck.com repo" href="https://github.com/chasepeck/chasepeck.github.io"><img src="/assets/repoicon.png" height="50px"></a>
+  <style scoped>
+    .repoicon {
+    transition: .5s ease;
+    transform-origin: center center;
+    }
+    .repoicon:hover{
+        transform: scale(1.3,1.3)
+    }
+  </style>
+  <a title="chasepeck.com repo" href="https://github.com/chasepeck/chasepeck.github.io"><img class="repoicon" src="/assets/repoicon.png" height="50px"></a>
 </div>
 <footer style="margin-top: 10px; margin-bottom: 25px;">©2020 Chase Peck</footer>
 </html>
