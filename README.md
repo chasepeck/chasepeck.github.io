@@ -4,6 +4,6 @@
 
 ![GitHub](https://img.shields.io/github/license/chasepeck/chasepeck.github.io?style=flat-square)
 
-![GitHub last commit](https://img.shields.io/github/last-commit/chasepeck/chasepeck.github.io?style=flat-square)
+![GitHub last commit](https://img.shields.io/github/last-commit/chasepeck/chasepeck.github.io?color=green&style=flat-square)
 
 welcome to my website.
