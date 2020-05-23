@@ -49,6 +49,10 @@ background-repeat: repeat;
   <a href="/blog">BLOG</a><br>
   <a href="/games">GAMES</a><br>
 </div>
+<!--Fake ad slot 1-->
+<a id="fakeAdHREF1">
+<img id="fakeAd1" alt="fakeAd1" style="width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-top: 50px;"></img>
+</a>
 <div class="normal" style="text-align:center;color:yellow;">
 <style scoped>
   button {
@@ -90,4 +94,24 @@ background-repeat: repeat;
   <a title="chasepeck.com repo" href="https://github.com/chasepeck/chasepeck.github.io"><img class="repoicon" src="/assets/repoicon.png" height="50px"></a>
 </div>
 <footer style="margin-top: 10px; margin-bottom: 25px;">©2020 Chase Peck<br>c52 (1.1.0.b1)</footer>
+<script>
+  var fakeAdPaths=["/ads/Execution.png","/ads/Graphic design.png","/ads/John Code.png","/ads/Rich quick.png","/ads/Secrets.png"]
+  var insert = fakeAdPaths[Math.floor(Math.random()*fakeAdPaths.length)];
+  document.getElementById("fakeAd1").src = insert;
+  if(insert=="/ads/Execution.png"){
+    document.getElementById("fakeAdHREF1").href="/ads/p/execution.html"
+  }
+  if(insert=="/ads/Graphic design.png"){
+    document.getElementById("fakeAdHREF1").href="/ads/p/graphicdesign.html"
+  }
+  if(insert=="/ads/John Code.png"){
+    document.getElementById("fakeAdHREF1").href="/ads/p/johncode.html"
+  }
+  if(insert=="/ads/Rich quick.png"){
+    document.getElementById("fakeAdHREF1").href="#"
+  }
+  if(insert=="/ads/Secrets.png"){
+    document.getElementById("fakeAdHREF1").href="#"
+  }
+</script>
 </html>
