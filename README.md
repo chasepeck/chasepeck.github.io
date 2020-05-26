@@ -8,6 +8,8 @@
 
 welcome to my website.
 
-    Version: c52 (1.1.0.b1)
+    Version: c55 (2.0.0.b0)
 
 **Check the dev branch to preview upcoming changes**
+
+***Notice: the ads are fake. It's a joke, buddy!***
