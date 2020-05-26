@@ -9,3 +9,5 @@
 welcome to my website.
 
     Version: c52 (1.1.0.b1)
+
+**Check the dev branch to preview upcoming changes**
