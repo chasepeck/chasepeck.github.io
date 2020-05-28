@@ -8,7 +8,7 @@
 
 welcome to my website.
 
-    Version: c64 (2.1.0.b0)
+    Version: c65 (2.1.1.b0)
 
 **Check the dev branch to preview upcoming changes**
 
