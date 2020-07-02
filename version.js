@@ -1,0 +1,1 @@
+document.getElementById("version").innerHTML = "c68 (2.3.0.b0)";

@@ -8,7 +8,7 @@
 
 welcome to my website.
 
-    Version: c67 (2.2.0.b1)
+    Version: c68 (2.3.0.b0)
 
 **Check the dev branch to preview upcoming changes**
 
