@@ -18,6 +18,7 @@ background-repeat: repeat;
 <div class="normal" style="text-align:center;color:yellow;">
   <img src="assets/logos/chase peck rainbow.png" alt="chasepeck.com" style="width:50%;height:auto"></img>
   <h2><i id="subtitle"></i></h2>
+  <img id="indexface" alt="indexface" style="width:10%; height:auto; margin-top: 50px;">
   <script>
     //Subtitles
     var subtitles = ["interweb shenanigans","scroll for sexi bod","u have fun thyme on zees website",
@@ -32,11 +33,17 @@ background-repeat: repeat;
     "holly carp!","' UNION (SELECT names,passwords FROM users);--","no xss here (so don't try)","flavor text","now you're playing with power",
     "not on sega","Allan, please add details!","don't inspect element<!--I told you!-->","holaoy caprarp!","oobisoft, you-be-soft",
     "wuz yur favorite consile? mine iz wii u!!","follow me on super mario maker 2: X6G-XB3-4XF","hoyl parc!","mudda 1+2+3","ertbound",
-    "not on 32x adapters","r u mergin' rite now bro?","r u committin' rite now bro?","arms sweating, palms sweating, mom's sweating"];
+    "not on 32x adapters","r u mergin' rite now bro?","r u committin' rite now bro?","arms sweating, palms sweating, mom's sweating",
+    "give me a drink, bartender","my name's not shayne, kid","slowly creeping features","corn you believe colonel?","re: pete",
+    "help! i'm visually gagging!"];
     //End
     var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
     document.getElementById("subtitle").innerHTML = insert;
     console.log("Hello from home!");
+
+    //Index faces
+    var path="/assets/indexfaces/indexface"
+    document.getElementById("indexface").src = path.concat(Math.floor(Math.random() * 9) + 1,".jpg")
   </script>
 </div>
 <div class="dosfont" style="background-color: black; margin: auto; margin-top: 50px; padding:10px 50px; overflow: hidden;">
@@ -98,7 +105,9 @@ background-repeat: repeat;
   </style>
   <a title="chasepeck.com repo" href="https://github.com/chasepeck/chasepeck.github.io"><img class="repoicon" src="/assets/repoicon.png" height="50px"></a>
 </div>
-<footer style="margin-top: 10px; margin-bottom: 25px;">©2020 Chase Peck<br><i><a style="color:yellow;" href="INFO.txt">Information</a></i>
+<footer style="margin-top: 10px; margin-bottom: 25px;">©2020 Chase Peck<br>
+  <i><a style="color:yellow;" href="INFO.txt">Information</a></i><br>
+  <i><a style="color:yellow;" href="https://github.com/chasepeck/chasepeck.github.io/commits/master">Version history</a></i>
   <p style="color:yellow;text-align: center; margin-bottom: 0px;margin-top:0px;" id="version"></p></footer>
 <script>
   var fakeAdPaths=["/ads/Execution.png","/ads/Graphic design.png","/ads/John Code.png","/ads/Rich quick.png","/ads/Secrets.png"]
