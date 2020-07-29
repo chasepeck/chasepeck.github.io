@@ -8,7 +8,7 @@
 
 welcome to my website.
 
-    Version: c70 (2.4.0.b0)
+    Version: c71 (2.4.1.b0)
 
 **Check the dev branch to preview upcoming changes**
 
