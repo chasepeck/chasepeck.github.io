@@ -1,7 +1,7 @@
 chasepeck.com
 welcome to my website.
 
-Version: c72 (2.4.2.b0)
+Version: c73 (2.4.3.b0)
 
 Check the dev branch to preview upcoming changes.
 
