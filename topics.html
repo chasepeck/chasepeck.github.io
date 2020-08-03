@@ -2,8 +2,8 @@
 <html>
 <head>
   <title>chasepeck - topics</title>
-  <link rel="stylesheet" href="stylesheets/stylesheet_index.css">
-  <link rel="stylesheet" href="stylesheets/stylesheet_default.css">
+  <link rel="stylesheet" href="/stylesheets/stylesheet_index.css">
+  <link rel="stylesheet" href="/stylesheets/stylesheet_default.css">
   <link rel="icon" href="/assets/favicon.png" type="image/gif">
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
@@ -13,11 +13,42 @@
 <style>
 body {
 background-color: blue;
-background-image: url("assets/bgs/scanlinesbg.png");
+background-image: url("/assets/bgs/scanlinesbg.png");
 background-size: 1000px;
 background-repeat: repeat;
 }
 </style>
+<!--Header-->
+<div id="header" style="padding: 10px; border: 1px solid white; background-color: black; font-family: dos_vga_437; font-size:30px">
+  <style scoped>
+      a:link{
+      font-family: dos_vga_437;
+      color:white;
+      font-style: normal;
+      font-size: 30px;
+      text-decoration: none;
+      }
+      a:hover{
+      font-family: dos_vga_437;
+      color:black !important;
+      background-color: white;
+      font-style: normal;
+      font-size: 30px;
+      text-decoration: none;
+      }
+      a:visited{
+      font-family: dos_vga_437;
+      color: white;
+      font-style: normal;
+      font-size: 30px;
+      text-decoration: none;
+      }
+      div{
+          color:white;
+      }
+  </style>
+  <a style="text-decoration: none;" href="/">chasepeck.com</a>/topics
+</div>
 <div class="normal" style="color:yellow;text-align: center;">
   <h1>topics</h1>
   <h2><i>hot topics!</i></h2>
@@ -34,33 +65,37 @@ background-repeat: repeat;
       margin-bottom: 50px;
       width: fit-content;
     }
-    a{
+    .topiclist a{
+      font-family: sans-serif;
+      font-size: 25px;
       color:yellow;
       text-decoration: none;
     }
-    a:hover{
+    .topiclist a:hover{
+      font-size: 25px;
+      font-family: sans-serif;
       color:black;
       text-decoration: none;
     }
   </style>
-  <ol>
+  <ol class="topiclist">
     <h3>Games</h3>
     <a href="/games"><li>Chase Peck Games</li></a>
     <a href="https://gamejolt.com/c/chasepeckgames-x5h4rr"><li>GameJolt Community</li></a>
     <a href="https://gamejolt.com/games/ydks/462267"><li>You Don't Know Scratch</li></a>
   </ol>
-  <ol>
+  <ol class="topiclist">
     <h3>Featured blog posts</h3>
     <a href="/blog"><li>All blog posts</li></a>
     <a href="/blog/6-28-2020.html"><li>6-28-2020</li></a>
     <a href="/blog/5-20-2020.html"><li>5-20-2020</li></a>
     <a href="/blog/3-31-2020.html"><li>3-31-2020</li></a>
   </ol>
-  <ol>
+  <ol class="topiclist">
     <h3>Blog extras</h3>
     <a href="/blog/envelope.html"><li>The envelope</li></a>
   </ol>
-  <ol>
+  <ol class="topiclist">
     <h3>Fake ads</h3>
     <a href="/ads/p/execution.html"><li>Execution</li></a>
     <a href="/ads/p/graphicdesign.html"><li>Graphic design</li></a>
@@ -68,7 +103,7 @@ background-repeat: repeat;
     <a href="/ads/p/richquick.html"><li>Get rich quick</li></a>
     <a href="/ads/p/secrets.html"><li>Secrets</li></a>
   </ol>
-  <ol>
+  <ol class="topiclist">
     <h3>Assets/audio</h3>
     <a href="/assets/forblog/american battle.wav"><li>American Battle.wav</li></a>
     <a href="/assets/forblog/awkward battle.wav"><li>Awkward Battle.wav</li></a>
@@ -77,7 +112,7 @@ background-repeat: repeat;
     <a href="/assets/forblog/monday morning battle.wav"><li>Monday Morning Battle.wav</li></a>
     <a href="/assets/forblog/moody battle.wav"><li>Moody Battle.wav</li></a>
   </ol>
-  <ol>
+  <ol class="topiclist">
     <h3>Miscellaneous</h3>
     <a href="/"><li>Back to chasepeck.com</li></a>
     <a href="/feedback.html"><li>Feedback</li></a>
