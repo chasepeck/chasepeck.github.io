@@ -50,7 +50,7 @@ background-repeat: repeat;
     <a style="text-decoration: none;" href="/">chasepeck.com</a>/films
 </div>
 <div class="normal" style="text-align: center;color: yellow;">
-    <img src="/assets/logos/cpf/ChasePeckFilms.png" style="width:80%;height: auto;">
+    <img src="/assets/logos/cpf/ChasePeckFilms.png" style="width:80%;height: auto;margin-top: 30px;">
     <h2 style="margin-bottom: 100px;"><i id="subtitle"></i></h2>
     <script>
         //Subtitles
@@ -60,9 +60,37 @@ background-repeat: repeat;
         var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
         document.getElementById("subtitle").innerHTML = insert;
     </script>
+
+    <figure style="display:inline-block; vertical-align: top;">
+    <h1 style="margin-top: 30px;">latest video</h1><br>
+    <h2 style="margin-bottom: 50px;">guaranteed fresh</h2>
+    </figure>
+
+    <!-- Thanks to https://codegena.com/auto-embed-latest-video-youtube-channel/ -->
+    <iframe style="display:inline-block;" class="latestVideoEmbed" vnum='0' cid="UC0Db09Ndk6BKK7Sx_mLEoIQ" width="600" height="340" frameborder="0" allowfullscreen></iframe>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script>
+    var reqURL = "https://api.rss2json.com/v1/api.json?rss_url=" + encodeURIComponent("https://www.youtube.com/feeds/videos.xml?channel_id=");
+    function loadVideo(iframe) {
+    $.getJSON(reqURL + iframe.getAttribute('cid'),
+        function(data) {
+        var videoNumber = (iframe.getAttribute('vnum') ? Number(iframe.getAttribute('vnum')) : 0);
+        var link = data.items[videoNumber].link;
+        id = link.substr(link.indexOf("=") + 1);
+        iframe.setAttribute("src", "https://youtube.com/embed/" + id + "?controls=0&autoplay=1");
+        }
+    );
+    }
+    var iframes = document.getElementsByClassName('latestVideoEmbed');
+    for (var i = 0, len = iframes.length; i < len; i++) {
+    loadVideo(iframes[i]);
+    }
+    </script>
     
-    <h1>featured films</h1>
+    <figure style="display: inline-block; vertical-align: top;">
+    <h1 style="margin-top: 250px;">featured films</h1>
     <h2 style="margin-bottom: 50px;">alleged award-winning films</h2>
+    </figure>
 
     <div>
         <style scoped>
@@ -89,7 +117,7 @@ background-repeat: repeat;
         </figure>
         <figure style="display:inline-block;">
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/LzAm08ysqu0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
-            <figcaption><b>some gmod tomfoolery</b><br>gripping action that keeps you on the edge of your seat</figcaption>
+            <figcaption><b>some gmod tomfoolery</b><br>tense action that keeps you on the edge of your seat</figcaption>
         </figure>
         <figure style="display:inline-block;">
             <iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/bLPb1wLGGqs" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>            
