@@ -8,7 +8,7 @@
 
 welcome to my website.
 
-    Version: c75 (3.1.0.b0)
+    Version: c76 (3.2.0.b0)
 
 **Check the dev branch to preview upcoming changes**
 
