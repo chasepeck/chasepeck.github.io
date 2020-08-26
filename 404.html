@@ -12,14 +12,53 @@
   <style>
   body {
   font-family: dos_vga_437;
-  font-size: 25px;
+  font-size: 35px;
   background-color: black;
   color: white;
   }
   </style>
-  <div>
-    <h2>404</h2>
-    <h2>No bootable medium found! System halted.</h2>
-    <h2><a href="/index.html">back</a></h2>
-  </div>
+  <div id="typedtext"></div><br>
+  <a id="backlink" href='/index.html'></a>
+  <!--Thanks to https://css-tricks.com/snippets/css/typewriter-effect/-->
+  <script>
+    // set up text to print, each item in array is new line
+    var aText = new Array(
+    "ERROR 404", 
+    "No bootable medium found! System halted.",
+    );
+    var iSpeed = 30; // time delay of print out
+    var iIndex = 0; // start printing array at this posision
+    var iArrLength = aText[0].length; // the length of the text array
+    var iScrollAt = 20; // start scrolling up at this many lines
+    
+    var iTextPos = 0; // initialise text position
+    var sContents = ''; // initialise contents variable
+    var iRow; // initialise current row
+    
+    function typewriter()
+    {
+    sContents =  ' ';
+    iRow = Math.max(0, iIndex-iScrollAt);
+    var destination = document.getElementById("typedtext");
+    
+    while ( iRow < iIndex ) {
+      sContents += aText[iRow++] + '<br />';
+    }
+    destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos);
+    if ( iTextPos++ == iArrLength ) {
+      iTextPos = 0;
+      iIndex++;
+      if ( iIndex != aText.length ) {
+      iArrLength = aText[iIndex].length;
+      setTimeout("typewriter()", 500);
+      }
+    } else {
+      setTimeout("typewriter()", iSpeed);
+    }
+    }
+
+    typewriter();
+
+    setTimeout(function(){document.getElementById("backlink").innerHTML="Back";},2500)
+    </script>
 </html>
