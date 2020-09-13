@@ -9,7 +9,3 @@
 welcome to my website.
 
     Version: c82 (4.0.0.b0)
-
-**Check the dev branch to preview upcoming changes**
-
-***Notice: the ads are fake. It's a joke, buddy!***
