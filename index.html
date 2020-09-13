@@ -63,9 +63,8 @@ background-repeat: repeat;
   <a href="/feedback.html">FEEDBACK</a><br>
 </div>
 <!--Fake ad slot 1-->
-<a id="fakeAdHREF1">
-<img id="fakeAd1" alt="fakeAd1" style="width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-top: 50px;"></img>
-</a>
+<a class="fakead">
+<img class="fakead" alt="fakeAd1" style="width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-top: 50px;"></img></a>
 <div class="normal" style="text-align:center;color:yellow;">
 <style scoped>
   button {
@@ -111,29 +110,11 @@ background-repeat: repeat;
   <i><a style="color:yellow;" href="https://github.com/chasepeck/chasepeck.github.io/commits/master">Version history</a></i>
   <p style="color:yellow;text-align: center; margin-bottom: 0px;margin-top:0px;" id="version"></p>
   <img id="indexface" alt="indexface" style="width:10%; height:auto;margin-top: 10px;"></footer>
-<script>
-  var fakeAdPaths=["/ads/Execution.png","/ads/Graphic design.png","/ads/John Code.png","/ads/Rich quick.png","/ads/Secrets.png"]
-  var insert = fakeAdPaths[Math.floor(Math.random()*fakeAdPaths.length)];
-  document.getElementById("fakeAd1").src = insert;
-  if(insert=="/ads/Execution.png"){
-    document.getElementById("fakeAdHREF1").href="/ads/p/execution.html"
-  }
-  if(insert=="/ads/Graphic design.png"){
-    document.getElementById("fakeAdHREF1").href="/ads/p/graphicdesign.html"
-  }
-  if(insert=="/ads/John Code.png"){
-    document.getElementById("fakeAdHREF1").href="/ads/p/johncode.html"
-  }
-  if(insert=="/ads/Rich quick.png"){
-    document.getElementById("fakeAdHREF1").href="/ads/p/richquick.html"
-  }
-  if(insert=="/ads/Secrets.png"){
-    document.getElementById("fakeAdHREF1").href="/ads/p/secrets.html"
-  }
-
-  //Index faces
-  var path="/assets/indexfaces/indexface"
-  document.getElementById("indexface").src = path.concat(Math.floor(Math.random() * 9) + 1,".jpg")
-</script>
+<script src="/fakeads.js"></script>
 <script src="/version.js"></script>
+<script>
+  //Index faces
+  var path="/assets/indexfaces/indexface";
+  document.getElementById("indexface").src = path.concat(Math.floor(Math.random() * 9) + 1,".jpg");
+</script>
 </html>
