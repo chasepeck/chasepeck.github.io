@@ -139,3 +139,11 @@ margin-left: 0px;
     font-style: normal;
     font-size: 30px;
 }
+
+#indexface {
+  cursor: move;
+}
+#indexface.is-pointer-down {
+  box-shadow: 10px 10px 5px grey;
+}
+#indexface.is-dragging { opacity: 0.7; }
