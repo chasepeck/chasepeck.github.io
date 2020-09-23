@@ -1,1 +1,1 @@
-document.getElementById("version").innerHTML = "c81 (3.5.0.b0)";
+document.getElementById("version").innerHTML = "4.0.0.b1";
