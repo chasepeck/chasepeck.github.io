@@ -7,5 +7,3 @@
 ![GitHub last commit](https://img.shields.io/github/last-commit/chasepeck/chasepeck.github.io?color=green&style=flat-square)
 
 welcome to my website.
-
-    Version: 4.2.0.b0

@@ -1,1 +1,0 @@
-document.getElementById("version").innerHTML = "4.2.0.b0";

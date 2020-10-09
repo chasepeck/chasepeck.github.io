@@ -1,7 +1,4 @@
-var fakeAdPaths=["/ads/Execution.png","/ads/Graphic design.png","/ads/John Code.png","/ads/Rich quick.png","/ads/Secrets.png",
-"/ads/Abstract Art.png","/ads/Anonymous Classes.png","/ads/Chase Peck for President.png","/ads/Click It.png","/ads/Glasses for Seniors.png",
-"/ads/Kindness Kills.png","/ads/Never Too Young.png","/ads/Other Candidates.png","/ads/Richard Danger Schitzelburgh.png","/ads/Save Money.png","/ads/X-Tra Long Peanut.png",];
-var adlist={
+const adlist={
     "/ads/Execution.png": "/ads/p/execution.html",
     "/ads/Graphic design.png": "/ads/p/graphicdesign.html",
     "/ads/John Code.png": "/ads/p/johncode.html",
@@ -18,10 +15,12 @@ var adlist={
     "/ads/Richard Danger Schitzelburgh.png": "/ads/p/dickdanger.html",
     "/ads/Save Money.png": "/ads/p/savemoney.html",
     "/ads/X-Tra Long Peanut.png": "/ads/p/peanuts.html",
+    "/ads/Shenzhen Electric Ad.png": "/ads/shenzhenelectric"
 }
-var fakeadslots = document.getElementsByClassName("fakead");
-for(i=0;i<fakeadslots.length;i++){
-    var randnum = Math.floor(Math.random()*fakeAdPaths.length);
-    fakeadslots[i].href = adlist[fakeAdPaths[randnum]];
-    fakeadslots[i+1].src = fakeAdPaths[randnum];
+var fakeadslots=document.querySelectorAll(".fakead");
+var i;
+for (i=0;i<fakeadslots.length;i+=2){
+    var randnum = Math.floor(Math.random()*Object.keys(adlist).length);
+    fakeadslots[i].href = adlist[Object.keys(adlist)[randnum]];
+    fakeadslots[i].querySelector(".fakead").src = Object.keys(adlist)[randnum];
 }
