@@ -66,7 +66,9 @@ if os.path.exists("blog/"+postdate+".html"):
     if not "y" in _x:
         raise Exception("Cancelled")
 blogfile=open("blog/"+postdate+".html","w")
+blogtable=open("blog/blogtable.txt","a")
 print("Type your HTML post:")
 content = input()
 towrite = headertext+content+footertext
 blogfile.write(towrite)
+blogtable.write("\n"+postdate+"_"+postname)
