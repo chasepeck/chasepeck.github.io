@@ -1,7 +1,11 @@
+from sys import argv
+import os.path
+script, postdate, postname = argv
+headertext = """
 <!DOCTYPE html>
 <html>
     <head>
-        <title>chasepeck - blog (4-27-2020)</title>
+        <title>chasepeck - blog ("""+postdate+""")</title>
         <link rel="stylesheet" href="/stylesheets/stylesheet_blogpost.css">
         <link rel="icon" href="/assets/favicon.png" type="image/png">
         <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
@@ -9,7 +13,7 @@
         <link rel="manifest" href="/its_web_man.webmanifest">
         <link rel="stylesheet" href="https://use.typekit.net/fym7jvp.css">
         <meta charset="UTF-8">
-        <meta name="description" content="chase peck blog: committing (4-27-2020)">
+        <meta name="description" content="chase peck blog: """+postname+" ("+postdate+""")\">
         <meta name="keywords" content="games, developer, development, programming, chase peck games, chase peck films, films, movies, videos, shorts, comedy, satire">
         <style>
             body {
@@ -48,13 +52,21 @@
                 color:white;
             }
         </style>
-        <a style="text-decoration: none;" href="/">chasepeck.com</a><a style="text-decoration: none;" href="/blog">/blog</a>/4-27-2020
+        <a style="text-decoration: none;" href="/">chasepeck.com</a><a style="text-decoration: none;" href="/blog">/blog</a>/"""+postdate+"""
     </div>
-    <div class="blog" style="padding-left: 80px; padding-right: 80px; line-height: 44px;">
-        <p>i'm not making "you don't know scratch" for now because it was going to take too long, and i just want to
-            get some little zingers thrown out onto gamejolt. working on some right now ;) let's see if i can commit.
-            probably not. just keep an eye on me and my gamejolt page, alright? make sure i'm not dead please. if i don't
-            post anything in a while, i've probably stopped committing. committing is my phobia. like, i need i know to do it,
-            but i'm a wuss and go back inside... but this time i'm going to do it. i'm going to commit. okay, here i go...
-        </p>
-    </div>
+    <div class="blog" style="padding-left: 80px; padding-right: 80px; line-height: 44px;"><p>
+"""
+footertext = """
+</p>
+</div>
+"""
+if os.path.exists("blog/"+postdate+".html"):
+    print("WARNING! File already exists. Are you sure you want to create a new post? y/n")
+    _x = input()
+    if not "y" in _x:
+        raise Exception("Cancelled")
+blogfile=open("blog/"+postdate+".html","w")
+print("Type your HTML post:")
+content = input()
+towrite = headertext+content+footertext
+blogfile.write(towrite)
