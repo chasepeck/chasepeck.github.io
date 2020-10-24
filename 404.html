@@ -21,10 +21,15 @@
   <a id="backlink" href='/index.html'></a>
   <!--Thanks to https://css-tricks.com/snippets/css/typewriter-effect/-->
   <script>
+    var subtitles = ["are you kidding me right now", "oh for god's sake!!", "wowie, look... we have a hacker",
+    "thanks, mitnick", "i bet you could hack into google now", "what are you doing?", "this is your fault, stackoverflow!!!",
+    "looks like you have a 404 in your brain","mhm, thanks...","you've ruined everything!","it's ok, i'll just return the favor by giving you viruses",
+    "oh piss off!!!","quick! rollback!"]
+    var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
     // set up text to print, each item in array is new line
     var aText = new Array(
-    "ERROR 404", 
-    "No bootable medium found! System halted.",
+    "ERROR 404: NOT FOUND", 
+    insert,
     );
     var iSpeed = 30; // time delay of print out
     var iIndex = 0; // start printing array at this posision
@@ -59,6 +64,6 @@
 
     typewriter();
 
-    setTimeout(function(){document.getElementById("backlink").innerHTML="Back";},2500)
+    setTimeout(function(){document.getElementById("backlink").innerHTML="Back";},insert.length*60+500)
     </script>
 </body></html>
