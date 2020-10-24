@@ -145,3 +145,29 @@ margin-left: 0px;
     font-style: normal;
     font-size: 30px;
 }
+@keyframes rainbow{
+    0% {color: red;}
+    12.5% {color: orange;}
+    25% {color: yellow;}
+    37.5% {color: green;}
+    50% {color: blue;}
+    62.5% {color: indigo;}
+    75% {color: purple;}
+    87.5% {color: violet;}
+    100% {color: red;}
+}
+.geocities a:hover{
+    animation: rainbow 2s infinite;
+    font-family: dos_vga_437;
+    background-color:black;
+    font-style: normal;
+    font-size: 50px;
+    text-decoration: none;
+}
+@keyframes shake{
+    0% {left: 200px;}
+    25%{left: -200px;}
+    50%{left: 200px;}
+    75%{left: -200px;}
+    100%{left: 200px;}
+}
