@@ -22,7 +22,7 @@
   </style>
 </head><body>
 <div class="fgheader" style="text-align:center;color:yellow;">
-  <img src="/assets/logos/chase peck rainbow.png" alt="chasepeck.com" style="width:50%;height:auto;margin-top: 50px;"></img>
+  <img src="/assets/logos/chase peck rainbow.png" alt="chasepeck.com" style="width:50%;height:auto;margin-top: 50px;animation: movein 1s"></img>
   <h2><i id="subtitle"><noscript>Really guy? You have JavaScript disabled? What are you, some paranoiac?</noscript></i></h2>
   <script>
     //Subtitles
@@ -34,7 +34,7 @@
     "get me a cold and fizzy cocaine-cola","thus, and whomst didith, visit thou thy chase peck website.","i hate you toby",
     "noding is for cerds","*funny caption*","peck you","go peck yourself","sometimes i think you don't care",
     "cascading style sheets!","hypertext markup language!","give love to the mac","what's a yaml?","humble beginnings as a scratch user",
-    "nought insayne>..,<<...","frog on a console.log","hello from home","corona can't compare","oh golly it's jason bourne",
+    "nought insayne>..,<<...","frog on a console.log","hello from home","oh golly it's jason bourne",
     "holly carp!","' UNION (SELECT names,passwords FROM users);--","no xss here (so don't try)","flavor text","now you're playing with power",
     "not on sega","Allan, please add details!","don't inspect element<!--I told you!-->","holaoy caprarp!","oobisoft, you-be-soft",
     "wuz yur favorite consile? mine iz wii u!!","follow me on super mario maker 2: X6G-XB3-4XF","hoyl parc!","mudda 1+2+3","ertbound",
@@ -46,7 +46,8 @@
     "betwixt two ferns","open thy eyes, see light","sorry, humor-inator out of order","sorry","sorry for the website","oh sorry",
     "i've run out of subtitle ideas","youtube star, and liar","usa! usa! usa! usa! usa! usa! usa! usa!", "sharmpulumpoulous","HYPER CHASE PECK II RETURNS",
     "SUPER NEW CHASE PECK BROS. U DELUXE GOTY EDITION","travis!? who's that?!","bring us f-zero? please?","bring us mother 3? no?","yep yep yep, you're gonna make the sponduli! the moolah!",
-    "sloprano","omfg tas so FUNNY!!!!"];
+    "sloprano","omfg tas so FUNNY!!!!","https:///w.website.web.info.net/about.html.css.php","this is my favorite website","millions of years of code!",
+    "[stand by]  operate  idle", "';--ha! suck it!", "im nto havingeg a stoke,,, u are!!!", "you've been pwned"];
     //End
     var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
     document.getElementById("subtitle").innerHTML = insert;
@@ -71,34 +72,18 @@
 </div>
 <!--Fake ad slot 1-->
 <a class="fakead"><img class="fakead" alt="fakead" style="width: 50%; height: auto; display: block; margin-left: auto; margin-right: auto; margin-top: 50px;"></a>
-<div class="fgheader" style="text-align:center;color:yellow;">
-<style>
-  button {
-    font-size: 30px;
-    font-family: dos_vga_437;
-    background-color: black;
-    color: white;
-    padding: 12px 20px;
-    border: 3px solid white;
-    cursor: pointer;
-    margin-top: 25px;
-  }
-
-  button:active {
-    font-size: 30px;
-    font-family: dos_vga_437;
-    background-color: white;
-    color: black;
-    padding: 12px 20px;
-    border: 3px solid black;
-    cursor: pointer;
-    margin-top: 25px;
-  }
-</style>
-<h1>news</h1>
-<iframe id="news" src="https://gamejolt.com/@chasepeck" width="1000px" height="500px"></iframe><br>
-<button title="refresh" onclick='document.getElementById("news").src = "https:\/\/gamejolt.com/@chasepeck"'>refresh</button>
+<div class="fgheader" style="text-align:center;color:yellow;margin:100px;">
+<h1>latest blog posts</h1>
+<div id="figspace" style="padding: 20px; background-color: white;color:black;font-family: dos_vga_437;text-align: center; border: blue 5px solid;font-size: 20px;">
+  <script src="/scripts/listblog_latest.js"></script>
 </div>
+</div>
+<!--
+<div id="supportme" style="text-align: center; margin:50px; color:yellow; font-family: franklin-gothic-urw; font-size: 25px;">
+  <h2><i>If you like what I do, <br>please consider supporting me!</i></h2>
+  <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="chasepeck" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Support me!" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+</div>
+-->
 <div class="fgheader" style="margin-top:100px;text-align:center;color:yellow;">
   <style>
     .repoicon {
@@ -125,4 +110,5 @@
   var path="/assets/indexfaces/indexface";
   document.getElementById("indexface").src = path.concat(Math.floor(Math.random() * 9) + 1,".jpg");
 </script>
+<!--<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="chasepeck" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting my site. If you like what I do, please consider supporting me!" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>-->
 </body></html>

@@ -1,16 +1,70 @@
-footer {
-    font-family: 'Times New Roman', Times, serif;
-    text-align: center;
-    color: yellow;
-}
-
 @font-face {
     font-family: dos_vga_437;
     src: url('perfect_dos_vga_437-webfont.woff2') format('woff2'),
          url('perfect_dos_vga_437-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
+}
+@font-face {
+    font-family: 'apple_garamondregular';
+    src: url('applegaramond-webfont.woff2') format('woff2'),
+         url('applegaramond-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
+}
+@keyframes shake{
+    0%  {left: 200px;}
+    25% {left: -200px;}
+    50% {left: 200px;}
+    75% {left: -200px;}
+    100%{left: 200px;}
+}
+@keyframes rainbow{
+    0%    {color: red;}
+    12.5% {color: orange;}
+    25%   {color: yellow;}
+    37.5% {color: green;}
+    50%   {color: blue;}
+    62.5% {color: indigo;}
+    75%   {color: purple;}
+    87.5% {color: violet;}
+    100%  {color: red;}
+}
+@keyframes movein{
+    0%  {opacity: 0; margin-right: 200px;}
+    25% {opacity: 0; margin-right: 200px;}
+    100%{opacity: 1; margin-right: 0px;}
+}
+header{
+    font-family: dos_vga_437;
+    font-size: 35px;
+    padding: 10px;
+    background-color: blue;
+    background-image: url("/assets/bgs/scanlinesbg.png");
+    align-items: center;
+    display: flex;
+    position: fixed;
+    margin: 0px;
+}
+.headerlinks{
+    background-color: black;
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 30px;
+    margin-left: 20px;
+}
+.headerlinks a{
+    border-radius: 10px;
+    padding: 10px;
+    font-size: 30px;
+    color: white;
+    text-decoration: none;
+}
+footer {
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+    color: yellow;
 }
 .fgheader a:link{
     color:white;
@@ -145,17 +199,6 @@ margin-left: 0px;
     font-style: normal;
     font-size: 30px;
 }
-@keyframes rainbow{
-    0% {color: red;}
-    12.5% {color: orange;}
-    25% {color: yellow;}
-    37.5% {color: green;}
-    50% {color: blue;}
-    62.5% {color: indigo;}
-    75% {color: purple;}
-    87.5% {color: violet;}
-    100% {color: red;}
-}
 .geocities a:hover{
     animation: rainbow 2s infinite;
     font-family: dos_vga_437;
@@ -163,11 +206,4 @@ margin-left: 0px;
     font-style: normal;
     font-size: 50px;
     text-decoration: none;
-}
-@keyframes shake{
-    0% {left: 200px;}
-    25%{left: -200px;}
-    50%{left: 200px;}
-    75%{left: -200px;}
-    100%{left: 200px;}
 }
