@@ -32,9 +32,9 @@
     100%  {color: red;}
 }
 @keyframes movein{
-    0%  {opacity: 0; margin-right: 200px;}
-    25% {opacity: 0; margin-right: 200px;}
-    100%{opacity: 1; margin-right: 0px;}
+    0%  {opacity: 0; right: 200px;}
+    25% {opacity: 0; right: 200px;}
+    100%{opacity: 1; right: 0px;}
 }
 header{
     font-family: dos_vga_437;
