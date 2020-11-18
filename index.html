@@ -12,6 +12,7 @@
   <meta charset="UTF-8">
   <meta name="description" content="the homepage of chase peck, the game developer and video creator.">
   <meta name="keywords" content="games, developer, development, programming, chase peck games, chase peck films, films, movies, videos, shorts, comedy, satire">
+  <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
   <style>
     body {
     background-color: blue;
@@ -110,6 +111,7 @@
   //Index faces
   var path="/assets/indexfaces/indexface";
   document.getElementById("indexface").src = path.concat(Math.floor(Math.random() * 9) + 1,".jpg");
+  let draggie = new Draggabilly('#indexface');
 </script>
 <!--<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="chasepeck" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting my site. If you like what I do, please consider supporting me!" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>-->
 </body></html>
