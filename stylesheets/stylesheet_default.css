@@ -48,6 +48,16 @@
     87.5% {color: violet;}
     100%  {color: red;}
 }
+@media (max-width: 1000px) {                  
+    .hide-if-small {
+       display: none;
+    }
+    #mainlogo{
+        margin: 10px;
+        width: 200% !important;
+        text-align: center !important;
+    }
+ }
 @keyframes movein{
     0%  {opacity: 0; right: 200px;}
     25% {opacity: 0; right: 200px;}
@@ -167,7 +177,7 @@ margin-left: 0px;
     font-family: dos_vga_437;
     color:white;
     font-style: normal;
-    font-size: 50px;
+    font-size: 30px;
     text-decoration: none;
 }
 .dosfont a:hover{
@@ -175,7 +185,7 @@ margin-left: 0px;
     color:black !important;
     background-color: white;
     font-style: normal;
-    font-size: 50px;
+    font-size: 30px;
     text-decoration: none;
 }
 .dosfont a:visited{
@@ -189,7 +199,7 @@ margin-left: 0px;
     font-family: dos_vga_437;
     color:white;
     font-style: normal;
-    font-size: 50px;
+    font-size: 30px;
 }
 .dosfont h2{
     font-family: dos_vga_437;
