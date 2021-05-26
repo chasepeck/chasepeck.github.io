@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class="body-border">
 <head>
   <title>chasepeck</title>
   
@@ -8,31 +8,25 @@
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
   <link rel="manifest" href="/its_web_man.webmanifest">
-  <link rel="stylesheet" href="https://use.typekit.net/fym7jvp.css">
   <meta charset="UTF-8">
-  <meta name="description" content="the homepage of chase peck, the game developer and video creator.">
+  <meta name="description" content="homepage of chase peck, game developer of organic games llc">
   <meta name="keywords" content="games, developer, development, programming, chase peck games, chase peck films, films, movies, videos, shorts, comedy, satire">
-  <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
-  <style>
-    body {
-    background-color: blue;
-    background-image: url("/assets/bgs/scanlinesbg.png");
-    background-size: 1000px;
-    background-repeat: repeat;
-    }
-  </style>
-</head><body>
-<div class="fgheader" style="margin-left: 50px; color:yellow;width:50%;display: inline-block;vertical-align: top;text-align: left;">
+</head><body id="intro" class="dosfont">
+<div id="inside-border">
+<audio autoplay>
+  <source src="/assets/beep.wav">
+</audio>
+<div style="margin-left: 50px; color:yellow;display: inline-block;vertical-align: top;text-align: left;">
   <figure>
-  <img id="mainlogo" src="/assets/logos/CPOG.png" alt="chasepeck.com" style="width:120%;height:auto;margin-top: 10px;"></img>
-  <h2 style="font-size: 30px;" class="hide-if-small"><i id="subtitle"><noscript>i know you have javascript disabled.</noscript></i></h2>
+  <h1 style="font-size: 60px;font-weight: normal;">chasepeck.com<br><a href="https://organic.games" style="font-size: 60px;">organic games</a></h1>
+  <h2 style="font-size: 30px;font-weight: normal;" id="typedtext">> <noscript>i know you have javascript disabled.</noscript></h2>
 </figure>
 </div>
-<div style="display: inline-block;width:45%;text-align:right;">
+<!--<div style="display: inline-block;width:45%;text-align:right;">
   <figure>
   <a class="hide-if-small" href="games/shootboyspacegame/"><img src="assets/headers/ShootBoySpaceGame.png" style="width:70%;height:auto;vertical-align: bottom;"></img></a>
   </figure>
-</div>
+</div>-->
   <script>
     //Subtitles
     var subtitles = ["interweb shenanigans",
@@ -41,7 +35,6 @@
     "what's the deal with this website?",
     "for a good time, visit chasepeck.com/goodtime.html",
     "$$$ big big bucks bucks $$$",
-    "I Never Use Uppercase Letters",
     "up for golf?",
     "up for frolf?",
     "cut to: int. my room - forever",
@@ -58,7 +51,6 @@
     "now you're playing with power",
     "not on sega",
     "allan, please add details!",
-    "don't inspect element<!--I told you!-->",
     "holaoy caprarp!",
     "follow me on super mario maker 2: X6G-XB3-4XF",
     "hoyl parc!",
@@ -86,31 +78,78 @@
     "to err is human, but to air is fan",
     "when thou are stupidious, i laughest at thy",
     "don't forget to commit and push",
-    "- the sign painter",
+    "the sign painter",
     "i just loveeee my leeetlle infernooo",
     "why is your cousin such a wet sandwich?",
     "i love you, but you don't know what you're talking about",
     "did you tell them that those were the lord's chips?",
     "crying and screaming and farting",
-    "i'm mr. greenz"
+    "i'm mr. greenz",
+    "chase peck for president",
+    "gimme da gorbage"
     ];
     //End
     var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
-    document.getElementById("subtitle").innerHTML = insert;
+    //document.getElementById("subtitle").innerHTML = insert;
+
+    var aText = new Array(
+    insert
+    );
+    var iSpeed = 30; // time delay of print out
+    var iIndex = 0; // start printing array at this posision
+    var iArrLength = aText[0].length; // the length of the text array
+    var iScrollAt = 20; // start scrolling up at this many lines
+    
+    var iTextPos = 0; // initialise text position
+    var sContents = ''; // initialise contents variable
+    var iRow; // initialise current row
+    
+    function typewriter()
+    {
+    sContents =  '> ';
+    iRow = Math.max(0, iIndex-iScrollAt);
+    var destination = document.getElementById("typedtext");
+    
+    while ( iRow < iIndex ) {
+      sContents += aText[iRow++] + '<br />';
+    }
+    destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos);
+    if ( iTextPos++ == iArrLength ) {
+      iTextPos = 0;
+      iIndex++;
+      if ( iIndex != aText.length ) {
+      iArrLength = aText[iIndex].length;
+      setTimeout("typewriter()", 500);
+      }
+    } else {
+      setTimeout("typewriter()", iSpeed);
+    }
+    }
+
+    function showBody(){
+      document.getElementById("inside-border").style.display="block"
+      document.body.id=""
+    }
+
+    setTimeout("typewriter()",1000);
+    setTimeout("showBody()",500);
   </script>
-</div>
-<div id="indexmenu" class="dosfont" style="background-color: black;margin: 50px; padding:10px 50px; overflow: hidden;border-radius: 25px;">
-  <h1><i>$ ls SOCIAL</i></h1>
-  <a href="https://www.youtube.com/channel/UC0Db09Ndk6BKK7Sx_mLEoIQ">YOUTUBE</a><br>
-  <a href="https://github.com/chasepeck">GITHUB</a><br>
-  <a href="https://www.behance.net/chasepeck/">BEHANCE</a><br>
-  <h1><i>$ ls CONTACT</i></h1>
-  <a href="mailto:contactchasepeck@icloud.com">CONTACT</a><br>
-  <h1><i>$ ls THINGS</i></h1>
-  <div class="geocities"><a href="http://organic.games" style="font-size: 50px;">ORGANIC GAMES</a><br></div>
-  <a href="/films">FILMS</a><br>
-  <a href="/repos">REPOS</a><br>
-  <a href="/feedback.html">FEEDBACK</a><br>
+<div id="indexmenu" style="background-color: black;margin: 50px; padding:10px 50px; overflow: hidden;border-radius: 25px;">
+  <h1 style="font-weight: normal;"><i>$ ls SOCIAL</i></h1>
+  <div class="geocities"><a href="https://organic.games">games</a></div>
+  <a href="https://www.youtube.com/channel/UC0Db09Ndk6BKK7Sx_mLEoIQ">youtube</a><br>
+  <a href="https://github.com/chasepeck">github</a><br>
+  <h1 style="font-weight: normal;"><i>$ ls CONTACT</i></h1>
+  <a href="mailto:contactchasepeck@icloud.com">contact</a><br>
+  <h1 style="font-weight: normal;"><i>$ ls THINGS</i></h1>
+  <h1 style="font-weight: normal;font-size: 25px;">FEATURED</h1>
+  <ul>
+    <li><a href="/a/5-25-21.html">RELEASING GAME! & Organic Games LLC  - 5/25/21</a></li>
+  </ul>
+  <h1 style="font-weight: normal;font-size: 25px;">ALL</h1>
+  <ul>
+    <li><a href="/a/5-25-21.html">RELEASING GAME! & Organic Games LLC - 5/25/21</a></li>
+  </ul>
 </div>
 <!--
 <div id="supportme" style="text-align: center; margin:50px; color:yellow; font-family: franklin-gothic-urw; font-size: 25px;">
@@ -118,31 +157,10 @@
   <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="chasepeck" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Support me!" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
 </div>
 -->
-<div class="fgheader" style="margin-top:25px;text-align:center;color:yellow;">
-  <style>
-    .repoicon {
-    transition: .5s ease;
-    transform-origin: center center;
-    }
-    .repoicon:hover{
-        transform: scale(1.3,1.3)
-    }
-  </style>
-  <a title="chasepeck.com repo" href="https://github.com/chasepeck/chasepeck.github.io"><img class="repoicon" src="/assets/repoicon.png" height="50px"></a>
-</div>
-<footer style="margin-top: 10px; margin-bottom: 25px;"><img src="/assets/copyleft.png" height="11px"> 2021 Chase Peck<br>
-  <i><a style="color:yellow;" href="https://github.com/chasepeck/chasepeck.github.io/commits/master">Version history</a></i>
-  <p style="color:yellow;text-align: center; margin-bottom: 0px;margin-top:0px;" id="version"></p>
-  <img id="indexface" alt="indexface" style="width:10%; height:auto;margin-top: 10px;">
-</footer>
+<footer style="margin-top: 10px; margin-bottom: 25px;">0000011111100101 Chase Peck<br></footer>
 <!--Scripts-->
 <script src="/scripts/fakeads.js"></script>
 <script src="/scripts/version.js"></script>
-<script>
-  //Index faces
-  var path="/assets/indexfaces/indexface";
-  document.getElementById("indexface").src = path.concat(Math.floor(Math.random() * 9) + 1,".jpg");
-  let draggie = new Draggabilly('#indexface');
-</script>
 <!--<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="chasepeck" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting my site. If you like what I do, please consider supporting me!" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>-->
+</div>
 </body></html>

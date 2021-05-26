@@ -30,6 +30,7 @@
     font-style: normal;
 
 }
+
 @keyframes shake{
     0%  {left: 200px;}
     25% {left: -200px;}
@@ -68,109 +69,25 @@
     80% {opacity: 0;}
     100%{opacity: 1;}
 }
+body{
+    background-color: rgb(10, 10, 10);
+}
+.body-border body{
+    border:50px solid darkblue;
+    margin: 0 auto;
+    padding: 50px;
+}
+#inside-border{
+    display: none;
+}
+#intro{
+    background-color: darkblue;
+}
 footer {
-    font-family: sans-serif;
+    font-family: "dos_vga_437";
     font-size: 15px;
     text-align: center;
-    color: yellow;
-}
-.fgheader a:link{
-    color:white;
-    font-family: franklin-gothic-urw, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 40px;
-}
-.fgheader a:hover{
-    color:white;
-    font-family: franklin-gothic-urw, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 40px;
-}
-.fgheader a:visited{
-    color:lightgray;
-    font-family: franklin-gothic-urw, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 40px;
-}
-.fgheader a:active{
-    color:lightblue;
-    font-family: franklin-gothic-urw, sans-serif;
-    font-weight: 700;
-    font-style: normal;
-    font-size: 40px;
-}
-.fgheader p{
-font-family: franklin-gothic-urw, sans-serif;
-font-weight: 400;
-font-style: normal;
-}
-.fgheader p.italic{
-font-family: franklin-gothic-urw, sans-serif;
-font-weight: 400;
-font-style: italic;
-}
-.fgheader h1{
-font-family: franklin-gothic-urw, sans-serif;
-font-weight: 900;
-font-style: normal;
-font-size: 100px;
-margin-top: 0px;
-margin-bottom: 0px;
-margin-right: 0px;
-margin-left: 0px;
-}
-.fgheader h1.italic{
-font-family: franklin-gothic-urw, sans-serif;
-font-weight: 900;
-font-style: italic;
-font-size: 100px;
-margin-top: 0px;
-margin-bottom: 0px;
-margin-right: 0px;
-margin-left: 0px;
-}
-.fgheader h2{
-font-family: franklin-gothic-urw, sans-serif;
-font-weight: 700;
-font-style: normal;
-font-size: 50px;
-margin-top: 0px;
-margin-bottom: 0px;
-margin-right: 0px;
-margin-left: 0px;
-}
-.fgheader h2.italic{
-font-family: franklin-gothic-urw, sans-serif;
-font-weight: 700;
-font-style: italic;
-font-size: 50px;
-margin-top: 0px;
-margin-bottom: 0px;
-margin-right: 0px;
-margin-left: 0px;
-}
-.fgheader h3{
-font-family: franklin-gothic-urw, sans-serif;
-font-weight: 900;
-font-style: normal;
-font-size: 80px;
-margin-top: 0px;
-margin-bottom: 0px;
-margin-right: 0px;
-margin-left: 0px;
-}
-.fgheader h3.italic{
-font-family: franklin-gothic-urw, sans-serif;
-font-weight: 900;
-font-style: italic;
-font-size: 80px;
-margin-top: 0px;
-margin-bottom: 0px;
-margin-right: 0px;
-margin-left: 0px;
+    color: white;
 }
 
 .dosfont a:link{
@@ -205,14 +122,25 @@ margin-left: 0px;
     font-family: dos_vga_437;
     color:white;
     font-style: normal;
-    font-size: 30px;
+    font-size: 50px;
+    margin: 0px;
+}
+.dosfont p, ul, ol{
+    font-family: dos_vga_437;
+    color:white;
+    font-style: normal;
+    font-size: 25px;
+}
+.dosfont p a {
+    font-size: 25px !important;
+    font-style: italic !important;
+    color: lightskyblue !important;
 }
 .geocities a:hover{
     animation: rainbow 2s infinite;
     font-family: dos_vga_437;
     background-color:black;
     font-style: normal;
-    font-size: 50px;
     text-decoration: none;
 }
 #indexface {
