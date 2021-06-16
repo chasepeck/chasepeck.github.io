@@ -12,155 +12,101 @@
   <meta name="description" content="homepage of chase peck, game developer of organic games llc">
   <meta name="keywords" content="games, developer, development, programming, chase peck games, chase peck films, films, movies, videos, shorts, comedy, satire">
 </head><body id="intro" class="dosfont">
-<div id="inside-border">
-<audio autoplay>
-  <source src="/assets/beep.wav">
-</audio>
-<div style="margin-left: 50px; color:yellow;display: inline-block;vertical-align: top;text-align: left;">
-  <figure>
-  <h1 style="font-size: 60px;font-weight: normal;">chasepeck.com<br><a href="https://organic.games" style="font-size: 60px;">organic games</a></h1>
-  <h2 style="font-size: 30px;font-weight: normal;" id="typedtext">> <noscript>i know you have javascript disabled.</noscript></h2>
-</figure>
-</div>
-<!--<div style="display: inline-block;width:45%;text-align:right;">
-  <figure>
-  <a class="hide-if-small" href="games/shootboyspacegame/"><img src="assets/headers/ShootBoySpaceGame.png" style="width:70%;height:auto;vertical-align: bottom;"></img></a>
-  </figure>
-</div>-->
-  <script>
-    //Subtitles
-    var subtitles = ["interweb shenanigans",
-    "scroll for sexi bod",
-    "coolest website of the millennium",
-    "what's the deal with this website?",
-    "for a good time, visit chasepeck.com/goodtime.html",
-    "$$$ big big bucks bucks $$$",
-    "up for golf?",
-    "up for frolf?",
-    "cut to: int. my room - forever",
-    "gif or gif?",
-    "windows 95 not supported",
-    "get me a cold and fizzy cocaine-cola",
-    "noding is for cerds",
-    "*funny caption*",
-    "sometimes i think you don't care",
-    "humble beginnings as a scratch user",
-    "oh golly it's jason bourne",
-    "holly carp!",
-    "no xss here (so don't try)",
-    "now you're playing with power",
-    "not on sega",
-    "allan, please add details!",
-    "holaoy caprarp!",
-    "follow me on super mario maker 2: X6G-XB3-4XF",
-    "hoyl parc!",
-    "not on 32x adapters",
-    "arms sweating, palms sweating, mom's sweating",
-    "give me a drink, bartender",
-    "my name's not shayne, kid",
-    "corn you believe colonel?",
-    "404 subtitle ain't been found",
-    "may its gland endure 1000 years!",
-    "betwixt two ferns",
-    "open thy eyes, see light",
-    "youtube star, and liar",
-    "usa! usa! usa! usa! usa! usa! usa! usa!",
-    "HYPER CHASE PECK II RETURNS",
-    "SUPER NEW CHASE PECK BROS. U DELUXE GOTY EDITION",
-    "we want mother 3! am i doing it right?",
-    "yep yep yep, you're gonna make the sponduli! the moolah!",
-    "millions of years of code!",
-    "[stand by]  operate  idle",
-    "im nto havingeg a stoke,,, u are!!!",
-    "ƒ∑¢ºµ¬å´3¢",
-    "hoo!!! hee!!!",
-    "ubiquitous omnipresence",
-    "to err is human, but to air is fan",
-    "when thou are stupidious, i laughest at thy",
-    "don't forget to commit and push",
-    "the sign painter",
-    "i just loveeee my leeetlle infernooo",
-    "why is your cousin such a wet sandwich?",
-    "i love you, but you don't know what you're talking about",
-    "did you tell them that those were the lord's chips?",
-    "crying and screaming and farting",
-    "i'm mr. greenz",
-    "chase peck for president",
-    "gimme da gorbage"
-    ];
-    //End
-    var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
-    //document.getElementById("subtitle").innerHTML = insert;
+  <noscript>
+    <h1 style="text-align: center; font-style: normal;">JavaScript is required for this website.</h1>
+  </noscript>
+  <div id="inside-border">
+    <!-- <audio autoplay>
+      <source src="/assets/beep.wav">
+    </audio> -->
+    <div style="margin-left: 50px; color:yellow;display: inline-block;vertical-align: top;text-align: left;">
+      <figure>
+      <h1 style="font-size: 60px;font-weight: normal;">chasepeck.com<br><a href="https://organic.games" style="font-size: 60px;">organic games</a></h1>
+      <h2 style="font-size: 30px;font-weight: normal;" id="typedtext">> </h2>
+    </figure>
+    </div>
+    <!--<div style="display: inline-block;width:45%;text-align:right;">
+      <figure>
+      <a class="hide-if-small" href="games/shootboyspacegame/"><img src="assets/headers/ShootBoySpaceGame.png" style="width:70%;height:auto;vertical-align: bottom;"></img></a>
+      </figure>
+    </div>-->
+      <script src="subtitles.js"></script>
+      <script>
 
-    var aText = new Array(
-    insert
-    );
-    var iSpeed = 30; // time delay of print out
-    var iIndex = 0; // start printing array at this posision
-    var iArrLength = aText[0].length; // the length of the text array
-    var iScrollAt = 20; // start scrolling up at this many lines
-    
-    var iTextPos = 0; // initialise text position
-    var sContents = ''; // initialise contents variable
-    var iRow; // initialise current row
-    
-    function typewriter()
-    {
-    sContents =  '> ';
-    iRow = Math.max(0, iIndex-iScrollAt);
-    var destination = document.getElementById("typedtext");
-    
-    while ( iRow < iIndex ) {
-      sContents += aText[iRow++] + '<br />';
-    }
-    destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos);
-    if ( iTextPos++ == iArrLength ) {
-      iTextPos = 0;
-      iIndex++;
-      if ( iIndex != aText.length ) {
-      iArrLength = aText[iIndex].length;
-      setTimeout("typewriter()", 500);
-      }
-    } else {
-      setTimeout("typewriter()", iSpeed);
-    }
-    }
+        var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
+        //var insert = subtitles[subtitles.length-1];
+        //document.getElementById("subtitle").innerHTML = insert;
 
-    function showBody(){
-      document.getElementById("inside-border").style.display="block"
-      document.body.id=""
-    }
+        var aText = new Array(
+        insert
+        );
+        var iSpeed = 30; // time delay of print out
+        var iIndex = 0; // start printing array at this posision
+        var iArrLength = aText[0].length; // the length of the text array
+        var iScrollAt = 20; // start scrolling up at this many lines
+        
+        var iTextPos = 0; // initialise text position
+        var sContents = ''; // initialise contents variable
+        var iRow; // initialise current row
+        
+        function typewriter()
+        {
+        sContents =  '> ';
+        iRow = Math.max(0, iIndex-iScrollAt);
+        var destination = document.getElementById("typedtext");
+        
+        while ( iRow < iIndex ) {
+          sContents += aText[iRow++] + '<br />';
+        }
+        destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos);
+        if ( iTextPos++ == iArrLength ) {
+          iTextPos = 0;
+          iIndex++;
+          if ( iIndex != aText.length ) {
+          iArrLength = aText[iIndex].length;
+          setTimeout("typewriter()", 500);
+          }
+        } else {
+          setTimeout("typewriter()", iSpeed);
+        }
+        }
 
-    setTimeout("typewriter()",1000);
-    setTimeout("showBody()",500);
-  </script>
-<div id="indexmenu" style="background-color: black;margin: 50px; padding:10px 50px; overflow: hidden;border-radius: 25px;">
-  <h1 style="font-weight: normal;"><i>$ ls SOCIAL</i></h1>
-  <div class="geocities"><a href="https://organic.games">games</a></div>
-  <a href="https://www.youtube.com/channel/UC0Db09Ndk6BKK7Sx_mLEoIQ">youtube</a><br>
-  <a href="https://github.com/chasepeck">github</a><br>
-  <h1 style="font-weight: normal;"><i>$ ls CONTACT</i></h1>
-  <a href="mailto:contactchasepeck@icloud.com">contact</a><br>
-  <h1 style="font-weight: normal;"><i>$ ls THINGS</i></h1>
-  <h1 style="font-weight: normal;font-size: 25px;">FEATURED</h1>
-  <ul>
-    <li><a href="/a/5-25-21.html">RELEASING GAME! & Organic Games LLC  - 5/25/21</a></li>
-  </ul>
-  <h1 style="font-weight: normal;font-size: 25px;">ALL</h1>
-  <ul>
-    <li><a href="/a/5-25-21.html">RELEASING GAME! & Organic Games LLC - 5/25/21</a></li>
-  </ul>
-</div>
-<!--
-<div id="supportme" style="text-align: center; margin:50px; color:yellow; font-family: franklin-gothic-urw; font-size: 25px;">
-  <h2><i>If you like what I do, <br>please consider supporting me!</i></h2>
-  <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="chasepeck" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Support me!" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-</div>
--->
-<footer style="margin-top: 10px; margin-bottom: 25px;">0000011111100101 Chase Peck<br></footer>
-<!--Scripts-->
-<script src="/scripts/fakeads.js"></script>
-<script src="/scripts/version.js"></script>
-<!--<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="chasepeck" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting my site. If you like what I do, please consider supporting me!" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>-->
-</div>
+        function showBody(){
+          document.getElementById("inside-border").style.display="block"
+          document.body.id=""
+        }
+
+        setTimeout("typewriter()",1000);
+        setTimeout("showBody()",500);
+      </script>
+    <div id="indexmenu" style="background-color: black;margin: 50px; padding:10px 50px; overflow: hidden;border-radius: 25px;">
+      <h1 style="font-weight: normal;"><i>$ ls SOCIAL</i></h1>
+      <div class="geocities"><a href="https://organic.games">games</a></div>
+      <a href="https://www.youtube.com/channel/UC0Db09Ndk6BKK7Sx_mLEoIQ">youtube</a><br>
+      <a href="https://github.com/chasepeck">github</a><br>
+      <a href="https://gist.github.com/chasepeck">gh gists</a><br>
+      <h1 style="font-weight: normal;"><i>$ ls CONTACT</i></h1>
+      <a href="mailto:contactchasepeck@icloud.com">contact</a><br>
+      <h1 style="font-weight: normal;"><i>$ ls THINGS</i></h1>
+      <h1 style="font-weight: normal;font-size: 25px;">FEATURED</h1>
+      <ul>
+        <li><a href="/a/5-25-21.html">RELEASING GAME! & Organic Games LLC  - 5/25/21</a></li>
+      </ul>
+      <h1 style="font-weight: normal;font-size: 25px;">ALL</h1>
+      <ul>
+        <li><a href="/a/5-25-21.html">RELEASING GAME! & Organic Games LLC - 5/25/21</a></li>
+      </ul>
+    </div>
+    <!--
+    <div id="supportme" style="text-align: center; margin:50px; color:yellow; font-family: franklin-gothic-urw; font-size: 25px;">
+      <h2><i>If you like what I do, <br>please consider supporting me!</i></h2>
+      <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="chasepeck" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Support me!" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
+    </div>
+    -->
+    <footer style="margin-top: 10px; margin-bottom: 25px;">0000011111100101 Chase Peck<br></footer>
+    <!--Scripts-->
+    <script src="/scripts/fakeads.js"></script>
+    <script src="/scripts/version.js"></script>
+    <!--<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="chasepeck" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting my site. If you like what I do, please consider supporting me!" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>-->
+    </div>
 </body></html>

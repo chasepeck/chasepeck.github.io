@@ -49,6 +49,10 @@
     87.5% {color: violet;}
     100%  {color: red;}
 }
+@keyframes flash1{
+    0%    {color: white;}
+    100%  {color: orange;font-weight: bold;}
+}
 @media (max-width: 1100px) {                  
     .hide-if-small {
        display: none;
@@ -136,10 +140,20 @@ footer {
     font-style: italic !important;
     color: lightskyblue !important;
 }
+.geocities a:link{
+    animation: flash1 0.5s infinite alternate;
+    animation-iteration-count: 10;
+    animation-delay: 1s;
+    animation-timing-function:ease-in-out;
+    font-family: dos_vga_437;
+    background-color:black;
+    font-style: normal;
+    text-decoration: none;
+}
 .geocities a:hover{
     animation: rainbow 2s infinite;
     font-family: dos_vga_437;
-    background-color:black;
+    background-color:rgb(53, 53, 53);
     font-style: normal;
     text-decoration: none;
 }
