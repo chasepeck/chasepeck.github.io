@@ -104,9 +104,48 @@
     </div>
     -->
     <footer style="margin-top: 10px; margin-bottom: 25px;">0000011111100101 Chase Peck<br></footer>
+    <div style="text-align: center;">
+      <canvas id="three"></canvas>
+      <script src="three.js"></script>
+      <script>
+
+        var numframes = 0;
+
+        const scene = new THREE.Scene();
+        const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+        const renderer = new THREE.WebGLRenderer({canvas: document.querySelector("#three"), alpha: true});
+        renderer.setSize( 480, 240);
+        renderer.setPixelRatio( window.devicePixelRatio );
+
+        var geometry = new THREE.BoxGeometry();
+        var tex = new THREE.TextureLoader().load('/assets/favicon.png');
+        var material = new THREE.MeshStandardMaterial( { map: tex } );
+        var cube = new THREE.Mesh( geometry, material );
+        scene.add( cube );
+        
+        const light = new THREE.PointLight( 0xffffffff, 5, 100 );
+        light.position.set(50,50,50)
+        scene.add( light );
+
+        camera.position.z = 2;
+
+        function animate() {
+          numframes ++;
+          requestAnimationFrame( animate );
+
+          cube.rotation.x = Math.sin(numframes/50)/4;
+          cube.rotation.y += 0.02+(Math.sin(numframes/100)/50)+0.02;
+
+          cube.position.y = Math.sin(numframes/100)/4;
+
+          renderer.render( scene, camera );
+        }
+        animate();
+      </script>
+    </div>
     <!--Scripts-->
     <script src="/scripts/fakeads.js"></script>
-    <script src="/scripts/version.js"></script>
     <!--<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="chasepeck" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting my site. If you like what I do, please consider supporting me!" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>-->
     </div>
 </body></html>
