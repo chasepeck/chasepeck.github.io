@@ -73,6 +73,38 @@
     80% {opacity: 0;}
     100%{opacity: 1;}
 }
+@keyframes slide {
+  from {
+    background-position-x: 0;
+  }
+  to {
+    background-position-x: -100%;
+  }
+}
+
+#backtextouter {
+    overflow: hidden;
+    margin-bottom: 20px;
+    background-color: darkblue;
+}
+
+#backtextouter div {
+    display: inline-block;
+}
+
+#backtextloop {
+    white-space: nowrap;
+    animation: loop-anim 20s linear infinite;
+}
+
+@keyframes loop-anim {
+    0% {
+        margin-left: 0;
+    }
+    100% {
+        margin-left: -50% /* This works because of the div between "outer" and "loop" */
+    }
+}
 body{
     background-color: rgb(10, 10, 10);
 }

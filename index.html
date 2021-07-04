@@ -16,69 +16,14 @@
     <h1 style="text-align: center; font-style: normal;">JavaScript is required for this website.</h1>
   </noscript>
   <div id="inside-border">
-    <!-- <audio autoplay>
-      <source src="/assets/beep.wav">
-    </audio> -->
+
     <div style="margin-left: 50px; color:yellow;display: inline-block;vertical-align: top;text-align: left;">
       <figure>
       <h1 style="font-size: 60px;font-weight: normal;">chasepeck.com<br><a href="https://organic.games" style="font-size: 60px;">organic games</a></h1>
       <h2 style="font-size: 30px;font-weight: normal;" id="typedtext">> </h2>
     </figure>
     </div>
-    <!--<div style="display: inline-block;width:45%;text-align:right;">
-      <figure>
-      <a class="hide-if-small" href="games/shootboyspacegame/"><img src="assets/headers/ShootBoySpaceGame.png" style="width:70%;height:auto;vertical-align: bottom;"></img></a>
-      </figure>
-    </div>-->
-      <script src="subtitles.js"></script>
-      <script>
 
-        var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
-        //var insert = subtitles[subtitles.length-1];
-        //document.getElementById("subtitle").innerHTML = insert;
-
-        var aText = new Array(
-        insert
-        );
-        var iSpeed = 30; // time delay of print out
-        var iIndex = 0; // start printing array at this posision
-        var iArrLength = aText[0].length; // the length of the text array
-        var iScrollAt = 20; // start scrolling up at this many lines
-        
-        var iTextPos = 0; // initialise text position
-        var sContents = ''; // initialise contents variable
-        var iRow; // initialise current row
-        
-        function typewriter()
-        {
-        sContents =  '> ';
-        iRow = Math.max(0, iIndex-iScrollAt);
-        var destination = document.getElementById("typedtext");
-        
-        while ( iRow < iIndex ) {
-          sContents += aText[iRow++] + '<br />';
-        }
-        destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos);
-        if ( iTextPos++ == iArrLength ) {
-          iTextPos = 0;
-          iIndex++;
-          if ( iIndex != aText.length ) {
-          iArrLength = aText[iIndex].length;
-          setTimeout("typewriter()", 500);
-          }
-        } else {
-          setTimeout("typewriter()", iSpeed);
-        }
-        }
-
-        function showBody(){
-          document.getElementById("inside-border").style.display="block"
-          document.body.id=""
-        }
-
-        setTimeout("typewriter()",1000);
-        setTimeout("showBody()",500);
-      </script>
     <div id="indexmenu" style="background-color: black;margin: 50px; padding:10px 50px; overflow: hidden;border-radius: 25px;">
       <h1 style="font-weight: normal;"><i>$ ls SOCIAL</i></h1>
       <div class="geocities"><a href="https://organic.games">games</a></div>
@@ -98,55 +43,105 @@
         <li><a href="/a/5-25-21.html">RELEASING GAME! & Organic Games LLC - 5/25/21</a></li>
       </ul>
     </div>
-    <!--
-    <div id="supportme" style="text-align: center; margin:50px; color:yellow; font-family: franklin-gothic-urw; font-size: 25px;">
-      <h2><i>If you like what I do, <br>please consider supporting me!</i></h2>
-      <script type="text/javascript" src="https://cdnjs.buymeacoffee.com/1.0.0/button.prod.min.js" data-name="bmc-button" data-slug="chasepeck" data-color="#FFDD00" data-emoji=""  data-font="Cookie" data-text="Support me!" data-outline-color="#000000" data-font-color="#000000" data-coffee-color="#ffffff" ></script>
-    </div>
-    -->
+
     <footer style="margin-top: 10px; margin-bottom: 25px;">0000011111100101 Chase Peck<br></footer>
+
     <div style="text-align: center;">
       <canvas id="three"></canvas>
-      <script src="three.js"></script>
-      <script>
-
-        var numframes = 0;
-
-        const scene = new THREE.Scene();
-        const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-
-        const renderer = new THREE.WebGLRenderer({canvas: document.querySelector("#three"), alpha: true});
-        renderer.setSize( 480, 240);
-        renderer.setPixelRatio( window.devicePixelRatio );
-
-        var geometry = new THREE.BoxGeometry();
-        var tex = new THREE.TextureLoader().load('/assets/favicon.png');
-        var material = new THREE.MeshStandardMaterial( { map: tex } );
-        var cube = new THREE.Mesh( geometry, material );
-        scene.add( cube );
-        
-        const light = new THREE.PointLight( 0xffffffff, 5, 100 );
-        light.position.set(50,50,50)
-        scene.add( light );
-
-        camera.position.z = 2;
-
-        function animate() {
-          numframes ++;
-          requestAnimationFrame( animate );
-
-          cube.rotation.x = Math.sin(numframes/50)/4;
-          cube.rotation.y += 0.02+(Math.sin(numframes/100)/50)+0.02;
-
-          cube.position.y = Math.sin(numframes/100)/4;
-
-          renderer.render( scene, camera );
-        }
-        animate();
-      </script>
     </div>
+
     <!--Scripts-->
     <script src="/scripts/fakeads.js"></script>
-    <!--<script data-name="BMC-Widget" src="https://cdnjs.buymeacoffee.com/1.0.0/widget.prod.min.js" data-id="chasepeck" data-description="Support me on Buy me a coffee!" data-message="Thank you for visiting my site. If you like what I do, please consider supporting me!" data-color="#5F7FFF" data-position="Right" data-x_margin="18" data-y_margin="18"></script>-->
-    </div>
-</body></html>
+    <script src="/scripts/subtitles.js"></script>
+    <script src="/scripts/looptext.js"></script>
+    <script>
+
+      var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
+      //var insert = subtitles[subtitles.length-1];
+
+      var aText = new Array(
+      insert
+      );
+      var iSpeed = 30; // time delay of print out
+      var iIndex = 0; // start printing array at this posision
+      var iArrLength = aText[0].length; // the length of the text array
+      var iScrollAt = 20; // start scrolling up at this many lines
+      
+      var iTextPos = 0; // initialise text position
+      var sContents = ''; // initialise contents variable
+      var iRow; // initialise current row
+      
+      function typewriter()
+      {
+      sContents =  '> ';
+      iRow = Math.max(0, iIndex-iScrollAt);
+      var destination = document.getElementById("typedtext");
+      
+      while ( iRow < iIndex ) {
+        sContents += aText[iRow++] + '<br />';
+      }
+      destination.innerHTML = sContents + aText[iIndex].substring(0, iTextPos);
+      if ( iTextPos++ == iArrLength ) {
+        iTextPos = 0;
+        iIndex++;
+        if ( iIndex != aText.length ) {
+        iArrLength = aText[iIndex].length;
+        setTimeout("typewriter()", 500);
+        }
+      } else {
+        if(aText[iIndex].substring(iTextPos-2, iTextPos-1)=="." || aText[iIndex].substring(iTextPos-2, iTextPos-1)=="?" || aText[iIndex].substring(iTextPos-2, iTextPos-1)=="!" || aText[iIndex].substring(iTextPos-2, iTextPos-1)==","){
+          setTimeout("typewriter()", iSpeed*10);
+        } else {
+          setTimeout("typewriter()", iSpeed);
+        }
+      }
+      }
+
+      function showBody(){
+        document.getElementById("inside-border").style.display="block"
+        document.body.id=""
+      }
+
+      setTimeout("typewriter()",1000);
+      setTimeout("showBody()",500);
+    </script>
+    <script src="https://cdn.rawgit.com/mrdoob/three.js/f5bd0b75e5364087918c2bf33429d4c62071664c/build/three.js" type="application/javascript"></script>
+    <script>
+
+      var numframes = 0;
+
+      const scene = new THREE.Scene();
+      const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
+
+      const renderer = new THREE.WebGLRenderer({canvas: document.querySelector("#three"), alpha: true});
+      renderer.setSize( 480, 240);
+      renderer.setPixelRatio( window.devicePixelRatio );
+
+      var geometry = new THREE.BoxGeometry();
+      var tex = new THREE.TextureLoader().load('/assets/favicon.png');
+      var material = new THREE.MeshStandardMaterial( { map: tex } );
+      var cube = new THREE.Mesh( geometry, material );
+      scene.add( cube );
+      
+      const light = new THREE.PointLight( 0xffffffff, 5, 100 );
+      light.position.set(50,50,50)
+      scene.add( light );
+
+      camera.position.z = 2;
+
+      function animate() {
+        numframes ++;
+        requestAnimationFrame( animate );
+
+        cube.rotation.x = Math.sin(numframes/50)/4;
+        cube.rotation.y += 0.02+(Math.sin(numframes/100)/50)+0.02;
+
+        cube.position.y = Math.sin(numframes/100)/4;
+
+        renderer.render( scene, camera );
+      }
+      animate();
+    </script>
+  </div>
+</body>
+</html>

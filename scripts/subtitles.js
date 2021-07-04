@@ -61,5 +61,17 @@ var subtitles = [
 "so i booked a ticket to japan",
 "$999.99 for no ads! (cheap!)",
 "_ <",
-"CONGRATULATION. THIS STORY IS HAPPY END."
+"CONGRATULATION. THIS STORY IS HAPPY END.",
+"benadryl cumberbash",
+"it works*!",
+"it has been said.",
+"wickerpedia",
+"it's a rough-n-tumble world, y'know?",
+"ya think it's gonna go dis way, it go dat way",
+"i'm james phillips",
+"tron jon",
+"i chwahna chween",
+"i'm a no-nonsense man. down to the nitty-gritty.",
+"i'm a no-nonsense man. i use x86 assembly.",
+"purchase a chest of chase-coins >> $99.99! <<"
 ];
