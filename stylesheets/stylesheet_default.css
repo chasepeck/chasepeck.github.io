@@ -1,7 +1,7 @@
 @font-face {
-    font-family: dos_vga_437;
-    src: url('perfect_dos_vga_437-webfont.woff2') format('woff2'),
-         url('perfect_dos_vga_437-webfont.woff') format('woff');
+    font-family: pixchicago;
+    src: url('perfect_pixchicago-webfont.woff2') format('woff2'),
+         url('perfect_pixchicago-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
@@ -31,6 +31,13 @@
 
 }
 
+@font-face {
+    font-family: 'pixchicago';
+    font-style: normal;
+    font-weight: normal;
+    src: local('pixchicago'), url('/stylesheets/pixChicago.woff') format('woff');
+}
+
 @keyframes shake{
     0%  {left: 200px;}
     25% {left: -200px;}
@@ -55,14 +62,28 @@
 }
 @media (max-width: 1100px) {                  
     .hide-if-small {
-       display: none;
+        display: none;
     }
     #mainlogo{
         margin: 10px;
         width: 170% !important;
         text-align: center !important;
     }
- }
+    .dropdown img {
+        width:1500px !important;
+    }
+    .blog-view {
+        display: none !important;
+    }
+}
+@media (max-width: 1900px) {                  
+    #cube-footer {
+        display: none;
+    }
+    #cube-footer-text {
+        display: block;
+    }
+}
 @keyframes movein{
     0%  {opacity: 0; right: 200px;}
     25% {opacity: 0; right: 200px;}
@@ -81,118 +102,91 @@
     background-position-x: -100%;
   }
 }
-
-#backtextouter {
-    overflow: hidden;
-    margin-bottom: 20px;
-    background-color: darkblue;
-}
-
-#backtextouter div {
-    display: inline-block;
-}
-
-#backtextloop {
-    white-space: nowrap;
-    animation: loop-anim 20s linear infinite;
-}
-
-@keyframes loop-anim {
-    0% {
-        margin-left: 0;
-    }
-    100% {
-        margin-left: -50% /* This works because of the div between "outer" and "loop" */
-    }
-}
 body{
     background-color: rgb(10, 10, 10);
 }
 .body-border body{
-    border:50px solid darkblue;
     margin: 0 auto;
-    padding: 50px;
 }
 #inside-border{
     display: none;
 }
 #intro{
-    background-color: darkblue;
+    background-image: url("/assets/peckos/Background.png");
 }
 footer {
-    font-family: "dos_vga_437";
-    font-size: 15px;
+    font-family: "apple_garamondregular";
+    font-size: 30px;
     text-align: center;
     color: white;
 }
 
-.dosfont a:link{
-    font-family: dos_vga_437;
-    color:white;
-    font-style: normal;
-    font-size: 30px;
-    text-decoration: none;
-}
-.dosfont a:hover{
-    font-family: dos_vga_437;
-    color:black !important;
-    background-color: white;
-    font-style: normal;
-    font-size: 30px;
-    text-decoration: none;
-}
-.dosfont a:visited{
-    font-family: dos_vga_437;
+.peckos-font, .peckos-font a{
+    font-family: "pixchicago";
     color: white;
-    font-style: normal;
-    font-size: 30px;
     text-decoration: none;
 }
-.dosfont h1{
-    font-family: dos_vga_437;
+
+body {
+    background-image: url("/assets/peckos/Background.png");
+}
+
+.draggable {
+    cursor: grab;
+}
+
+.draggable.is-pointer-down {
+    cursor: grabbing;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+  
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: rgb(214,214,214);
+    min-width: 160px;
+    box-shadow: 5px 8px 0px 0px black;
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown a{
+    color:black;
+    font-size: 15px;
+}
+
+.dropdown:hover{
+    cursor:pointer;
+}
+
+.dropdown-content a:hover{
+    color:red;
+}
+
+#indexmenu a{
+    color:black;
+    cursor: pointer;
+}
+#indexmenu a:hover{
     color:white;
-    font-style: normal;
-    font-size: 30px;
+    background-color: black;
 }
-.dosfont h2{
-    font-family: dos_vga_437;
-    color:white;
-    font-style: normal;
-    font-size: 50px;
-    margin: 0px;
+.blog-page a{
+    color: blue;
+    font-style: italic;
 }
-.dosfont p, ul, ol{
-    font-family: dos_vga_437;
-    color:white;
-    font-style: normal;
-    font-size: 25px;
+.blog-page a:hover{
+    color: white;
+    background-color: black;
 }
-.dosfont p a {
-    font-size: 25px !important;
-    font-style: italic !important;
-    color: lightskyblue !important;
+.blog-page{
+    color:black;
 }
-.geocities a:link{
-    animation: flash1 0.5s infinite alternate;
-    animation-iteration-count: 10;
-    animation-delay: 1s;
-    animation-timing-function:ease-in-out;
-    font-family: dos_vga_437;
-    background-color:black;
-    font-style: normal;
-    text-decoration: none;
+#indexmenu h1{
+    color:black;
+    font-size: 10px;
 }
-.geocities a:hover{
-    animation: rainbow 2s infinite;
-    font-family: dos_vga_437;
-    background-color:rgb(53, 53, 53);
-    font-style: normal;
-    text-decoration: none;
-}
-#indexface {
-    cursor: move;
-  }
-#indexface.is-pointer-down {
-box-shadow: 10px 10px 5px grey;
-}
-#indexface.is-dragging { opacity: 0.7; }
