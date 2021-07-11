@@ -190,3 +190,6 @@ body {
     color:black;
     font-size: 10px;
 }
+#organic-games-link:hover{
+    cursor:pointer;
+}
