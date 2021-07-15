@@ -60,6 +60,10 @@
     0%    {color: white;}
     100%  {color: orange;font-weight: bold;}
 }
+@keyframes image-shake{
+    0%    {transform: rotate(-20deg);}
+    100%    {transform: rotate(20deg);}
+}
 @media (max-width: 1100px) {                  
     .hide-if-small {
         display: none;
@@ -192,4 +196,17 @@ body {
 }
 #organic-games-link:hover{
     cursor:pointer;
+}
+#rss {
+    background-color: rgba(214,214,214,0) !important;
+}
+#rss img {
+    width: 5%;
+    animation: image-shake 1s infinite ease-in-out alternate;
+    transition: 100ms;
+}
+#rss:hover img{
+    width: 7%;
+    animation: image-shake 0.3s infinite ease-in-out alternate;
+    transition: 100ms;
 }

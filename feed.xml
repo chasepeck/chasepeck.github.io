@@ -1,0 +1,23 @@
+<?xml version="1.0" ?>
+<rss version="2.0">
+<channel>
+    <title>chasepeck.com</title>
+    <link>https://chasepeck.com</link>
+    <description>Chase Peck's personal blog. It sucks.</description>
+
+    <item>
+        <title>RELEASING GAME! & Organic Games LLC</title>
+        <link>https://chasepeck.com/a/5-25-21.html</link>
+        <description>Releasing a game soon!</description>
+        <pubDate>May 25th, 2021</pubDate>
+    </item>
+
+    <item>
+        <title>Dot Dash Dot is released!</title>
+        <link>https://chasepeck.com/a/6-23-21.html</link>
+        <description>Organic Games LLC's first project has been released!</description>
+        <pubDate>June 23rd, 2021</pubDate>
+    </item>
+
+</channel>
+</rss>
