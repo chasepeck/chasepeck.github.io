@@ -137,6 +137,7 @@ body {
 
 .draggable {
     cursor: grab;
+    display: inline-block;
 }
 
 .draggable.is-pointer-down {

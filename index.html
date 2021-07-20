@@ -48,8 +48,8 @@
       <source src="assets/sound/computer.wav">
     </audio>
 
-    <img src="/assets/peckos/PeckOS9.png" style="position: relative; left: 100px; top: 50px;" class="draggable">
-    <a href="https://organic.games" style="cursor: pointer !important;"><img id="organic-games-link" src="/assets/peckos/OrganicGames.png" style="position: relative; left: 230px; top: 20px;" class="draggable"></a>
+    <img src="/assets/peckos/PeckOS9.png" class="draggable">
+    <a href="https://organic.games" style="cursor: pointer !important;"><img id="organic-games-link" src="/assets/peckos/OrganicGames.png" class="draggable"></a>
 
     <!-- <div style="margin-left: 50px; color:yellow;display: inline-block;vertical-align: top;text-align: left;">
       <figure>
@@ -59,7 +59,7 @@
     </div> -->
 
     <div id="indexmenu">
-      <div class="draggable" style="transform: translate(30%,-10%);">
+      <div class="draggable">
         <img src="/assets/peckos/Empty.png">
         <div style="position: absolute; transform: translate(20%,-120%);">
           <h1 id="things">~ My Things ~</h1>
@@ -69,14 +69,14 @@
           <a href="https://gist.github.com/chasepeck">Gists</a><br>
         </div>
       </div>
-      <div class="draggable" style="transform: translate(40%,-50%);">
+      <div class="draggable">
         <img src="/assets/peckos/Empty.png">
         <div style="position: absolute; transform: translate(20%,-230%);">
           <h1 id="contact">~ Contact ~</h1>
           <a href="mailto:contactchasepeck@icloud.com">Contact</a><br>
         </div>
       </div>
-      <div class="draggable" style="transform: translate(10%,-50%);">
+      <div class="draggable">
         <img src="/assets/peckos/Blog.png" style="width: 480px;">
         <div style="position: absolute; transform: translate(5%,-110%);">
           <div style="width: 440px; height: 280px; overflow: scroll;">
@@ -93,18 +93,18 @@
       </div>
     </div>
 
-    <div class="blog-view draggable" style="transform: translate(50%,-100%); display: none;" id="blog-view">
-      <img src="/assets/peckos/BlogView.jpeg" style="width: 548px; height: 469px;">
-      <iframe src="" style="position: relative; transform: translate(-102%,-1%); width: 528px; height: 401px;overflow: hidden;" id="blog-view-iframe"></iframe>
-    </div>
-
-    <footer style="margin-top: 10px; margin-bottom: 25px; color:black; transform: translate(7%,-200%);" class="draggable" id="cube-footer">
-      <img src="/assets/peckos/Empty.png" style="width:13%;height: auto;">
+    <footer style="margin-top: 10px; margin-bottom: 25px; color:black;" class="draggable" id="cube-footer">
+      <img src="/assets/peckos/Empty.png">
       <div style="position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);">
         <canvas id="three"></canvas>
       </div>
     </footer>
-    <img src="/assets/peckos/Copyleft.png" style="transform: translate(100%,-300%);" class="draggable">
+    <img src="/assets/peckos/Copyleft.png" class="draggable">
+
+    <div class="blog-view draggable" style="display: none;" id="blog-view">
+      <img src="/assets/peckos/BlogView.jpeg" style="width: 548px; height: 469px;">
+      <iframe src="" style="position: relative; transform: translate(-102%,-1%); width: 528px; height: 401px;overflow: hidden;" id="blog-view-iframe"></iframe>
+    </div>
 
     <!--Scripts-->
     <script src="/scripts/fakeads.js"></script>
@@ -175,7 +175,8 @@
       function view_blog(url){
         if(window.innerWidth>1100){
           document.getElementById("blog-view").style.display="block";
-          document.getElementById("blog-view-iframe").src=url
+          document.getElementById("blog-view-iframe").src=url;
+          window.location.href = "/#blog-view"
         } else {
           window.open(url)
         }
