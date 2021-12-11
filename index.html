@@ -130,7 +130,7 @@
           console.log(subtitles);
           var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
           //var insert = subtitles[subtitles.length-1];
-          document.getElementById("subtitle").innerHTML = '<img src="assets/peckos/Sad.jpeg" style="height:80%"><br>'+insert+'<p style="letter-spacing: 10px; font-size:10px; font-weight: normal;">CHASEPECK.COM</p>';
+          document.getElementById("subtitle").innerHTML = '<img src="assets/peckos/404.png" style="height:80%"><br>'+insert+'<p style="letter-spacing: 10px; font-size:10px; font-weight: normal;">CHASEPECK.COM</p>';
         }
       }
       request.open("GET","https://api.github.com/repos/chasepeck/subtitles/contents/general.json");
@@ -165,7 +165,6 @@
     </script>
     <script src="https://cdn.rawgit.com/mrdoob/three.js/f5bd0b75e5364087918c2bf33429d4c62071664c/build/three.js" type="application/javascript"></script>
     <script>
-
       var numframes = 0;
 
       const scene = new THREE.Scene();

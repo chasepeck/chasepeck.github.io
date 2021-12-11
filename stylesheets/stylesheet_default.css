@@ -5,6 +5,7 @@
     font-weight: normal;
     font-style: normal;
 }
+
 @font-face {
     font-family: 'apple_garamondregular';
     src: url('applegaramond-webfont.woff2') format('woff2'),
@@ -13,6 +14,7 @@
     font-style: normal;
 
 }
+
 @font-face {
     font-family: 'pixel_arial_11bold';
     src: url('pixeab__-webfont.woff2') format('woff2'),
@@ -45,6 +47,7 @@
     75% {left: -200px;}
     100%{left: 200px;}
 }
+
 @keyframes rainbow{
     0%    {color: red;}
     12.5% {color: orange;}
@@ -56,14 +59,17 @@
     87.5% {color: violet;}
     100%  {color: red;}
 }
+
 @keyframes flash1{
     0%    {color: white;}
     100%  {color: orange;font-weight: bold;}
 }
+
 @keyframes image-shake{
     0%    {transform: rotate(-20deg);}
     100%    {transform: rotate(20deg);}
 }
+
 @media (max-width: 1100px) {                  
     .hide-if-small {
         display: none;
@@ -80,6 +86,7 @@
         display: none !important;
     }
 }
+
 @media (max-width: 1900px) {                  
     #cube-footer {
         display: none;
@@ -88,16 +95,19 @@
         display: block;
     }
 }
+
 @keyframes movein{
     0%  {opacity: 0; right: 200px;}
     25% {opacity: 0; right: 200px;}
     100%{opacity: 1; right: 0px;}
 }
+
 @keyframes fadein{
     0%  {opacity: 0;}
     80% {opacity: 0;}
     100%{opacity: 1;}
 }
+
 @keyframes slide {
   from {
     background-position-x: 0;
@@ -106,15 +116,15 @@
     background-position-x: -100%;
   }
 }
-body{
-    background-color: rgb(10, 10, 10);
-}
+
 .body-border body{
     margin: 0 auto;
 }
+
 #inside-border{
     display: none;
 }
+
 footer {
     font-family: "apple_garamondregular";
     font-size: 30px;
@@ -173,38 +183,31 @@ body {
     color:black;
     cursor: pointer;
 }
+
 #indexmenu a:hover{
     color:white;
     background-color: black;
 }
+
 .blog-page a{
     color: blue;
     font-style: italic;
 }
+
 .blog-page a:hover{
     color: white;
     background-color: black;
 }
+
 .blog-page{
     color:black;
 }
+
 #indexmenu h1{
     color:black;
     font-size: 10px;
 }
+
 #organic-games-link:hover{
     cursor:pointer;
-}
-#rss {
-    background-color: rgba(214,214,214,0) !important;
-}
-#rss img {
-    width: 5%;
-    animation: image-shake 1s infinite ease-in-out alternate;
-    transition: 100ms;
-}
-#rss:hover img{
-    width: 7%;
-    animation: image-shake 0.3s infinite ease-in-out alternate;
-    transition: 100ms;
 }
