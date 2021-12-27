@@ -7,205 +7,56 @@
   <link rel="icon" href="/assets/favicon.png" type="image/png">
   <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
   <link rel="apple-touch-icon" sizes="180x180" href="/assets/apple-touch-icon.png">
-  <link rel="manifest" href="/its_web_man.webmanifest">
+  <link rel="manifest" href="/m.webmanifest">
   <meta charset="UTF-8">
   <meta name="description" content="Homepage of Chase Peck, game developer of Organic Games LLC">
   <meta name="keywords" content="games, developer, development, programming, chase peck games, chase peck films, films, movies, videos, shorts, comedy, satire">
-</head><body id="intro" class="peckos-font" style="overflow-x: hidden;">
-  <div style="position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);">
-    <h1 style="text-align: center; font-size: 20px;" id="subtitle">
-    </h1>
+</head><body class="peckos-font" style="overflow-x: hidden;">
+<noscript>
+  <div style="position: relative;width:600px;height: auto; top: 50px; left: 50px;">
+    <img src="/assets/peckos/Error.png" style="width:100%;">
+    <h1 style="font-style: normal; font-weight: lighter; font-size: 15px; color: black; position: absolute; top: 25%; left: 18%;">JavaScript is required for this website.</h1>
   </div>
-  <noscript>
-    <div style="position: relative;width:600px;height: auto; top: 50px; left: 50px;">
-      <img src="/assets/peckos/Error.png" style="width:100%;">
-      <h1 style="font-style: normal; font-weight: lighter; font-size: 15px; color: black; position: absolute; top: 25%; left: 18%;">JavaScript is required for this website.</h1>
-    </div>
-    <audio autoplay hidden="true">
-      <source src="assets/sound/crash.mp3">
-    </audio>
-  </noscript>
-  <div class="dropdown" style="width: 100%;height: auto;">
-    <img src="/assets/peckos/Menubar.png" style="margin: 0px; width: 100%; height: auto;display: none;" id="menubar" onclick="menubartoggle()">
-    <div class="dropdown-content" id="menubar-content" style="font-size: 12px; transform: translate(5%,0%);">
-      <hr style="border: 1px solid gray;">
-      <a href="https://organic.games" onclick="menubartoggle()">Organic Games</a><br>
-      <hr style="border: 1px solid gray;">
-      <a href="https://www.youtube.com/channel/UC0Db09Ndk6BKK7Sx_mLEoIQ">YouTube</a><br>
-      <a href="https://github.com/chasepeck">GitHub</a><br>
-      <a href="https://gist.github.com/chasepeck">Gists</a><br>
-      <hr style="border: 1px solid gray;">
-      <a href="https://chasepeck.com/journal">Journal</a><br>
-      <hr style="border: 1px solid gray;">
-      <a href="#blog" onclick="menubartoggle()">Blog</a><br>
-      <hr style="border: 1px solid gray;">
-      <a href="mailto:contactchasepeck@icloud.com">Contact</a><br>
-      <hr style="border: 1px solid gray;">
-    </div>
-  </div>
-  <div id="inside-border">
+</noscript>
 
-    <audio id="startup" hidden="true">
-      <source src="assets/sound/macstart2.wav">
-    </audio>
-    <audio autoplay hidden="true" loop>
-      <source src="assets/sound/computer.wav">
-    </audio>
+<div style="text-align: center;">
+  <img src="/assets/icons/dead.png" style="width: 80px;">
+  <h1 style="font-size: 20px; font-weight:normal;" id="subtitle"></h1>
+</div>
 
-    <img src="/assets/peckos/PeckOS9.png" class="draggable">
-    <a href="https://organic.games" style="cursor: pointer !important;"><img id="organic-games-link" src="/assets/peckos/OrganicGames.png" class="draggable"></a>
+<hr style="border: 1px solid rgb(50,50,50); margin-top: 50px;">
+<div style="text-align: center;">
+  <a href="https://organic.games" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/floppy.gif">Games</div></a>
+  <a href="https://www.youtube.com/channel/UC0Db09Ndk6BKK7Sx_mLEoIQ" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/computer.gif">YouTube</div></a>
+  <a href="https://github.com/chasepeck" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/command.gif">GitHub</div></a>
+  <a href="https://gist.github.com/chasepeck" target="_blank" rel="noopener noreferrer"><div class="index-button" target="_blank" rel="noopener noreferrer"><img src="/assets/icons/papers.gif">Gists</div></a>
+  <a href="https://chasepeck.com/journal" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/write.gif">Journal</div></a>
+</div>
 
-    <!-- <div style="margin-left: 50px; color:yellow;display: inline-block;vertical-align: top;text-align: left;">
-      <figure>
-      <h1 style="font-size: 60px;font-weight: normal;">chasepeck.com<br><a href="https://organic.games" style="font-size: 60px;">organic games</a></h1>
-      <h2 style="font-size: 30px;font-weight: normal;" id="typedtext">> </h2>
-    </figure>
-    </div> -->
+<div style="width: 50%; margin: 50px auto;" class="blog-list">
+  <a href="/blog/12-25-21.html"><b>12-25-21</b> A journal!</a><br>
+  <a href="/blog/7-29-21.html"><b>7-29-21</b> Chase Peck's Zachtronics Puzzles</a><br>
+  <a href="/blog/7-20-21.html"><b>7-20-21</b> TIS-100 Puzzle: Binary to Decimal</a><br>
+  <a href="/blog/6-23-21.html"><b>6-23-21</b> Dot Dash Dot is released!</a><br>
+  <a href="/blog/5-25-21.html"><b>5-25-21</b> RELEASING GAME! & Organic Games LLC</a><br>
+</div>
 
-    <div id="indexmenu">
-      <div class="draggable">
-        <img src="/assets/peckos/Empty.png">
-        <div style="position: absolute; transform: translate(20%,-107%);">
-          <h1 id="things" style="margin-bottom: 0px;">~ My Things ~</h1>
-          <a href="https://organic.games">Games</a><br>
-          <a href="https://www.youtube.com/channel/UC0Db09Ndk6BKK7Sx_mLEoIQ">YouTube</a><br>
-          <a href="https://github.com/chasepeck">GitHub</a><br>
-          <a href="https://gist.github.com/chasepeck">Gists</a><br>
-          <a href="https://chasepeck.com/journal">Journal</a><br>
-        </div>
-      </div>
-      <div class="draggable">
-        <img src="/assets/peckos/Empty.png">
-        <div style="position: absolute; transform: translate(20%,-230%);">
-          <h1 id="contact">~ Contact ~</h1>
-          <a href="mailto:contactchasepeck@icloud.com">Contact</a><br>
-        </div>
-      </div>
-      <div class="draggable">
-        <img src="/assets/peckos/Blog.png" style="width: 480px;">
-        <div style="position: absolute; transform: translate(5%,-110%);">
-          <div style="width: 440px; height: 280px; overflow: scroll;">
-            <h1 id="blog" style="font-size: 20px;">~ Blog ~</h1>
-            <h1 style="font-weight: normal;font-size: 18px;">FEATURED</h1>
-            <a onclick="view_blog('/a/12-25-21.html')">A journal! - 12/25/21</a>
-
-            <h1 style="font-weight: normal;font-size: 18px;">ALL</h1>
-            <a onclick="view_blog('/a/12-25-21.html')">A journal! - 12/25/21</a><br>
-            <a onclick="view_blog('/a/7-29-21.html')">Chase Peck's Zachtronics Puzzles - 7/29/21</a><br>
-            <a onclick="view_blog('/a/7-20-21.html')">TIS-100 Puzzle: Binary to Decimal - 7/20/21</a><br>
-            <a onclick="view_blog('/a/6-23-21.html')">Dot Dash Dot is released! - 6/23/21</a><br>
-            <a onclick="view_blog('/a/5-25-21.html')">RELEASING GAME! & Organic Games LLC - 5/25/21</a><br>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <footer style="margin-top: 10px; margin-bottom: 25px; color:black;" class="draggable" id="cube-footer">
-      <img src="/assets/peckos/Empty.png">
-      <div style="position: absolute;left: 50%;top: 50%;transform: translate(-50%, -50%);">
-        <canvas id="three"></canvas>
-      </div>
-    </footer>
-    <img src="/assets/peckos/Copyleft.png" class="draggable">
-
-    <div class="blog-view draggable" style="display: none;" id="blog-view">
-      <img src="/assets/peckos/BlogView.jpeg" style="width: 548px; height: 469px;">
-      <iframe src="" style="position: relative; transform: translate(-102%,-1%); width: 528px; height: 401px;overflow: hidden;" id="blog-view-iframe"></iframe>
-    </div>
-
-    <!--Scripts-->
-    <script src="https://unpkg.com/draggabilly@2/dist/draggabilly.pkgd.min.js"></script>
-    <script>
-      var draggableElems = document.querySelectorAll('.draggable');
-      // array of Draggabillies
-      var draggies = []
-      // init Draggabillies
-      for ( var i=0; i < draggableElems.length; i++ ) {
-        var draggableElem = draggableElems[i];
-        var draggie = new Draggabilly( draggableElem, {
-          // options...
-        });
-        draggies.push( draggie );
-      }
-    </script>
-    <script>
-      var subtitles;
-      var request = new XMLHttpRequest;
-      request.onreadystatechange = function() {
-        if (this.readyState == 4 && this.status == 200) {
-          subtitles = JSON.parse(this.responseText);
-          console.log(subtitles);
-          var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
-          //var insert = subtitles[subtitles.length-1];
-          document.getElementById("subtitle").innerHTML = '<img src="assets/peckos/404.png" style="height:80%"><br>'+insert+'<p style="letter-spacing: 10px; font-size:10px; font-weight: normal;">CHASEPECK.COM</p>';
-        }
-      }
-      request.open("GET","https://api.github.com/repos/chasepeck/subtitles/contents/general.json");
-      request.setRequestHeader("Accept","application/vnd.github.VERSION.raw");
-      request.send();
-
-      function menubartoggle(){
-        if(document.getElementById("menubar-content").style.display=="block")document.getElementById("menubar-content").style.display="none";
-        else document.getElementById("menubar-content").style.display="block";
-      }
-
-      function view_blog(url){
-        if(window.innerWidth>1100){
-          document.getElementById("blog-view").style.display="block";
-          document.getElementById("blog-view-iframe").src=url;
-          window.location.href = "/#blog-view"
-        } else {
-          window.open(url)
-        }
-      }
-
-      function showBody(){
-        document.getElementById("inside-border").style.display="block"
-        document.body.id=""
-        document.getElementById("startup").play()
-        document.getElementById("subtitle").style.display="none"
-        document.getElementById("menubar").style.display="block"
-        document.body.style.backgroundImage = "url('/assets/peckos/Background.png')";
-      }
-
-      setTimeout("showBody()",3000);
-    </script>
-    <script src="https://cdn.rawgit.com/mrdoob/three.js/f5bd0b75e5364087918c2bf33429d4c62071664c/build/three.js" type="application/javascript"></script>
-    <script>
-      var numframes = 0;
-
-      const scene = new THREE.Scene();
-      const camera = new THREE.PerspectiveCamera( 75, window.innerWidth / window.innerHeight, 0.1, 1000 );
-
-      const renderer = new THREE.WebGLRenderer({canvas: document.querySelector("#three"), alpha: true});
-      renderer.setSize( 480, 240);
-      renderer.setPixelRatio( window.devicePixelRatio );
-
-      var geometry = new THREE.BoxGeometry();
-      var tex = new THREE.TextureLoader().load('/assets/favicon.png');
-      var material = new THREE.MeshStandardMaterial( { map: tex } );
-      var cube = new THREE.Mesh( geometry, material );
-      scene.add( cube );
-      
-      const light = new THREE.PointLight( 0xffffffff, 5, 100 );
-      light.position.set(50,50,50)
-      scene.add( light );
-
-      camera.position.z = 2;
-
-      function animate() {
-        numframes ++;
-        requestAnimationFrame( animate );
-
-        cube.rotation.x = Math.sin(numframes/50)/4;
-        cube.rotation.y += 0.02+(Math.sin(numframes/100)/50)+0.02;
-
-        cube.position.y = Math.sin(numframes/100)/4;
-
-        renderer.render( scene, camera );
-      }
-      animate();
-    </script>
-  </div>
+<!--Scripts-->
+<script>
+  var subtitles;
+  var request = new XMLHttpRequest;
+  request.onreadystatechange = function() {
+    if (this.readyState == 4 && this.status == 200) {
+      subtitles = JSON.parse(this.responseText);
+      console.log(subtitles);
+      var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
+      //var insert = subtitles[subtitles.length-1];
+      document.getElementById("subtitle").innerHTML = insert+'<p style="letter-spacing: 10px; font-size:10px; font-weight: normal;">CHASEPECK.COM</p>';
+    }
+  }
+  request.open("GET","https://api.github.com/repos/chasepeck/subtitles/contents/general.json");
+  request.setRequestHeader("Accept","application/vnd.github.VERSION.raw");
+  request.send();
+</script>
 </body>
 </html>

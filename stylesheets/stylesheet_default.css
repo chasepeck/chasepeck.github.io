@@ -40,6 +40,14 @@
     src: local('pixchicago'), url('/stylesheets/pixChicago.woff') format('woff');
 }
 
+@font-face {
+    font-family: dos_vga_437;
+    src: url('perfect_dos_vga_437-webfont.woff2') format('woff2'),
+         url('perfect_dos_vga_437-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @keyframes shake{
     0%  {left: 200px;}
     25% {left: -200px;}
@@ -71,28 +79,11 @@
 }
 
 @media (max-width: 1100px) {                  
-    .hide-if-small {
-        display: none;
+    html, body {
+        padding: 20px 10px !important;
     }
-    #mainlogo{
-        margin: 10px;
-        width: 170% !important;
-        text-align: center !important;
-    }
-    .dropdown img {
-        width:1500px !important;
-    }
-    .blog-view {
-        display: none !important;
-    }
-}
-
-@media (max-width: 1900px) {                  
-    #cube-footer {
-        display: none;
-    }
-    #cube-footer-text {
-        display: block;
+    .blog-list {
+        width: 100% !important;
     }
 }
 
@@ -117,19 +108,34 @@
   }
 }
 
-.body-border body{
-    margin: 0 auto;
+html, body {
+    padding: 50px;
+    background-color: black;
+    cursor: url("/assets/repoicon.png"), auto;
 }
 
-#inside-border{
-    display: none;
+.index-button {
+    height: 60px;
+    display: table-cell;
 }
 
-footer {
-    font-family: "apple_garamondregular";
-    font-size: 30px;
-    text-align: center;
-    color: white;
+.index-button * {
+    vertical-align: middle;
+}
+
+.index-button img {
+    height: 100%;
+    filter: invert(100%);
+    margin-right: 10px;
+    padding: 5px;
+}
+
+.index-button:hover {
+    background-color: white;
+}
+
+.index-button:hover img {
+    filter: invert(0%);
 }
 
 .peckos-font, .peckos-font a{
@@ -138,76 +144,20 @@ footer {
     text-decoration: none;
 }
 
-body {
-    background-color: black;
+.blog-list b{
+    font-family: "Courier New", monospace;
+    font-size: 140%;
+    color: gray;
+    border-right: solid gray 1px;
+    padding-right: 10px;
+    vertical-align: middle;
 }
 
-.draggable {
-    cursor: grab;
-    display: inline-block;
-}
-
-.draggable.is-pointer-down {
-    cursor: grabbing;
-}
-
-.dropdown {
-    position: relative;
-    display: inline-block;
-}
-  
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: rgb(214,214,214);
-    min-width: 160px;
-    box-shadow: 5px 8px 0px 0px black;
-    padding: 12px 16px;
-    z-index: 1;
-}
-
-.dropdown a{
-    color:black;
-    font-size: 15px;
-}
-
-.dropdown:hover{
-    cursor:pointer;
-}
-
-.dropdown-content a:hover{
-    color:red;
-}
-
-#indexmenu a{
-    color:black;
-    cursor: pointer;
-}
-
-#indexmenu a:hover{
-    color:white;
-    background-color: black;
-}
-
-.blog-page a{
+.blog-page a {
     color: blue;
-    font-style: italic;
 }
 
-.blog-page a:hover{
-    color: white;
-    background-color: black;
-}
-
-.blog-page{
-    color:black;
-}
-
-#indexmenu h1{
-    color:black;
-    font-size: 10px;
-}
-
-#organic-games-link:hover{
-    cursor:pointer;
+a:hover, a:hover b{
+    color: black;
+    background-color: white;
 }
