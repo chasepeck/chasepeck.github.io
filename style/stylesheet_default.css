@@ -37,7 +37,7 @@
     font-family: 'pixchicago';
     font-style: normal;
     font-weight: normal;
-    src: local('pixchicago'), url('/stylesheets/pixChicago.woff') format('woff');
+    src: url('pixChicago.woff') format('woff');
 }
 
 @font-face {
@@ -48,7 +48,7 @@
     font-style: normal;
 }
 
-@keyframes shake{
+@keyframes shake {
     0%  {left: 200px;}
     25% {left: -200px;}
     50% {left: 200px;}
@@ -56,7 +56,7 @@
     100%{left: 200px;}
 }
 
-@keyframes rainbow{
+@keyframes rainbow {
     0%    {color: red;}
     12.5% {color: orange;}
     25%   {color: yellow;}
@@ -68,12 +68,12 @@
     100%  {color: red;}
 }
 
-@keyframes flash1{
+@keyframes flash1 {
     0%    {color: white;}
     100%  {color: orange;font-weight: bold;}
 }
 
-@keyframes image-shake{
+@keyframes image-shake {
     0%    {transform: rotate(-20deg);}
     100%    {transform: rotate(20deg);}
 }
@@ -87,13 +87,13 @@
     }
 }
 
-@keyframes movein{
+@keyframes movein {
     0%  {opacity: 0; right: 200px;}
     25% {opacity: 0; right: 200px;}
     100%{opacity: 1; right: 0px;}
 }
 
-@keyframes fadein{
+@keyframes fadein {
     0%  {opacity: 0;}
     80% {opacity: 0;}
     100%{opacity: 1;}
@@ -108,10 +108,25 @@
   }
 }
 
-html, body {
+/*------------------------*/
+
+body {
     padding: 50px;
     background-color: black;
 }
+
+body, a {
+    font-family: "pixchicago";
+    color: white;
+    text-decoration: none;
+}
+
+a:hover, a:hover b {
+    color: black !important;
+    background-color: white;
+}
+
+/*------------------------*/
 
 .index-button {
     height: 60px;
@@ -137,13 +152,9 @@ html, body {
     filter: invert(0%);
 }
 
-.peckos-font, .peckos-font a{
-    font-family: "pixchicago";
-    color: white;
-    text-decoration: none;
-}
+/*------------------------*/
 
-.blog-list b{
+.blog-list b {
     font-family: "Courier New", monospace;
     font-size: 140%;
     color: gray;
@@ -154,9 +165,4 @@ html, body {
 
 .blog-page a {
     color: blue;
-}
-
-a:hover, a:hover b{
-    color: black;
-    background-color: white;
 }
