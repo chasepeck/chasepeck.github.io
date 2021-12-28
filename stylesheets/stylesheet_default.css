@@ -111,7 +111,6 @@
 html, body {
     padding: 50px;
     background-color: black;
-    cursor: url("/assets/repoicon.png"), auto;
 }
 
 .index-button {
