@@ -48,36 +48,6 @@
     font-style: normal;
 }
 
-@keyframes shake {
-    0%  {left: 200px;}
-    25% {left: -200px;}
-    50% {left: 200px;}
-    75% {left: -200px;}
-    100%{left: 200px;}
-}
-
-@keyframes rainbow {
-    0%    {color: red;}
-    12.5% {color: orange;}
-    25%   {color: yellow;}
-    37.5% {color: green;}
-    50%   {color: blue;}
-    62.5% {color: indigo;}
-    75%   {color: purple;}
-    87.5% {color: violet;}
-    100%  {color: red;}
-}
-
-@keyframes flash1 {
-    0%    {color: white;}
-    100%  {color: orange;font-weight: bold;}
-}
-
-@keyframes image-shake {
-    0%    {transform: rotate(-20deg);}
-    100%    {transform: rotate(20deg);}
-}
-
 @media (max-width: 1100px) {                  
     html, body {
         padding: 20px 10px !important;
@@ -87,43 +57,56 @@
     }
 }
 
-@keyframes movein {
-    0%  {opacity: 0; right: 200px;}
-    25% {opacity: 0; right: 200px;}
-    100%{opacity: 1; right: 0px;}
-}
-
-@keyframes fadein {
-    0%  {opacity: 0;}
-    80% {opacity: 0;}
-    100%{opacity: 1;}
-}
-
-@keyframes slide {
-  from {
-    background-position-x: 0;
-  }
-  to {
-    background-position-x: -100%;
-  }
-}
-
 /*------------------------*/
 
 body {
+    --background: black;
+    
+    --white: white;
+    --black: black;
+    --blue: blue;
+    --gray: gray;
+
+    --invert: 100%;
+    --invert-hover: 0%;
+
+    --enable-color: 0;
+    --brightness: 1;
+    --hue-rotate: 0deg;
+
     padding: 50px;
-    background-color: black;
+    background-color: var(--background);
 }
 
 body, a {
     font-family: "pixchicago";
-    color: white;
+    color: var(--white);
     text-decoration: none;
 }
 
 a:hover, a:hover b {
-    color: black !important;
-    background-color: white;
+    color: var(--black) !important;
+    background-color: var(--white);
+}
+
+footer {
+    font-size: 10px;
+    background-color: var(--background);
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    cursor: pointer;
+}
+
+footer b {
+    background-color: var(--gray);
+    color: var(--black);
 }
 
 /*------------------------*/
@@ -139,17 +122,17 @@ a:hover, a:hover b {
 
 .index-button img {
     height: 100%;
-    filter: invert(100%);
+    filter: invert(var(--invert)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
     margin-right: 10px;
     padding: 5px;
 }
 
 .index-button:hover {
-    background-color: white;
+    background-color: var(--white);
 }
 
 .index-button:hover img {
-    filter: invert(0%);
+    filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
 }
 
 /*------------------------*/
@@ -157,14 +140,14 @@ a:hover, a:hover b {
 .blog-list b {
     font-family: "Courier New", monospace;
     font-size: 140%;
-    color: gray;
-    border-right: solid gray 1px;
+    color: var(--gray);
+    border-right: solid var(--gray) 1px;
     padding-right: 10px;
     vertical-align: middle;
 }
 
 .blog-page a {
-    color: blue;
+    color: var(--blue);
 }
 
 .blog-page h1 {
@@ -178,13 +161,13 @@ a:hover, a:hover b {
 .blog-page h1 img {
     width: 50px;
     margin-right: 25px;
-    filter: invert(100%);
+    filter: invert(var(--invert)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
 }
 
 .blog-page h1 a:hover img {
-    filter: invert(0%);
+    filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
 }
 
 .blog-page h1 a {
-    color: white;
+    color: var(--white);
 }

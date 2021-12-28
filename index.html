@@ -20,11 +20,11 @@
 </noscript>
 
 <div style="text-align: center;">
-  <img src="/assets/favicon.png" style="width: 80px;">
+  <img src="/assets/favicon-transparent.png" style="width: 80px; filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));">
   <h1 style="font-size: 20px; font-weight:normal;" id="subtitle"></h1>
 </div>
 
-<hr style="border: 1px solid rgb(50,50,50); margin: 25px 0px;">
+<hr style="border: 1px solid var(--gray); margin: 25px 0px;">
 
 <div style="text-align: center;">
   <a href="https://organic.games" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/floppy.gif">Games</div></a>
@@ -41,6 +41,15 @@
   <a href="/blog/6-23-21.html"><b>6-23-21</b> Dot Dash Dot is released!</a><br>
   <a href="/blog/5-25-21.html"><b>5-25-21</b> RELEASING GAME! & Organic Games LLC</a><br>
 </div>
+
+<footer>
+  <b>THEME:</b>
+  <a onclick="set_theme('black','white','black','blue','gray','1','0','0','1','0deg');">DEFAULT</a> -
+  <a onclick="set_theme('white','black','white','blue','black','0','1','0','1','0deg');">LIGHT</a> -
+  <a onclick="set_theme('black','red','black','purple','darkred','1','0','1','0.075','0deg');">RED</a> -
+  <a onclick="set_theme('black','teal','darkred','blue','rgb(50,50,70)','1','0','1','0.075','180deg');">OCEAN</a> -
+  <a onclick="set_theme('#1e1615','#c6beab','darkred','blue','#665b53','1','0','1','0.075','75deg');">EARTH</a>
+</footer>
 
 <!--Scripts-->
 <script>
@@ -59,5 +68,6 @@
   request.setRequestHeader("Accept","application/vnd.github.VERSION.raw");
   request.send();
 </script>
+<script src="/theme.js"></script>
 </body>
 </html>
