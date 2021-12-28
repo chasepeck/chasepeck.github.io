@@ -166,3 +166,25 @@ a:hover, a:hover b {
 .blog-page a {
     color: blue;
 }
+
+.blog-page h1 {
+    display: table-cell;
+}
+
+.blog-page h1 * {
+    vertical-align: middle;
+}
+
+.blog-page h1 img {
+    width: 50px;
+    margin-right: 25px;
+    filter: invert(100%);
+}
+
+.blog-page h1 a:hover img {
+    filter: invert(0%);
+}
+
+.blog-page h1 a {
+    color: white;
+}
