@@ -1,4 +1,7 @@
-set_theme(localStorage.getItem("background"),localStorage.getItem("white"),localStorage.getItem("black"),localStorage.getItem("blue"),localStorage.getItem("gray"),localStorage.getItem("invert"),localStorage.getItem("invert-hover"),localStorage.getItem("enable-color"),localStorage.getItem("brightness"),localStorage.getItem("hue-rotate"));
+if(localStorage.getItem("background") == null)
+  set_theme('black','white','black','blue','gray','1','0','0','1','0deg');
+else
+  set_theme(localStorage.getItem("background"),localStorage.getItem("white"),localStorage.getItem("black"),localStorage.getItem("blue"),localStorage.getItem("gray"),localStorage.getItem("invert"),localStorage.getItem("invert-hover"),localStorage.getItem("enable-color"),localStorage.getItem("brightness"),localStorage.getItem("hue-rotate"));
 
 function set_theme(background, white, black, blue, gray, invert, inverthover, enablecolor, brightness, huerotate){
   var body = document.querySelector("body");

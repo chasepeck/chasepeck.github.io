@@ -1,15 +1,15 @@
 @font-face {
     font-family: pixchicago;
-    src: url('perfect_pixchicago-webfont.woff2') format('woff2'),
-         url('perfect_pixchicago-webfont.woff') format('woff');
+    src: url('/assets/fonts/perfect_pixchicago-webfont.woff2') format('woff2'),
+         url('/assets/fonts/perfect_pixchicago-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'apple_garamondregular';
-    src: url('applegaramond-webfont.woff2') format('woff2'),
-         url('applegaramond-webfont.woff') format('woff');
+    src: url('/assets/fonts/applegaramond-webfont.woff2') format('woff2'),
+         url('/assets/fonts/applegaramond-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -17,8 +17,8 @@
 
 @font-face {
     font-family: 'pixel_arial_11bold';
-    src: url('pixeab__-webfont.woff2') format('woff2'),
-         url('pixeab__-webfont.woff') format('woff');
+    src: url('/assets/fonts/pixeab__-webfont.woff2') format('woff2'),
+         url('/assets/fonts/pixeab__-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -26,8 +26,8 @@
 
 @font-face {
     font-family: 'pixel_arial_11regular';
-    src: url('pixearg_-webfont.woff2') format('woff2'),
-         url('pixearg_-webfont.woff') format('woff');
+    src: url('/assets/fonts/pixearg_-webfont.woff2') format('woff2'),
+         url('/assets/fonts/pixearg_-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -37,13 +37,13 @@
     font-family: 'pixchicago';
     font-style: normal;
     font-weight: normal;
-    src: url('pixChicago.woff') format('woff');
+    src: url('/assets/fonts/pixChicago.woff') format('woff');
 }
 
 @font-face {
     font-family: dos_vga_437;
-    src: url('perfect_dos_vga_437-webfont.woff2') format('woff2'),
-         url('perfect_dos_vga_437-webfont.woff') format('woff');
+    src: url('/assets/fonts/perfect_dos_vga_437-webfont.woff2') format('woff2'),
+         url('/assets/fonts/perfect_dos_vga_437-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
