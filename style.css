@@ -146,6 +146,15 @@ footer b {
     vertical-align: middle;
 }
 
+.blog-list #featured {
+    display: inline-block;
+    width: 90%;
+    margin: 10px 0px 10px 0px;
+    padding: 10px;
+    font-size: 150%;
+    border: dashed var(--gray) 1px;
+}
+
 .blog-page a {
     color: var(--blue);
 }
