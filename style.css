@@ -100,6 +100,10 @@ footer {
     padding: 10px;
 }
 
+footer:not(a) {
+    color: var(--gray);
+}
+
 footer a {
     cursor: pointer;
 }
