@@ -159,8 +159,23 @@ footer b {
     border: dashed var(--gray) 1px;
 }
 
-.blog-page a {
+.blog-page *:not(h1 a, h2), p, ul {
+    font-family: "pixel_arial_11regular";
+}
+
+.blog-page p {
+    text-indent: 20pt;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.blog-page ul {
+    font-size: 18px;
+}
+
+.blog-page p a {
     color: var(--blue);
+    font-family: "pixel_arial_11bold" !important;
 }
 
 .blog-page h1 {
