@@ -57,7 +57,7 @@
 			console.log(subtitles);
 			var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
 			//var insert = subtitles[subtitles.length-1];
-			document.getElementById("subtitle").innerHTML = insert+'<p style="letter-spacing: 10px; font-size:10px; font-weight: normal;">CHASEPECK.COM</p>';
+			document.getElementById("subtitle").innerHTML = insert+"<p>CHASEPECK.COM</p>";
 		}
 	}
 	request.open("GET","https://api.github.com/repos/chasepeck/subtitles/contents/general.json");

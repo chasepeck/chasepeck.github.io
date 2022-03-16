@@ -113,6 +113,13 @@ footer b {
     color: var(--black);
 }
 
+#subtitle p {
+    letter-spacing: 10px;
+    font-size: 10px;
+    font-weight: normal;
+    font-family: "pixel_arial_11regular";
+}
+
 /*------------------------*/
 
 .index-button {
