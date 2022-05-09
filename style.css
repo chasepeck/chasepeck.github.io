@@ -59,6 +59,10 @@
 
 /*------------------------*/
 
+html, body, a {
+    cursor: url("/assets/cursor.ico"), default;
+}
+
 body {
     --background: black;
     
@@ -102,10 +106,6 @@ footer {
 
 footer:not(a) {
     color: var(--gray);
-}
-
-footer a {
-    cursor: pointer;
 }
 
 footer b {
