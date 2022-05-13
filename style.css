@@ -60,7 +60,7 @@
 /*------------------------*/
 
 html, body, a {
-    cursor: url("/assets/cursor.ico"), default;
+    cursor: url("/assets/cursor.ico"), auto;
 }
 
 body {
