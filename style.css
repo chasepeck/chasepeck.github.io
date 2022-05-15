@@ -206,3 +206,12 @@ footer b {
 .blog-page h1 a {
     color: var(--white);
 }
+
+.blog-page h2 i {
+    color: var(--gray);
+    font-size: 15px;
+}
+
+.blog-page hr {
+    border: 2px dashed var(--gray);
+}
