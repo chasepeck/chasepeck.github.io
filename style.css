@@ -125,6 +125,10 @@ footer b {
     font-family: "pixel_arial_11regular";
 }
 
+ul {
+    list-style: square;
+}
+
 /*------------------------*/
 
 .index-button {
