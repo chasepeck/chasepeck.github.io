@@ -194,6 +194,10 @@ ul {
     font-family: "pixel_arial_11bold" !important;
 }
 
+.blog-page p b {
+    font-family: "pixel_arial_11bold" !important;
+}
+
 .blog-page h1 {
     display: table-cell;
 }
