@@ -1,49 +1,41 @@
 @font-face {
-    font-family: pixchicago;
-    src: url('/assets/fonts/perfect_pixchicago-webfont.woff2') format('woff2'),
-         url('/assets/fonts/perfect_pixchicago-webfont.woff') format('woff');
-    font-weight: normal;
+    font-family: "pixchicago";
     font-style: normal;
+    font-weight: normal;
+    src: url("/assets/fonts/pixChicago.woff") format("woff");
 }
 
 @font-face {
-    font-family: 'apple_garamondregular';
-    src: url('/assets/fonts/applegaramond-webfont.woff2') format('woff2'),
-         url('/assets/fonts/applegaramond-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-@font-face {
-    font-family: 'pixel_arial_11bold';
-    src: url('/assets/fonts/pixeab__-webfont.woff2') format('woff2'),
-         url('/assets/fonts/pixeab__-webfont.woff') format('woff');
+    font-family: "apple_garamondregular";
+    src: url("/assets/fonts/applegaramond-webfont.woff2") format("woff2"),
+         url("/assets/fonts/applegaramond-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'pixel_arial_11regular';
-    src: url('/assets/fonts/pixearg_-webfont.woff2') format('woff2'),
-         url('/assets/fonts/pixearg_-webfont.woff') format('woff');
+    font-family: "pixel_arial_11bold";
+    src: url("/assets/fonts/pixeab__-webfont.woff2") format("woff2"),
+         url("/assets/fonts/pixeab__-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 
 }
 
 @font-face {
-    font-family: 'pixchicago';
-    font-style: normal;
+    font-family: "pixel_arial_11regular";
+    src: url("/assets/fonts/pixearg_-webfont.woff2") format("woff2"),
+         url("/assets/fonts/pixearg_-webfont.woff") format("woff");
     font-weight: normal;
-    src: url('/assets/fonts/pixChicago.woff') format('woff');
+    font-style: normal;
+
 }
 
 @font-face {
-    font-family: dos_vga_437;
-    src: url('/assets/fonts/perfect_dos_vga_437-webfont.woff2') format('woff2'),
-         url('/assets/fonts/perfect_dos_vga_437-webfont.woff') format('woff');
+    font-family: "dos_vga_437";
+    src: url("/assets/fonts/perfect_dos_vga_437-webfont.woff2") format("woff2"),
+         url("/assets/fonts/perfect_dos_vga_437-webfont.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
