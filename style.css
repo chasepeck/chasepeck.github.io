@@ -6,7 +6,7 @@
 }
 
 @font-face {
-    font-family: "apple_garamondregular";
+    font-family: "apple_garamond";
     src: url("/assets/fonts/applegaramond-webfont.woff2") format("woff2"),
          url("/assets/fonts/applegaramond-webfont.woff") format("woff");
     font-weight: normal;
@@ -15,7 +15,7 @@
 }
 
 @font-face {
-    font-family: "pixel_arial_11bold";
+    font-family: "pixel_arial_bold";
     src: url("/assets/fonts/pixeab__-webfont.woff2") format("woff2"),
          url("/assets/fonts/pixeab__-webfont.woff") format("woff");
     font-weight: normal;
@@ -24,7 +24,7 @@
 }
 
 @font-face {
-    font-family: "pixel_arial_11regular";
+    font-family: "pixel_arial_regular";
     src: url("/assets/fonts/pixearg_-webfont.woff2") format("woff2"),
          url("/assets/fonts/pixearg_-webfont.woff") format("woff");
     font-weight: normal;
@@ -114,7 +114,7 @@ footer b {
     letter-spacing: 10px;
     font-size: 10px;
     font-weight: normal;
-    font-family: "pixel_arial_11regular";
+    font-family: "pixel_arial_regular";
 }
 
 ul {
@@ -168,7 +168,7 @@ ul {
 }
 
 .blog-page *:not(h1 a, h2), .blog-page p, .blog-page ul {
-    font-family: "pixel_arial_11regular";
+    font-family: "pixel_arial_regular";
 }
 
 .blog-page p {
@@ -183,11 +183,11 @@ ul {
 
 .blog-page p a {
     color: var(--blue);
-    font-family: "pixel_arial_11bold" !important;
+    font-family: "pixel_arial_bold" !important;
 }
 
 .blog-page p b {
-    font-family: "pixel_arial_11bold" !important;
+    font-family: "pixel_arial_bold" !important;
 }
 
 .blog-page h1 {
