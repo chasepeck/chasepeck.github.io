@@ -1,41 +1,39 @@
 @font-face {
     font-family: "pixchicago";
-    font-style: normal;
+    src: url("/assets/fonts/pixchicago.woff2") format("woff2"),
+         url("/assets/fonts/pixchicago.woff") format("woff");
     font-weight: normal;
-    src: url("/assets/fonts/pixChicago.woff") format("woff");
+    font-style: normal;
 }
 
 @font-face {
     font-family: "apple_garamond";
-    src: url("/assets/fonts/applegaramond-webfont.woff2") format("woff2"),
-         url("/assets/fonts/applegaramond-webfont.woff") format("woff");
+    src: url("/assets/fonts/applegaramond.woff2") format("woff2"),
+         url("/assets/fonts/applegaramond.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: "pixel_arial_bold";
-    src: url("/assets/fonts/pixeab__-webfont.woff2") format("woff2"),
-         url("/assets/fonts/pixeab__-webfont.woff") format("woff");
+    font-family: "pixel_arial";
+    src: url("/assets/fonts/pixelarial.woff2") format("woff2"),
+         url("/assets/fonts/pixelarial.woff") format("woff");
     font-weight: normal;
     font-style: normal;
-
 }
 
 @font-face {
-    font-family: "pixel_arial_regular";
-    src: url("/assets/fonts/pixearg_-webfont.woff2") format("woff2"),
-         url("/assets/fonts/pixearg_-webfont.woff") format("woff");
-    font-weight: normal;
+    font-family: "pixel_arial";
+    src: url("/assets/fonts/pixelarial_bold.woff2") format("woff2"),
+         url("/assets/fonts/pixelarial_bold.woff") format("woff");
+    font-weight: bold;
     font-style: normal;
-
 }
 
 @font-face {
     font-family: "dos_vga_437";
-    src: url("/assets/fonts/perfect_dos_vga_437-webfont.woff2") format("woff2"),
-         url("/assets/fonts/perfect_dos_vga_437-webfont.woff") format("woff");
+    src: url("/assets/fonts/perfect_dos_vga_437.woff2") format("woff2"),
+         url("/assets/fonts/perfect_dos_vga_437.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
@@ -114,7 +112,7 @@ footer b {
     letter-spacing: 10px;
     font-size: 10px;
     font-weight: normal;
-    font-family: "pixel_arial_regular";
+    font-family: "pixel_arial";
 }
 
 ul {
@@ -168,7 +166,7 @@ ul {
 }
 
 .blog-page *:not(h1 a, h2), .blog-page p, .blog-page ul {
-    font-family: "pixel_arial_regular";
+    font-family: "pixel_arial";
 }
 
 .blog-page p {
@@ -183,11 +181,7 @@ ul {
 
 .blog-page p a {
     color: var(--blue);
-    font-family: "pixel_arial_bold" !important;
-}
-
-.blog-page p b {
-    font-family: "pixel_arial_bold" !important;
+    font-weight: bold;
 }
 
 .blog-page h1 {
