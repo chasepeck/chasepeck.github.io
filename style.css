@@ -165,7 +165,7 @@ ul {
     border: dashed var(--gray) 1px;
 }
 
-.blog-page *:not(h1 a, h2), .blog-page p, .blog-page ul {
+.blog-page *:not(h1 a), .blog-page p, .blog-page ul {
     font-family: "pixel_arial";
 }
 
@@ -225,4 +225,13 @@ ul {
 
 .blog-page figcaption {
     font-style: italic;
+}
+
+/*------------------------*/
+
+.currently-reading {
+    border: 1px solid white;
+    padding: 10px;
+    margin: 10px;
+    text-align: center;
 }

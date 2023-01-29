@@ -10,54 +10,53 @@
 	<link rel="manifest" href="/m.webmanifest">
 	<meta charset="UTF-8">
 	<meta name="description" content="Homepage of Chase Peck, game developer of Organic Games LLC">
-	<meta name="keywords" content="games, developer, development, programming, chase peck games, chase peck films, films, movies, videos, shorts, comedy, satire">
 	<meta name="theme-color" content="#000000">
 </head><body style="overflow-x: hidden;">
-<div style="text-align: center;">
-	<img src="/assets/favicon-transparent.png" style="width: 80px; filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));">
-	<h1 style="font-size: 20px; font-weight:normal;" id="subtitle"></h1>
-</div>
+	<div style="text-align: center;">
+		<img src="/assets/favicon-transparent.png" style="width: 80px; filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));">
+		<h1 style="font-size: 20px; font-weight:normal;" id="subtitle"></h1>
+	</div>
 
-<hr style="border: 1px solid var(--gray); margin: 25px 0px;">
+	<hr style="border: 1px solid var(--gray); margin: 25px 0px;">
 
-<div style="text-align: center;">
-	<a href="https://organic.games" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/floppy.gif">Games</div></a>
-	<a href="https://www.youtube.com/@chase_peck" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/computer.gif">YouTube</div></a>
-	<a href="https://github.com/chasepeck" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/bomb.gif">GitHub</div></a>
-	<a href="https://chasepeck.com/journal" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/write.gif">Journal</div></a>
-</div>
+	<div style="text-align: center;">
+		<a href="https://organic.games" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/floppy.gif">Games</div></a>
+		<a href="https://www.youtube.com/@chase_peck" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/computer.gif">YouTube</div></a>
+		<a href="https://github.com/chasepeck" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/bomb.gif">GitHub</div></a>
+		<a href="/writing"><div class="index-button"><img src="/assets/icons/write.gif">Writing</div></a>
+	</div>
 
-<div style="width: 50%; margin: 50px auto;" class="blog-list">
-	<a href="/blog/5-16-22" id="featured"><b>5-16-22</b> Last night's totaw wunar ecwipse</a><br>
-	<a href="/blog/6-23-21" id="featured"><b>6-23-21</b> Dot Dash Dot is released!</a><br>
-</div>
+	<div style="width: 50%; margin: 50px auto;" class="blog-list">
+		<a href="/blog/5-16-22" id="featured"><b>5-16-22</b> Last night's totaw wunar ecwipse</a><br>
+		<a href="/blog/6-23-21" id="featured"><b>6-23-21</b> Dot Dash Dot is released!</a><br>
+	</div>
 
-<footer>
-	<b>THEME:</b>
-	<a onclick="set_theme('black','white','black','blue','gray','1','0','0','1','0deg');">DEFAULT</a> -
-	<a onclick="set_theme('white','black','white','blue','black','0','1','0','1','0deg');">LIGHT</a> -
-	<a onclick="set_theme('black','red','black','purple','darkred','1','0','1','0.075','0deg');">RED</a> -
-	<a onclick="set_theme('black','teal','darkred','blue','rgb(50,50,70)','1','0','1','0.075','180deg');">OCEAN</a> -
-	<a onclick="set_theme('#1e1615','#c6beab','darkred','blue','#665b53','1','0','1','0.075','75deg');">EARTH</a>
-	| <a style="color: var(--blue);" href="/map.html">Other pages</a>
-</footer>
+	<footer>
+		<b>THEME:</b>
+		<a onclick="set_theme('black','white','black','blue','gray','1','0','0','1','0deg');">DEFAULT</a> -
+		<a onclick="set_theme('white','black','white','blue','black','0','1','0','1','0deg');">LIGHT</a> -
+		<a onclick="set_theme('black','red','black','purple','darkred','1','0','1','0.075','0deg');">RED</a> -
+		<a onclick="set_theme('black','teal','darkred','blue','rgb(50,50,70)','1','0','1','0.075','180deg');">OCEAN</a> -
+		<a onclick="set_theme('#1e1615','#c6beab','darkred','blue','#665b53','1','0','1','0.075','75deg');">EARTH</a>
+		| <a style="color: var(--blue);" href="/map.html">Other pages</a>
+	</footer>
 
-<!--Scripts-->
-<script>
-	var subtitles;
-	var request = new XMLHttpRequest;
-	request.onreadystatechange = function() {
-		if (this.readyState == 4 && this.status == 200) {
-			subtitles = JSON.parse(this.responseText);
-			var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
-			//var insert = subtitles[subtitles.length-1];
-			document.getElementById("subtitle").innerHTML = insert+"<p>CHASEPECK.COM</p>";
+	<!--Scripts-->
+	<script>
+		var subtitles;
+		var request = new XMLHttpRequest;
+		request.onreadystatechange = function() {
+			if (this.readyState == 4 && this.status == 200) {
+				subtitles = JSON.parse(this.responseText);
+				var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
+				//var insert = subtitles[subtitles.length-1];
+				document.getElementById("subtitle").innerHTML = insert+"<p>CHASEPECK.COM</p>";
+			}
 		}
-	}
-	request.open("GET","https://api.github.com/repos/chasepeck/subtitles/contents/general.json");
-	request.setRequestHeader("Accept","application/vnd.github.VERSION.raw");
-	request.send();
-</script>
-<script src="/theme.js"></script>
+		request.open("GET","https://api.github.com/repos/chasepeck/subtitles/contents/general.json");
+		request.setRequestHeader("Accept","application/vnd.github.VERSION.raw");
+		request.send();
+	</script>
+	<script src="/theme.js"></script>
 </body>
 </html>
