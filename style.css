@@ -231,7 +231,8 @@ ul {
 
 .currently-reading {
     border: 1px solid white;
-    padding: 10px;
     margin: 10px;
+    padding: 10px;
+    font-size: 16px;
     text-align: center;
 }
