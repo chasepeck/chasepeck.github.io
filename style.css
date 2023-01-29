@@ -173,6 +173,8 @@ ul {
     text-indent: 20pt;
     font-size: 18px;
     letter-spacing: 1px;
+    text-align: justify;
+    text-justify: inter-word;
 }
 
 .blog-page ul {
