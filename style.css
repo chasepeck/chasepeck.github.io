@@ -135,6 +135,7 @@ ul {
     filter: invert(var(--invert)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
     margin-right: 10px;
     padding: 5px;
+    transition: 100ms;
 }
 
 .index-button:hover {
@@ -181,7 +182,7 @@ ul {
     font-size: 18px;
 }
 
-.blog-page p a {
+.blog-page a {
     color: var(--blue);
     font-weight: bold;
 }
@@ -198,6 +199,7 @@ ul {
     width: 50px;
     margin-right: 25px;
     filter: invert(var(--invert)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
+    transition: 100ms;
 }
 
 .blog-page h1 a:hover img {
