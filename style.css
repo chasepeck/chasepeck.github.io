@@ -7,11 +7,31 @@
 }
 
 @font-face {
-    font-family: "apple_garamond";
-    src: url("/assets/fonts/applegaramond.woff2") format("woff2"),
-         url("/assets/fonts/applegaramond.woff") format("woff");
+    font-family: "garamond";
+    src: url("/assets/fonts/garamond.ttf");
     font-weight: normal;
     font-style: normal;
+}
+
+@font-face {
+    font-family: "garamond";
+    src: url("/assets/fonts/garamond_italic.ttf");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "garamond";
+    src: url("/assets/fonts/garamond_bold.ttf");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "garamond";
+    src: url("/assets/fonts/garamond_bolditalic.ttf");
+    font-weight: bold;
+    font-style: italic;
 }
 
 @font-face {
@@ -49,6 +69,9 @@
     }
     .blog-page figure img {
         width: 95% !important;
+    }
+    .prose p {
+        margin: 10px 0px !important;
     }
 }
 
@@ -232,6 +255,21 @@ ul {
 }
 
 /*------------------------*/
+
+.prose * {
+    font-family: "garamond" !important;
+}
+
+.prose p {
+    font-size: 20px;
+    margin: 10px 20%;
+    line-height: 35px;
+}
+
+.prose h2 {
+    text-align: center;
+    font-size: 40px;
+}
 
 .currently-reading {
     border: 1px solid white;
