@@ -14,7 +14,9 @@
 </head><body style="overflow-x: hidden;">
 	<div style="text-align: center;">
 		<img src="/assets/favicon-transparent.png" style="width: 80px; transition: 100ms; filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));">
-		<h1 style="font-size: 20px; font-weight:normal;" id="subtitle"></h1>
+		<h1 style="font-size: 20px; font-weight:normal;" id="subtitle">
+			<noscript>Without JavaScript, there is peace.<p>CHASEPECK.COM</p></noscript>
+		</h1>
 	</div>
 
 	<hr style="border: 1px solid var(--gray); margin: 25px 0px;">
@@ -33,17 +35,20 @@
 	</div>
 
 	<footer>
-		<b>THEME:</b>
-		<a onclick="set_theme('black','white','black','blue','gray','1','0','0','1','0deg');">DEFAULT</a> -
-		<a onclick="set_theme('white','black','white','blue','black','0','1','0','1','0deg');">LIGHT</a> -
-		<a onclick="set_theme('black','red','black','purple','darkred','1','0','1','0.075','0deg');">RED</a> -
-		<a onclick="set_theme('black','teal','darkred','blue','rgb(50,50,70)','1','0','1','0.075','180deg');">OCEAN</a> -
-		<a onclick="set_theme('#1e1615','#c6beab','darkred','blue','#665b53','1','0','1','0.075','75deg');">EARTH</a>
-		| <a style="color: var(--blue);" href="/map.html">Other pages</a>
+		<span id="themes" style="display: none;">
+			<b>THEME:</b>
+			<a onclick="set_theme('black','white','black','blue','gray','1','0','0','1','0deg');">DEFAULT</a> -
+			<a onclick="set_theme('white','black','white','blue','black','0','1','0','1','0deg');">LIGHT</a> -
+			<a onclick="set_theme('black','red','black','purple','darkred','1','0','1','0.075','0deg');">RED</a> -
+			<a onclick="set_theme('black','teal','darkred','blue','rgb(50,50,70)','1','0','1','0.075','180deg');">OCEAN</a> -
+			<a onclick="set_theme('#1e1615','#c6beab','darkred','blue','#665b53','1','0','1','0.075','75deg');">EARTH</a>
+		</span>
 	</footer>
 
 	<!--Scripts-->
 	<script>
+		document.getElementById("themes").style.display = "inline";
+
 		var subtitles;
 		var request = new XMLHttpRequest;
 		request.onreadystatechange = function() {
