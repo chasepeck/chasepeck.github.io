@@ -172,11 +172,10 @@ ul {
 /*------------------------*/
 
 .blog-list b {
-    font-family: "Courier New", monospace;
-    font-size: 140%;
+    font-family: "pixel_arial";
     color: var(--gray);
     border-right: solid var(--gray) 1px;
-    padding-right: 10px;
+    padding-right: 5px;
     vertical-align: middle;
 }
 
@@ -188,6 +187,8 @@ ul {
     font-size: 150%;
     border: dashed var(--gray) 1px;
 }
+
+/*------------------------*/
 
 .blog-page *:not(h1 a), .blog-page p, .blog-page ul {
     font-family: "pixel_arial";
