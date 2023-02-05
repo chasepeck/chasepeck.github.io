@@ -202,7 +202,7 @@ ul {
     text-justify: inter-word;
 }
 
-.blog-page ul {
+.blog-page ul, .blog-page ol {
     font-size: 18px;
 }
 
