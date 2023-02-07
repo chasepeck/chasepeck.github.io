@@ -257,17 +257,17 @@ ul {
 
 /*------------------------*/
 
-.prose * {
+.prose *, .poetry, .poetry * {
     font-family: "garamond" !important;
 }
 
-.prose p {
+.prose p, .poetry, .poetry *{
     font-size: 20px;
     margin: 10px 20%;
     line-height: 35px;
 }
 
-.prose h2 {
+.prose h2, .poetry h2 {
     text-align: center;
     font-size: 40px;
 }
