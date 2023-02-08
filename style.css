@@ -70,7 +70,7 @@
     .blog-page figure img {
         width: 95% !important;
     }
-    .prose p {
+    .prose {
         margin: 10px 0px !important;
     }
 }
@@ -258,11 +258,11 @@ ul {
 /*------------------------*/
 
 .prose *, .poetry, .poetry * {
+    font-size: 20px !important;
     font-family: "garamond" !important;
 }
 
-.prose p, .poetry, .poetry *{
-    font-size: 20px;
+.prose, .poetry {
     margin: 10px 20%;
     line-height: 35px;
 }
