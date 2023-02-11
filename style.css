@@ -268,14 +268,6 @@ ul {
 }
 
 .prose h2, .poetry h2 {
-    text-align: center;
-    font-size: 40px;
-}
-
-.currently-reading {
-    border: 1px solid white;
-    margin: 10px;
-    padding: 10px;
-    font-size: 16px;
-    text-align: center;
+    text-align: center !important;
+    font-size: 40px !important;
 }
