@@ -179,6 +179,10 @@ ul {
     vertical-align: middle;
 }
 
+.blog-list i {
+    font-family: "pixel_arial";
+}
+
 .blog-list #featured {
     display: inline-block;
     width: 90%;
