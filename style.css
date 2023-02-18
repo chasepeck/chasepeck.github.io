@@ -275,3 +275,8 @@ ul {
     text-align: center !important;
     font-size: 40px !important;
 }
+
+.prose hr {
+    margin: 0px 25%;
+    border: 1px solid var(--gray);
+}
