@@ -70,7 +70,7 @@
     .blog-page figure img {
         width: 95% !important;
     }
-    .prose {
+    .list, .prose {
         margin: 10px 0px !important;
     }
 }
@@ -257,6 +257,16 @@ ul {
 
 .blog-page figcaption {
     font-style: italic;
+}
+
+/*------------------------*/
+
+.list {
+    margin: 10px 30%; 
+}
+
+.list h2, .list h3 {
+    text-align: center;
 }
 
 /*------------------------*/
