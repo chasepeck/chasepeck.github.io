@@ -194,7 +194,7 @@ ul {
 
 /*------------------------*/
 
-.blog-page *:not(h1 a), .blog-page p, .blog-page ul {
+.blog-page *:not(h1 a, h1 i), .blog-page p, .blog-page ul {
     font-family: "pixel_arial";
 }
 
@@ -219,7 +219,7 @@ ul {
     display: table-cell;
 }
 
-.blog-page h1 * {
+.blog-page h1 *:not(h1 i) {
     vertical-align: middle;
 }
 
