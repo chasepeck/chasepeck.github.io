@@ -1,60 +1,66 @@
 @font-face {
     font-family: "pixchicago";
-    src: url("/assets/fonts/pixchicago.woff2") format("woff2"),
-         url("/assets/fonts/pixchicago.woff") format("woff");
+    src: url("/assets/fonts/pixchicago/pixchicago.woff2") format("woff2"),
+         url("/assets/fonts/pixchicago/pixchicago.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "garamond";
-    src: url("/assets/fonts/garamond.ttf");
+    src: url("/assets/fonts/garamond/garamond.ttf");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "garamond";
-    src: url("/assets/fonts/garamond_italic.ttf");
+    src: url("/assets/fonts/garamond/garamond_italic.ttf");
     font-weight: normal;
     font-style: italic;
 }
 
 @font-face {
     font-family: "garamond";
-    src: url("/assets/fonts/garamond_bold.ttf");
+    src: url("/assets/fonts/garamond/garamond_bold.ttf");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
     font-family: "garamond";
-    src: url("/assets/fonts/garamond_bolditalic.ttf");
+    src: url("/assets/fonts/garamond/garamond_bolditalic.ttf");
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: "pixel_arial";
-    src: url("/assets/fonts/pixelarial.woff2") format("woff2"),
-         url("/assets/fonts/pixelarial.woff") format("woff");
+    src: url("/assets/fonts/pixelarial/pixelarial.woff2") format("woff2"),
+         url("/assets/fonts/pixelarial/pixelarial.woff") format("woff");
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: "pixel_arial";
-    src: url("/assets/fonts/pixelarial_bold.woff2") format("woff2"),
-         url("/assets/fonts/pixelarial_bold.woff") format("woff");
+    src: url("/assets/fonts/pixelarial/pixelarial_bold.woff2") format("woff2"),
+         url("/assets/fonts/pixelarial/pixelarial_bold.woff") format("woff");
     font-weight: bold;
     font-style: normal;
 }
 
 @font-face {
-    font-family: "dos_vga_437";
-    src: url("/assets/fonts/perfect_dos_vga_437.woff2") format("woff2"),
-         url("/assets/fonts/perfect_dos_vga_437.woff") format("woff");
+    font-family: "cjkserif";
+    src: url("/assets/fonts/cjkserif/cjkserif.otf");
     font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "cjkserif";
+    src: url("/assets/fonts/cjkserif/cjkserif_bold.otf");
+    font-weight: bold;
     font-style: normal;
 }
 
@@ -201,7 +207,6 @@ ul {
 .blog-page p {
     text-indent: 20pt;
     font-size: 18px;
-    letter-spacing: 1px;
     text-align: justify;
     text-justify: inter-word;
 }
