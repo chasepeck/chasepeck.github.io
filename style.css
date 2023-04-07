@@ -70,8 +70,9 @@
     html, body {
         padding: 20px 10px !important;
     }
-    .blog-list {
-        width: 100% !important;
+    #index-grid {
+        margin: 10px 0px !important;
+        grid-template-columns: auto !important;
     }
     .blog-page figure img {
         width: 95% !important;
@@ -106,9 +107,13 @@ body {
     background-color: var(--background);
 }
 
-body, a {
+body{
     font-family: "pixchicago";
     color: var(--white);
+}
+
+a {
+    color: var(--blue);
     text-decoration: none;
 }
 
@@ -151,6 +156,7 @@ ul {
 /*------------------------*/
 
 .index-button {
+    color: var(--white);
     height: 60px;
     display: table-cell;
 }
@@ -168,6 +174,7 @@ ul {
 }
 
 .index-button:hover {
+    color: var(--black);
     background-color: var(--white);
 }
 
@@ -177,22 +184,43 @@ ul {
 
 /*------------------------*/
 
-.blog-list b {
-    font-family: "pixel_arial";
+#index-grid {
+    display: grid;
+    margin: 50px;
+    grid-template-columns: auto auto;
+    gap: 10px;
+}
+
+#index-grid ul {
+    margin: 0px;
+    list-style-type: none;
+    border: 1px solid var(--gray);
+    box-shadow: 5px 5px var(--gray);
+    padding: 25px;
+}
+
+#index-grid ul h2, #index-grid ul h3 {
+    margin: 0px 0px 10px 0px;
+}
+
+#index-grid ul b {
     color: var(--gray);
     border-right: solid var(--gray) 1px;
     padding-right: 5px;
-    vertical-align: middle;
 }
 
-.blog-list i {
-    font-family: "pixel_arial";
+#index-grid ul i {
+    color: var(--white);
+    font-weight: normal;
 }
 
-.blog-list #featured {
+#index-grid ul a:hover i {
+    color: var(--black);
+}
+
+#index-grid #featured {
     display: inline-block;
-    width: 90%;
-    margin: 10px 0px 10px 0px;
+    margin: 10px 0px;
     padding: 10px;
     font-size: 150%;
     border: dashed var(--gray) 1px;
@@ -200,7 +228,7 @@ ul {
 
 /*------------------------*/
 
-.blog-page *:not(h1 a, h1 i), .blog-page p, .blog-page ul {
+.blog-page:not(h1 a, h1 i), .blog-page p, .blog-page ul {
     font-family: "pixel_arial";
 }
 
@@ -216,16 +244,12 @@ ul {
 }
 
 .blog-page a {
-    color: var(--blue);
     font-weight: bold;
 }
 
 .blog-page h1 {
+    font-family: "pixchicago";
     display: table-cell;
-}
-
-.blog-page h1 *:not(h1 i) {
-    vertical-align: middle;
 }
 
 .blog-page h1 img {
@@ -233,6 +257,7 @@ ul {
     margin-right: 25px;
     filter: invert(var(--invert)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
     transition: 100ms;
+    vertical-align: middle;
 }
 
 .blog-page h1 a:hover img {
