@@ -311,7 +311,7 @@ ul {
     line-height: 35px;
 }
 
-.prose h2, .poetry h2 {
+.prose h2, .poetry h2, .prose h2 *, .poetry h2 * {
     text-align: center !important;
     font-size: 40px !important;
 }
