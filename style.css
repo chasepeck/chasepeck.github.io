@@ -203,6 +203,10 @@ ul {
     margin: 0px 0px 10px 0px;
 }
 
+#index-grid ul h3 {
+    font-style: italic;
+}
+
 #index-grid ul b {
     color: var(--gray);
     border-right: solid var(--gray) 1px;
