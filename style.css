@@ -74,7 +74,7 @@
         margin: 10px 0px !important;
         grid-template-columns: auto !important;
     }
-    .blog-page figure img {
+    .sub-page figure img {
         width: 95% !important;
     }
     .list, .prose {
@@ -107,7 +107,7 @@ body {
     background-color: var(--background);
 }
 
-body{
+body {
     font-family: "pixchicago";
     color: var(--white);
 }
@@ -232,31 +232,31 @@ ul {
 
 /*------------------------*/
 
-.blog-page:not(h1 a, h1 i), .blog-page p, .blog-page ul {
+.sub-page:not(h1 a, h1 i), .sub-page p, .sub-page ul {
     font-family: "pixel_arial";
 }
 
-.blog-page p {
+.sub-page p {
     text-indent: 20pt;
     font-size: 18px;
     text-align: justify;
     text-justify: inter-word;
 }
 
-.blog-page ul, .blog-page ol {
+.sub-page ul, .sub-page ol {
     font-size: 18px;
 }
 
-.blog-page a {
+.sub-page a {
     font-weight: bold;
 }
 
-.blog-page h1 {
+.sub-page h1 {
     font-family: "pixchicago";
     display: table-cell;
 }
 
-.blog-page h1 img {
+.sub-page h1 img {
     width: 50px;
     margin-right: 25px;
     filter: invert(var(--invert)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
@@ -264,32 +264,32 @@ ul {
     vertical-align: middle;
 }
 
-.blog-page h1 a:hover img {
+.sub-page h1 a:hover img {
     filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
 }
 
-.blog-page h1 a {
+.sub-page h1 a {
     color: var(--white);
 }
 
-.blog-page h2 i {
+.sub-page h2 i {
     color: var(--gray);
     font-size: 15px;
 }
 
-.blog-page hr {
+.sub-page hr {
     border: 2px dashed var(--gray);
 }
 
-.blog-page figure {
+.sub-page figure {
     text-align: center;
 }
 
-.blog-page figure img {
+.sub-page figure img {
     width: 50%;
 }
 
-.blog-page figcaption {
+.sub-page figcaption {
     font-style: italic;
 }
 
