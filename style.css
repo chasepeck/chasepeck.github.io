@@ -299,6 +299,8 @@ ul {
     font-family: "garamond";
     font-style: italic;
     font-size: 18px;
+    text-align: justify;
+    text-justify: inter-word;
     padding: 20px;
 }
 
@@ -308,6 +310,8 @@ ul {
     font-family: "garamond";
     font-style: italic;
     font-size: 18px;
+    text-align: justify;
+    text-justify: inter-word;
     padding: 20px;
 }
 
@@ -344,6 +348,7 @@ ul {
 .prose h2, .poetry h2, .prose h2 *, .poetry h2 * {
     text-align: center !important;
     font-size: 40px !important;
+    font-variant: small-caps;
 }
 
 .prose hr {
