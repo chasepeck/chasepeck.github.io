@@ -13,9 +13,10 @@
 	<meta name="theme-color" content="#000000">
 </head><body style="overflow-x: hidden;">
 	<div style="text-align: center;">
-		<img src="/assets/favicon-transparent.png" style="width: 80px; transition: 100ms; filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));">
-		<h1 style="font-size: 20px; font-weight:normal;" id="subtitle">
-			<noscript>Without JavaScript, there is peace.<p>CHASEPECK.COM</p></noscript>
+		<img id="subtitle" style="max-width: 50%; transition: 100ms; filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));">
+		<h1 id="site-title" style="font-size: 20px; font-weight:normal;">
+			<noscript>Without JavaScript, there is peace.</noscript>
+			<p>CHASEPECK.COM</p>
 		</h1>
 	</div>
 
@@ -106,20 +107,7 @@
 	<!--Scripts-->
 	<script>
 		document.getElementById("themes").style.display = "inline";
-
-		var subtitles;
-		var request = new XMLHttpRequest;
-		request.onreadystatechange = function() {
-			if (this.readyState == 4 && this.status == 200) {
-				subtitles = JSON.parse(this.responseText);
-				var insert = subtitles[Math.floor(Math.random()*subtitles.length)];
-				//var insert = subtitles[subtitles.length-1];
-				document.getElementById("subtitle").innerHTML = insert+"<p>CHASEPECK.COM</p>";
-			}
-		}
-		request.open("GET","https://api.github.com/repos/chasepeck/subtitles/contents/general.json");
-		request.setRequestHeader("Accept","application/vnd.github.VERSION.raw");
-		request.send();
+		document.getElementById("subtitle").src = "assets/subtitles/sub" + (Math.floor(Math.random() * 43) + 1).toString() + ".jpg";
 	</script>
 	<script src="/theme.js"></script>
 </body>

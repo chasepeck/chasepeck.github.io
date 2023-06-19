@@ -142,7 +142,7 @@ a:hover, a:hover b {
     color: var(--black);
 }
 
-#subtitle p {
+#site-title p {
     letter-spacing: 10px;
     font-size: 10px;
     font-weight: normal;
