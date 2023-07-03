@@ -199,32 +199,35 @@ ul {
 
 #index-grid ul {
     margin: 0px;
-    list-style-type: none;
     border: 1px solid var(--gray);
     box-shadow: 5px 5px var(--gray);
     padding: 25px;
 }
 
-#index-grid ul h2, #index-grid ul h3 {
+#index-list {
+    list-style-type: none;
+}
+
+#index-list h2, #index-list h3 {
     margin: 0px 0px 10px 0px;
 }
 
-#index-grid ul h3 {
+#index-list h3 {
     font-style: italic;
 }
 
-#index-grid ul b {
+#index-list b {
     color: var(--gray);
     border-right: solid var(--gray) 1px;
     padding-right: 5px;
 }
 
-#index-grid ul i {
+#index-list i {
     color: var(--white);
     font-weight: normal;
 }
 
-#index-grid ul a:hover i {
+#index-list a:hover i {
     color: var(--black);
 }
 
@@ -234,6 +237,11 @@ ul {
     padding: 10px;
     font-size: 150%;
     border: dashed var(--gray) 1px;
+}
+
+#index-grid #subdirectory {
+    font-style: italic;
+    color: purple;
 }
 
 /*------------------------*/
