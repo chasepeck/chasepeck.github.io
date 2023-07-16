@@ -66,19 +66,25 @@
 
 /*------------------------*/
 
-@media (max-width: 1100px) {                  
+@media (max-width: 800px) {                  
     html, body {
         padding: 20px 10px !important;
     }
     #index-grid {
+        display: block !important;
         margin: 10px 0px !important;
-        grid-template-columns: auto !important;
+    }
+    #index-grid ul {
+        margin: 10px !important; 
     }
     .sub-page figure img {
         width: 95% !important;
     }
     .list, .prose {
         margin: 10px 0px !important;
+    }
+    .image-gallery span {
+        flex: 50% !important;
     }
 }
 
@@ -193,7 +199,7 @@ ul {
 #index-grid {
     display: grid;
     margin: 50px;
-    grid-template-columns: auto auto;
+    grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
 
@@ -360,4 +366,20 @@ ul {
 .prose hr {
     margin: 0px 25%;
     border: 1px solid var(--gray);
+}
+
+/*------------------------*/
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.image-gallery span {
+    flex: 20%;
+    margin: 0px;
+}
+
+.image-gallery span img {
+    width: 99%;
 }
