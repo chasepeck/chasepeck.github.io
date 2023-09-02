@@ -25,7 +25,7 @@
 
 	<hr style="border: 1px solid var(--gray);">
 
-	<div style="text-align: center; margin: 25px 0px;">
+	<div style="text-align: center; margin: 25px 0px;" class="theme">
 		<a href="https://organic.games" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/floppy.gif">Games</div></a>
 		<a href="https://www.youtube.com/@chase_peck" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/computer.gif">YouTube</div></a>
 		<a href="https://github.com/chasepeck" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/bomb.gif">GitHub</div></a>
@@ -129,20 +129,24 @@
 				<a href="contact">Contact
 					<i>Email me for a good time.</i>
 				</a>
-			</li>
+			</li><br>
+			<hr>
+			<div id="themes" style="color: var(--gray); display: none;">
+				<b>THEME:</b>
+				<a onclick="set_theme('black','white','black','blue','gray','1','0','0','1','0deg');">DEFAULT</a> -
+				<a onclick="set_theme('white','black','white','blue','black','0','1','0','1','0deg');">LIGHT</a> -
+				<a onclick="set_theme('black','red','black','purple','darkred','1','0','1','0.075','0deg');">RED</a> -
+				<a onclick="set_theme('black','teal','darkred','blue','rgb(50,50,70)','1','0','1','0.075','180deg');">OCEAN</a> -
+				<a onclick="set_theme('#1e1615','#c6beab','darkred','blue','#665b53','1','0','1','0.075','75deg');">EARTH</a>
+			</div>
 		</ul>
 	</div>
 
-	<footer id="fixed-footer">
-		<span id="themes" style="display: none;">
-			<b>THEME:</b>
-			<a onclick="set_theme('black','white','black','blue','gray','1','0','0','1','0deg');">DEFAULT</a> -
-			<a onclick="set_theme('white','black','white','blue','black','0','1','0','1','0deg');">LIGHT</a> -
-			<a onclick="set_theme('black','red','black','purple','darkred','1','0','1','0.075','0deg');">RED</a> -
-			<a onclick="set_theme('black','teal','darkred','blue','rgb(50,50,70)','1','0','1','0.075','180deg');">OCEAN</a> -
-			<a onclick="set_theme('#1e1615','#c6beab','darkred','blue','#665b53','1','0','1','0.075','75deg');">EARTH</a>
-		</span>
-	</footer>
+	<div style="text-align: center; filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));">
+		<img src="/assets/favicon.png" style="max-width: 10%;"><br>
+		<img src="/assets/misc/chase.jpg" style="max-width: 10%;">
+		<img src="/assets/misc/peck.jpg" style="max-width: 10%;">
+	</div>
 
 	<script>
 		document.getElementById("themes").style.display = "inline";

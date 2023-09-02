@@ -198,7 +198,7 @@ ul {
 
 #index-grid {
     display: grid;
-    margin: 50px;
+    margin: 50px 50px 10px;
     grid-template-columns: 1fr 1fr;
     gap: 10px;
 }
