@@ -165,6 +165,15 @@ ul {
     list-style: square;
 }
 
+#sectionbreak {
+    width: 50%;
+    max-width: 200px;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
+}
+
 /*------------------------*/
 
 .index-button {
