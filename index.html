@@ -35,31 +35,34 @@
 		<!--Journal-->
 		<ul class="sub-page" id="index-list" style="grid-row: 1 / 3;">
 			<h2>Journal</h2>
+			<h4>Incessant, insecure, incoherent</h4>
 			<li><a href="/journal/7-4-23"><b>7-4-23</b> Happy anniversary to the 512 Martian States</a></li>
 			<li><a href="/journal/6-17-23"><b>6-17-23</b> Chase's soCial sCale</a></li>
 			<li><a href="/journal/6-15-23"><b>6-15-23</b> Paper, paper</a></li>
 			<li><a href="/journal/2-5-23"><b>2-5-23</b> Psuedonym proposals</a></li>
-			<li><a href="/journal/5-16-22"><b>5-16-22</b> Wast night's totaw wunar ecwipse</a></li>
-			<li><a href="/journal/6-23-21" id="featured"><b>6-23-21</b> Dot Dash Dot is released!</a></li>
 			<img id="sectionbreak" src="/assets/sectionbreaks/spiral.jpg">
+			<li><a href="/journal/5-16-22"><b>5-16-22</b> Wast night's totaw wunar ecwipse</a></li>
+			<img id="sectionbreak" src="/assets/sectionbreaks/spiral.jpg">
+			<li><a href="/journal/6-23-21" id="featured"><b>6-23-21</b> Dot Dash Dot is released!</a></li>
 		</ul>
 
 		<!--Programming-->
 		<ul class="sub-page" id="index-list">
 			<h2>Programming</h2>
+			<h4>fn what() { help(); }</h4>
 			<h3>Games</h3>
 			<li>
 				<a href="https://organic.games/games/dotdashdot">Dot Dash Dot
 					<i>Morse Code Mayhem!</i>
 				</a>
 			</li>
-			<img id="sectionbreak" src="/assets/sectionbreaks/snake.jpg">
+			<img id="sectionbreak" src="/assets/sectionbreaks/ellipsis.jpg">
 			<li>
 				<a href="zachtronics-puzzles">Zachtronics Puzzles
 					<i>ACC ACC!! MOV!!</i>
 				</a>
 			</li>
-			<img id="sectionbreak" src="/assets/sectionbreaks/snail.jpg">
+			<img id="sectionbreak" src="/assets/sectionbreaks/ellipsis.jpg">
 			<span id="repos"></span>
 			<li>
 				<a id="subdirectory" href="https://gist.github.com/chasepeck">➢ Gists
@@ -71,6 +74,7 @@
 		<!--Writing-->
 		<ul class="sub-page" id="index-list">
 			<h2>Writing</h2>
+			<h4>100% purple</h4>
 			<h3>Short stories</h3>
 				<li>
 					<a id="subdirectory" href="writing/dreamcollection">➢ Perky's Dream Collection
@@ -128,23 +132,23 @@
 			<img id="sectionbreak" src="/assets/sectionbreaks/dinkus.jpg">
 			<div id="themes" style="color: var(--gray); display: none;">
 				<b>THEME:</b>
-				<a onclick="set_theme('black','white','black','blue','gray','1','0','0','1','0deg');">DEFAULT</a> -
-				<a onclick="set_theme('white','black','white','blue','black','0','1','0','1','0deg');">LIGHT</a> -
-				<a onclick="set_theme('black','red','black','purple','darkred','1','0','1','0.075','0deg');">RED</a> -
-				<a onclick="set_theme('black','teal','darkred','blue','rgb(50,50,70)','1','0','1','0.075','180deg');">OCEAN</a> -
-				<a onclick="set_theme('#1e1615','#c6beab','darkred','blue','#665b53','1','0','1','0.075','75deg');">EARTH</a> - 
+				<a onclick="set_theme('black','white','black','blue','gray','1','0','0','1','0deg');">DEFAULT</a><img id="sectionbreak-inline" src="/assets/sectionbreaks/asterisk.jpg" style="height: 16px;">
+				<a onclick="set_theme('white','black','white','blue','black','0','1','0','1','0deg');">LIGHT</a><img id="sectionbreak-inline" src="/assets/sectionbreaks/asterisk.jpg" style="height: 16px;">
+				<a onclick="set_theme('black','red','black','purple','darkred','1','0','1','0.075','0deg');">RED</a><img id="sectionbreak-inline" src="/assets/sectionbreaks/asterisk.jpg" style="height: 16px;">
+				<a onclick="set_theme('black','teal','darkred','blue','rgb(50,50,70)','1','0','1','0.075','180deg');">OCEAN</a><img id="sectionbreak-inline" src="/assets/sectionbreaks/asterisk.jpg" style="height: 16px;">
+				<a onclick="set_theme('#1e1615','#c6beab','darkred','blue','#665b53','1','0','1','0.075','75deg');">EARTH</a><img id="sectionbreak-inline" src="/assets/sectionbreaks/asterisk.jpg" style="height: 16px;">
 				<a onclick="set_theme('#efeade','black','white','blue','dimgray','0','1','0','1','0deg');">PAPER</a>
 			</div>
 		</ul>
 	</div>
 
 	<div style="text-align: center; filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));">
-		<img src="/assets/favicon.png" style="max-width: 10%;"><br>
+		<img src="/assets/favicon.png" style="max-width: 10%;">
 	</div>
 
 	<script>
 		document.getElementById("themes").style.display = "inline";
-		document.getElementById("subtitle").src = "assets/subtitles/sub" + (Math.floor(Math.random() * 60) + 1).toString() + ".jpg";
+		document.getElementById("subtitle").src = "assets/subtitles/sub" + (Math.floor(Math.random() * 49) + 1).toString() + ".jpg";
 	</script>
 	<script src="/theme.js"></script>
 	<script src="/repos.js"></script>

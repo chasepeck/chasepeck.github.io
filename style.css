@@ -150,6 +150,7 @@ a:hover, a:hover b {
 
 #subtitle {
     max-width: 50%;
+    max-height: 500px;
     transition: 100ms;
     filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
 }
@@ -172,6 +173,11 @@ ul {
     display: block;
     margin: auto;
     filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
+}
+
+#sectionbreak-inline {
+    filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
+    margin-right: -4px;
 }
 
 /*------------------------*/
@@ -223,12 +229,18 @@ ul {
     list-style-type: none;
 }
 
-#index-list h2, #index-list h3 {
+#index-list h2, #index-list h3, #index-list h4 {
     margin: 0px 0px 10px 0px;
 }
 
 #index-list h3 {
     font-style: italic;
+}
+
+#index-list h4 {
+    font-style: italic;
+    color: var(--gray);
+    font-size: 12px;
 }
 
 #index-list b {
