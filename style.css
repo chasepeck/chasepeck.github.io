@@ -233,6 +233,13 @@ ul {
     margin: 0px 0px 10px 0px;
 }
 
+#index-list h2 img {
+    display: inline;
+    filter: invert(var(--invert)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
+    vertical-align: middle;
+    margin-right: 10px;
+}
+
 #index-list h3 {
     font-style: italic;
 }

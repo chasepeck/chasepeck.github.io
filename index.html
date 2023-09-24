@@ -25,16 +25,10 @@
 
 	<hr style="border: 1px solid var(--gray);">
 
-	<div style="text-align: center; margin: 25px 0px;" class="theme">
-		<a href="https://organic.games" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/floppy.gif">Games</div></a>
-		<a href="https://www.youtube.com/@chase_peck" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/computer.gif">YouTube</div></a>
-		<a href="https://github.com/chasepeck" target="_blank" rel="noopener noreferrer"><div class="index-button"><img src="/assets/icons/bomb.gif">GitHub</div></a>
-	</div>
-
 	<div id="index-grid">
 		<!--Journal-->
 		<ul class="sub-page" id="index-list" style="grid-row: 1 / 3;">
-			<h2>Journal</h2>
+			<h2><img src="/assets/icons/bomb.gif">Journal</h2>
 			<h4>Incessant, insecure, incoherent</h4>
 			<li><a href="/journal/7-4-23"><b>7-4-23</b> Happy anniversary to the 512 Martian States</a></li>
 			<li><a href="/journal/6-17-23"><b>6-17-23</b> Chase's soCial sCale</a></li>
@@ -48,7 +42,7 @@
 
 		<!--Programming-->
 		<ul class="sub-page" id="index-list">
-			<h2>Programming</h2>
+			<h2><img src="/assets/icons/floppy.gif">Programming</h2>
 			<h4>fn what() { help(); }</h4>
 			<h3>Games</h3>
 			<li>
@@ -73,7 +67,7 @@
 
 		<!--Writing-->
 		<ul class="sub-page" id="index-list">
-			<h2>Writing</h2>
+			<h2><img src="/assets/icons/write.gif">Writing</h2>
 			<h4>100% purple</h4>
 			<h3>Short stories</h3>
 				<li>
@@ -131,7 +125,12 @@
 			</li>
 			<img id="sectionbreak" src="/assets/sectionbreaks/dinkus.jpg">
 			<div id="themes" style="color: var(--gray); display: none;">
-				<b>THEME:</b>
+				<b style="font-weight: normal;">@</b>
+				<a href="https://organic.games" target="_blank">GAMES</a><img src="/assets/sectionbreaks/asterisk.jpg" id="sectionbreak-inline" style="height: 16px;">
+				<a href="https://youtube.com/@chase_peck" target="_blank">YOUTUBE</a><img src="/assets/sectionbreaks/asterisk.jpg" id="sectionbreak-inline" style="height: 16px;">
+				<a href="https://github.com/chasepeck" target="_blank">GITHUB</a>
+				<br>
+				<b>THEME</b>
 				<a onclick="set_theme('black','white','black','blue','gray','1','0','0','1','0deg');">DEFAULT</a><img id="sectionbreak-inline" src="/assets/sectionbreaks/asterisk.jpg" style="height: 16px;">
 				<a onclick="set_theme('white','black','white','blue','black','0','1','0','1','0deg');">LIGHT</a><img id="sectionbreak-inline" src="/assets/sectionbreaks/asterisk.jpg" style="height: 16px;">
 				<a onclick="set_theme('black','red','black','purple','darkred','1','0','1','0.075','0deg');">RED</a><img id="sectionbreak-inline" src="/assets/sectionbreaks/asterisk.jpg" style="height: 16px;">
@@ -148,7 +147,7 @@
 
 	<script>
 		document.getElementById("themes").style.display = "inline";
-		document.getElementById("subtitle").src = "assets/subtitles/sub" + (Math.floor(Math.random() * 49) + 1).toString() + ".jpg";
+		document.getElementById("subtitle").src = "assets/subtitles/sub" + (Math.floor(Math.random() * 58) + 1).toString() + ".jpg";
 	</script>
 	<script src="/theme.js"></script>
 	<script src="/repos.js"></script>
