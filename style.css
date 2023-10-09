@@ -64,6 +64,11 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "handwritten";
+    src: url("/assets/fonts/handwritten.ttf");
+}
+
 /*------------------------*/
 
 @media (max-width: 800px) {                  
@@ -101,6 +106,7 @@ body {
     --black: black;
     --blue: blue;
     --gray: gray;
+    --accent: purple;
 
     --invert: 100%;
     --invert-hover: 0%;
@@ -229,25 +235,22 @@ ul {
     list-style-type: none;
 }
 
-#index-list h2, #index-list h3, #index-list h4 {
+#index-list h2 {
     margin: 0px 0px 10px 0px;
+    text-shadow: 2px 2px var(--accent);
 }
 
 #index-list h2 img {
     display: inline;
     filter: invert(var(--invert)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
     vertical-align: middle;
-    margin-right: 10px;
+    margin-right: 15px;
 }
 
 #index-list h3 {
     font-style: italic;
-}
-
-#index-list h4 {
-    font-style: italic;
     color: var(--gray);
-    font-size: 12px;
+    text-align: right;
 }
 
 #index-list b {
@@ -275,7 +278,7 @@ ul {
 
 #index-grid #subdirectory {
     font-style: italic;
-    color: purple;
+    color: var(--accent);
 }
 
 /*------------------------*/
@@ -296,7 +299,8 @@ ul {
 }
 
 .sub-page h1 {
-    font-family: "pixchicago";
+    font-family: "handwritten";
+    font-size: 65px;
     display: table-cell;
 }
 
@@ -305,7 +309,7 @@ ul {
     margin-right: 25px;
     filter: invert(var(--invert)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
     transition: 100ms;
-    vertical-align: middle;
+    vertical-align: -10%;
 }
 
 .sub-page h1 a:hover img {
