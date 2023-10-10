@@ -302,6 +302,7 @@ ul {
     font-family: "handwritten";
     font-size: 65px;
     display: table-cell;
+    text-shadow: 2px 2px var(--accent);
 }
 
 .sub-page h1 img {
