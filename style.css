@@ -136,7 +136,7 @@ a:hover, a:hover b {
 }
 
 #fixed-footer {
-    font-size: 10px;
+    font-size: .75rem;
     background-color: var(--background);
     position: fixed;
     left: 0;
@@ -164,7 +164,7 @@ a:hover, a:hover b {
 
 #site-title p {
     letter-spacing: 10px;
-    font-size: 10px;
+    font-size: .75rem;
     font-weight: normal;
     font-family: "pixel_arial";
 }
@@ -281,7 +281,7 @@ ul {
 
 .sub-page {
     font-family: "pixel_arial";
-    font-size: 16px;
+    font-size: 1rem;
 }
 
 .sub-page p {
@@ -296,7 +296,7 @@ ul {
 
 .sub-page h1 {
     font-family: "handwritten";
-    font-size: 65px;
+    font-size: 4rem;
     display: table-cell;
     text-shadow: 2px 2px var(--accent);
 }
@@ -319,7 +319,7 @@ ul {
 
 .sub-page h4 {
     color: var(--gray);
-    font-size: 15px;
+    font-size: 1rem;
 }
 
 .sub-page hr {
@@ -342,7 +342,7 @@ ul {
     color: var(--gray);
     font-family: "garamond";
     font-style: italic;
-    font-size: 18px;
+    font-size: 1.15rem;
     text-align: justify;
     text-justify: inter-word;
     padding: 20px;
@@ -368,7 +368,7 @@ ul {
 
 .quote-list li {
     font-family: "garamond";
-    font-size: 20px;
+    font-size: 1.25rem;
     margin: 20px 0px;
     padding: 10px;
     border: 1px dashed var(--gray);
@@ -377,7 +377,7 @@ ul {
 /*------------------------*/
 
 .prose, .verse {
-    font-size: 20px;
+    font-size: 1.25rem;
     font-family: "garamond";
     margin: 10px 20%;
     line-height: 35px;
