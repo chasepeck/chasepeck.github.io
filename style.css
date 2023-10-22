@@ -75,6 +75,9 @@
     html, body {
         padding: 20px 10px !important;
     }
+    #index-column {
+        width: 100% !important;
+    }
     #index-grid {
         display: block !important;
         margin: 10px 0px !important;
@@ -87,9 +90,6 @@
     }
     .list, .prose {
         margin: 10px 0px !important;
-    }
-    .image-gallery span {
-        flex: 50% !important;
     }
 }
 
@@ -218,19 +218,9 @@ ul {
 
 /*------------------------*/
 
-#index-grid {
-    display: grid;
-    margin: 50px 50px 10px;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
-}
-
-#index-grid ul {
+#index-list {
     margin: 0px;
     padding: 25px;
-}
-
-#index-list {
     list-style-type: none;
 }
 
@@ -267,15 +257,7 @@ ul {
     color: var(--black);
 }
 
-#index-grid #featured {
-    display: inline-block;
-    margin: 10px 0px;
-    padding: 10px;
-    font-size: 150%;
-    border: dashed var(--gray) 1px;
-}
-
-#index-grid #subdirectory {
+#index-list #subdirectory {
     font-style: italic;
     color: var(--accent);
 }
@@ -287,6 +269,8 @@ ul {
 .journal img {
     width: 100%;
     display: inline-block;
+    max-width: 500px;
+    vertical-align: middle;
 }
 
 .journal a:hover img {
