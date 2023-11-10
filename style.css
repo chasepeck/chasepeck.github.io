@@ -1,12 +1,4 @@
 @font-face {
-    font-family: "pixchicago";
-    src: url("/assets/fonts/pixchicago/pixchicago.woff2") format("woff2"),
-         url("/assets/fonts/pixchicago/pixchicago.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
     font-family: "garamond";
     src: url("/assets/fonts/garamond/garamond.ttf");
     font-weight: normal;
@@ -62,11 +54,6 @@
     src: url("/assets/fonts/cjkserif/cjkserif_bold.otf");
     font-weight: bold;
     font-style: normal;
-}
-
-@font-face {
-    font-family: "handwritten";
-    src: url("/assets/fonts/handwritten.ttf");
 }
 
 /*------------------------*/
