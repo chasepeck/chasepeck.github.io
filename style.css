@@ -135,38 +135,10 @@ a:hover, a:hover b {
     cursor: pointer;
 }
 
-#fixed-footer {
-    font-size: .75rem;
-    background-color: var(--background);
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px;
-}
-
-#fixed-footer:not(a) {
-    color: var(--gray);
-}
-
-#fixed-footer b {
-    background-color: var(--gray);
-    color: var(--black);
-}
-
 #subtitle {
     max-width: 50%;
     max-height: 500px;
     transition: 100ms;
-    filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
-}
-
-#site-title p {
-    letter-spacing: 10px;
-    font-size: .75rem;
-    font-weight: normal;
-    font-family: "pixel_arial";
 }
 
 ul {
@@ -179,41 +151,10 @@ ul {
     padding: 10px;
     display: block;
     margin: auto;
-    filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
 }
 
 #sectionbreak-inline {
-    filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
     margin-right: -4px;
-}
-
-/*------------------------*/
-
-.index-button {
-    color: var(--white);
-    height: 60px;
-    display: table-cell;
-}
-
-.index-button * {
-    vertical-align: middle;
-}
-
-.index-button img {
-    height: 100%;
-    filter: invert(var(--invert)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
-    margin-right: 10px;
-    padding: 5px;
-    transition: 100ms;
-}
-
-.index-button:hover {
-    color: var(--black);
-    background-color: var(--white);
-}
-
-.index-button:hover img {
-    filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
 }
 
 /*------------------------*/
@@ -225,21 +166,24 @@ ul {
 }
 
 #index-list h2 {
-    margin: 0px 0px 10px 0px;
-    text-shadow: 2px 2px var(--accent);
-}
-
-#index-list h2 img {
-    display: inline;
-    filter: invert(var(--invert)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
-    vertical-align: middle;
-    margin-right: 15px;
+    text-align: center;
+    float: right;
+    max-width: 500px;
 }
 
 #index-list h3 {
-    font-style: italic;
-    color: var(--gray);
     text-align: right;
+    float: right;
+    max-width: 500px;
+}
+
+#index-list h2 img {
+    width: 50%;
+}
+
+#index-list h3 img {
+    filter: opacity(70%);
+    width: 50%;
 }
 
 #index-list b {
@@ -253,28 +197,36 @@ ul {
     font-weight: normal;
 }
 
+#index-list a img {
+    width: 100%;
+    max-width: 1000px;
+}
+
 #index-list a:hover i {
     color: var(--black);
 }
 
-#index-list #subdirectory {
-    font-style: italic;
-    color: var(--accent);
+#index-list a:hover img {
+    filter: invert(75%);
 }
 
-.journal a:hover {
-    background-color: var(--black);
+#index-column hr {
+    border: 1px solid var(--gray);
 }
 
-.journal img {
+#index-column img {
     width: 100%;
     display: inline-block;
     max-width: 500px;
     vertical-align: middle;
 }
 
-.journal a:hover img {
-    filter: invert(75%);
+#index-column li img {
+    max-width: 400px;
+}
+
+#index-column a:hover img {
+    background-color: var(--black);
 }
 
 /*------------------------*/
@@ -294,23 +246,17 @@ ul {
     font-weight: bold;
 }
 
-.sub-page h1 {
-    font-family: "handwritten";
-    font-size: 4rem;
-    display: table-cell;
-    text-shadow: 2px 2px var(--accent);
+.sub-page h1 a {
+    background-color: var(--black);
 }
 
 .sub-page h1 img {
-    width: 50px;
     margin-right: 25px;
-    filter: invert(var(--invert)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
-    transition: 100ms;
-    vertical-align: -10%;
+    max-width: 50%;
 }
 
 .sub-page h1 a:hover img {
-    filter: invert(var(--invert-hover)) brightness(var(--brightness)) sepia(var(--enable-color)) saturate(calc(var(--enable-color) * 10000%)) hue-rotate(var(--hue-rotate));
+    filter: invert(75%);
 }
 
 .sub-page h1 a {
