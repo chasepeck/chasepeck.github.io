@@ -107,7 +107,7 @@ body {
 }
 
 body {
-    font-family: "pixchicago";
+    font-family: "pixel_arial";
     color: var(--white);
 }
 
@@ -219,7 +219,6 @@ ul {
 /*------------------------*/
 
 .sub-page {
-    font-family: "pixel_arial";
     font-size: 1rem;
 }
 
