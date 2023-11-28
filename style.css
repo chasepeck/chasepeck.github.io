@@ -144,12 +144,6 @@ a:hover, a:hover b {
     cursor: pointer;
 }
 
-#drawing {
-    max-width: 50%;
-    max-height: 500px;
-    transition: 100ms;
-}
-
 ul {
     list-style: square;
 }

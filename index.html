@@ -13,14 +13,7 @@
 	<meta name="theme-color" content="#000000">
 </head><body style="overflow-x: hidden;">
 	<div style="text-align: center;">
-		<img id="drawing">
-		<h1 id="site-title" style="font-weight: normal;">
-			<noscript>
-				<img src="/assets/favicon.png" style="width: 80px;">
-				<br>Without JavaScript, there is peace.
-			</noscript>
-			<img src="/assets/index/title.jpg" style="width: 50%;">
-		</h1>
+		<img src="/assets/index/title.jpg" style="width: 50%;">
 	</div>
 
 	<div id="subtitle" style="margin: 50px -50px; text-align: center; background-color: darkred;"></div>
@@ -62,6 +55,7 @@
 					<a id="subdirectory" href="writing/dreamcollection">
 						<img src="assets/titles/perkysdreamcollection.jpg">
 					</a>
+					<div style="color: skyblue; margin: 10px 0px 50px 10px;">Where's Freud when you need him?</div>
 				</li>
 			<h3><img src="assets/index/poetry.jpg"></h3>
 				<li>
@@ -84,6 +78,7 @@
 					<a href="writing/quotes">
 						<img src="assets/titles/quotes.jpg">
 					</a>
+					<div style="color: orange; margin: 10px 0px 50px 50px;">People say things sometimes, and I'm here to say them again</div>
 				</li>
 		</ul>
 	</div>
@@ -114,9 +109,6 @@
 	</ul>
 	
 	<script>
-		// Random drawing
-		document.getElementById("drawing").src = "assets/subtitles/sub" + (Math.floor(Math.random() * 63) + 1).toString() + ".jpg";
-
 		// Random subtitle
 		var subtitles = [
 			"GRAND AMAZINGNESS OF THE AMAZING™",
@@ -126,9 +118,10 @@
 			"♫ na-na-na 塊魂 ♫",
 			"go back to the trees",
 			"fun with HTML",
-			"Live Fast Die Slow; Live Slow Die Fast"
+			"Live Fast Die Slow; Live Slow Die Fast",
+			"Everything is Everything<br>is what you're just about to say"
 		];
-		document.getElementById("subtitle").innerText = subtitles[Math.floor(Math.random() * subtitles.length)];
+		document.getElementById("subtitle").innerHTML = subtitles[Math.floor(Math.random() * subtitles.length)];
 
 		// Random acrostic
 		var acrostics = [
