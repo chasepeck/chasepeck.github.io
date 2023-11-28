@@ -13,7 +13,7 @@
 	<meta name="theme-color" content="#000000">
 </head><body style="overflow-x: hidden;">
 	<div style="text-align: center;">
-		<img id="subtitle">
+		<img id="drawing">
 		<h1 id="site-title" style="font-weight: normal;">
 			<noscript>
 				<img src="/assets/favicon.png" style="width: 80px;">
@@ -23,33 +23,9 @@
 		</h1>
 	</div>
 
-	<div id="index-column" style="display: inline-block; width: 50%; vertical-align: top;">
-		<!--Journal-->
-		<ul class="sub-page journal" id="index-list">
-			<!--7-4-23-->
-			<img src="assets/journal/7-4-23/entry.png">
-			<img src="assets/journal/7-4-23/martianstates.png">
+	<div id="subtitle" style="margin: 50px -50px; text-align: center; background-color: darkred;"></div>
 
-			<!--6-17-23-->
-			<img src="assets/journal/6-17-23/entry.png">
-			<img src="assets/journal/6-17-23/socialscale.jpg">
-
-			<!--5-16-22-->
-			<img src="assets/journal/5-16-22/entry.png">
-			<img src="assets/journal/5-16-22/1.jpeg" style="width: 23%">
-			<img src="assets/journal/5-16-22/2.jpeg" style="width: 23%">
-			<img src="assets/journal/5-16-22/3.jpeg" style="width: 23%">
-			<img src="assets/journal/5-16-22/4.jpeg" style="width: 23%">
-			<img src="assets/journal/5-16-22/5.jpeg" style="width: 23%">
-			<img src="assets/journal/5-16-22/6.jpeg" style="width: 23%">
-			<img src="assets/journal/5-16-22/7.jpeg" style="width: 23%">
-			<img src="assets/journal/5-16-22/8.jpeg" style="width: 23%">
-			<img src="assets/journal/5-16-22/9.jpeg" style="width: 49%">
-			<img src="assets/journal/5-16-22/10.jpeg" style="width: 49%">
-		</ul>
-	</div>
-
-	<div id="index-column" style="display: inline-block; float: right; width: 50%;">
+	<div id="index-column" style="display: inline-block; float: left; width: 50%;">
 		<!--Programming-->
 		<ul class="sub-page" id="index-list">
 			<h2><img src="/assets/index/games.jpg"></h2>
@@ -57,14 +33,9 @@
 				<a href="https://organic.games/games/dotdashdot">
 					<img src="/assets/index/dotdashdot.jpg">
 				</a>
+				<div style="animation: boogie 1s linear 0s infinite alternate; color: salmon; margin-left: 25%;">Dosh Dat Dosh: Sugs Arse</div>
 			</li>
 		</ul>
-
-		<hr>
-
-		<div style="text-align: center;">
-			<img src="assets/index/ink.png">
-		</div>
 
 		<hr>
 
@@ -117,8 +88,23 @@
 		</ul>
 	</div>
 
-	<!--Miscellaneous-->
-	<ul class="sub-page" id="index-list" style="clear: right;">
+	<!--Silly-->
+	<div id="index-column" style="display: inline-block; width: 50%; vertical-align: top;">
+		<ul id="index-list">
+			<pre id="acrostic" style="font-family: dotgothic; animation: rainbow 5s steps(2, end) 0s infinite forwards;">
+			</pre>
+		</ul>
+
+		<hr>
+
+		<div style="text-align: center;">
+			<img src="assets/index/ink.png">
+			<div style="background-color: purple; color: yellow; margin-bottom: 50px;">「Prunter Papper」です</div>
+		</div>
+	</div>
+
+	<!--Footer-->
+	<ul class="sub-page" id="index-list" style="clear: left;">
 		<div style="color: var(--gray); text-align: center;">
 			<a href="https://organic.games" target="_blank" style="background-color: var(--black);"><img src="assets/index/og.jpg" style="width: 50px;"></a>
 			<a href="https://youtube.com/@chase_peck" target="_blank" style="background-color: var(--black);"><img src="assets/index/youtube.jpg" style="width: 50px;"></a>
@@ -126,8 +112,94 @@
 			<a href="assets/index/email.png" target="_blank" style="background-color: var(--black);"><img src="assets/index/mail.jpg" style="width: 50px;"></a>
 		</div>
 	</ul>
+	
 	<script>
-		document.getElementById("subtitle").src = "assets/subtitles/sub" + (Math.floor(Math.random() * 63) + 1).toString() + ".jpg";
+		// Random drawing
+		document.getElementById("drawing").src = "assets/subtitles/sub" + (Math.floor(Math.random() * 63) + 1).toString() + ".jpg";
+
+		// Random subtitle
+		var subtitles = [
+			"GRAND AMAZINGNESS OF THE AMAZING™",
+			"チェイス・ペック",
+			"HA HA HA! YOU'VE FALLEN FOR MY TRAP! PREPARE FOR ECZEMA!",
+			"i'm not a WEEB i'm a GLOBAL CITIZEN",
+			"♫ na-na-na 塊魂 ♫",
+			"go back to the trees",
+			"fun with HTML",
+			"Live Fast Die Slow; Live Slow Die Fast"
+		];
+		document.getElementById("subtitle").innerText = subtitles[Math.floor(Math.random() * subtitles.length)];
+
+		// Random acrostic
+		var acrostics = [
+`C reamy
+H omosexual
+A sexual
+S oup consumer
+E galitarian
+
+P hil is not my name
+E dgar isn't either
+C ephalopod
+K eeled over and died last night`,
+			
+`C hase
+H ase
+A se
+S e
+E
+
+P eck
+E ck
+C k
+K`,
+
+`C ome on,
+H am sandwiches again?
+A lways with the ham
+S andwiches...
+E nough already!
+
+P lease, I beg you, something
+E lse other than ham sandwi
+C hes, I'm going to
+K ill myself!`,
+
+`C In my younger and more
+H vulnerable years my father
+A gave me some advice that I've
+S been turning over in my mind
+E ver since.
+
+P "Whenever you feel like criticizing anyone,"
+E he told me, "just remember that all the people
+C in this world haven't had the advantages
+K that you've had."
+`,
+
+`C it down
+H and poised to write
+A n acrostic poem!
+S o fun and
+E xciting!
+
+P a pa pa, la la la
+E ndless days writing
+C reatively, poems
+K ongregate.`,
+
+`C 古池や
+H 蛙飛び込む
+A 水の音
+S
+E
+
+P
+E
+C
+K`
+		];
+		document.getElementById("acrostic").innerText = acrostics[Math.floor(Math.random() * acrostics.length)];
 	</script>
 </body>
 </html>

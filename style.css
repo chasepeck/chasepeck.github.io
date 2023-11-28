@@ -56,6 +56,28 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "dotgothic";
+    src: url("/assets/fonts/dotgothic/dotgothic.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+/*------------------------*/
+
+@keyframes rainbow {
+    from { color: red; }
+    25% { color: yellow; }
+    50% { color: green; }
+    75% { color: blue; }
+    to { color: purple; }
+}
+
+@keyframes boogie {
+    from { padding-left: 0px; }
+    to { padding-left: 50px; }
+}
+
 /*------------------------*/
 
 @media (max-width: 800px) {                  
@@ -107,7 +129,7 @@ body {
 }
 
 body {
-    font-family: "pixel_arial";
+    font-family: "dotgothic";
     color: var(--white);
 }
 
@@ -122,7 +144,7 @@ a:hover, a:hover b {
     cursor: pointer;
 }
 
-#subtitle {
+#drawing {
     max-width: 50%;
     max-height: 500px;
     transition: 100ms;
