@@ -1,62 +1,4 @@
 @font-face {
-    font-family: "garamond";
-    src: url("/assets/fonts/garamond/garamond.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "garamond";
-    src: url("/assets/fonts/garamond/garamond_italic.ttf");
-    font-weight: normal;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "garamond";
-    src: url("/assets/fonts/garamond/garamond_bold.ttf");
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "garamond";
-    src: url("/assets/fonts/garamond/garamond_bolditalic.ttf");
-    font-weight: bold;
-    font-style: italic;
-}
-
-@font-face {
-    font-family: "pixel_arial";
-    src: url("/assets/fonts/pixelarial/pixelarial.woff2") format("woff2"),
-         url("/assets/fonts/pixelarial/pixelarial.woff") format("woff");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "pixel_arial";
-    src: url("/assets/fonts/pixelarial/pixelarial_bold.woff2") format("woff2"),
-         url("/assets/fonts/pixelarial/pixelarial_bold.woff") format("woff");
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "cjkserif";
-    src: url("/assets/fonts/cjkserif/cjkserif.otf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "cjkserif";
-    src: url("/assets/fonts/cjkserif/cjkserif_bold.otf");
-    font-weight: bold;
-    font-style: normal;
-}
-
-@font-face {
     font-family: "dotgothic";
     src: url("/assets/fonts/dotgothic/dotgothic.ttf");
     font-weight: normal;
@@ -288,7 +230,6 @@ ul {
 
 .sub-page header, .sub-page footer {
     color: var(--gray);
-    font-family: "garamond";
     font-style: italic;
     font-size: 1.15rem;
     text-align: justify;
@@ -315,7 +256,6 @@ ul {
 }
 
 .quote-list li {
-    font-family: "garamond";
     font-size: 1.25rem;
     margin: 20px 0px;
     padding: 10px;
@@ -326,13 +266,13 @@ ul {
 
 .prose, .verse {
     font-size: 1.25rem;
-    font-family: "garamond";
     margin: 10px 20%;
     line-height: 35px;
 }
 
 .verse {
     white-space: pre-wrap;
+    font-family: "dotgothic";
 }
 
 .prose h2, .verse h2, .prose h2 *, .verse h2 * {
