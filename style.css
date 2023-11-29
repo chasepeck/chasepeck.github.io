@@ -94,6 +94,11 @@ ul {
     margin-right: -4px;
 }
 
+.full-width-banner {
+    margin: 50px -50px;
+    text-align: center; 
+}
+
 /*------------------------*/
 
 #index-list {
