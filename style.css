@@ -30,6 +30,11 @@
     to { transform: rotate3d(0, 1, .1, 360deg); }
 }
 
+@keyframes persp {
+    from { transform: rotate3d(0, 1, .5, -30deg); }
+    to { transform: rotate3d(0, 1, .5, 30deg); }
+}
+
 /*------------------------*/
 
 @media (max-width: 800px) {                  
@@ -254,12 +259,23 @@ ul {
 
 /*------------------------*/
 
+table, th, td {
+    border: 1px solid var(--white);
+    border-collapse: collapse;
+    padding: 5px 10px;
+    font-weight: normal;
+}
+
 .list {
     margin: 10px 30%; 
 }
 
 .list h2, .list h3 {
     text-align: center;
+}
+
+.list audio {
+    width: 100%;
 }
 
 .quote-list li {
