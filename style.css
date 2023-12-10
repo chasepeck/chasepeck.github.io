@@ -57,6 +57,9 @@
     .list, .prose {
         margin: 10px 0px !important;
     }
+    #optional-hr {
+        display: block !important;
+    }
 }
 
 /*------------------------*/
@@ -143,24 +146,9 @@ ul {
     width: 50%;
 }
 
-#index-list b {
-    color: var(--gray);
-    border-right: solid var(--gray) 1px;
-    padding-right: 5px;
-}
-
-#index-list i {
-    color: var(--white);
-    font-weight: normal;
-}
-
 #index-list a img {
     width: 100%;
     max-width: 1000px;
-}
-
-#index-list a:hover i {
-    color: var(--black);
 }
 
 #index-list a:hover img {
@@ -184,6 +172,10 @@ ul {
 
 #index-column a:hover img {
     background-color: var(--black);
+}
+
+#optional-hr {
+    display: none;
 }
 
 /*------------------------*/
