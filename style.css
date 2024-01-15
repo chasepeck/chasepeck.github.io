@@ -5,6 +5,13 @@
     font-style: normal;
 }
 
+@font-face {
+    font-family: "dotmincho";
+    src: url("/assets/fonts/dotmincho/dotmincho.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
 /*------------------------*/
 
 @keyframes rainbow {
@@ -96,6 +103,10 @@ a:hover, a:hover b {
     cursor: pointer;
 }
 
+a:hover img {
+    filter: invert(75%);
+}
+
 ul {
     list-style: square;
 }
@@ -151,10 +162,6 @@ ul {
     max-width: 1000px;
 }
 
-#index-list a:hover img {
-    filter: invert(75%);
-}
-
 #index-column hr {
     border: 1px solid var(--gray);
 }
@@ -203,10 +210,6 @@ ul {
     max-width: 50%;
 }
 
-.sub-page h1 a:hover img {
-    filter: invert(75%);
-}
-
 .sub-page h1 a {
     color: var(--white);
 }
@@ -234,6 +237,7 @@ ul {
 
 .sub-page header, .sub-page footer {
     color: var(--gray);
+    font-family: "dotmincho";
     font-style: italic;
     font-size: 1.15rem;
     text-align: justify;
@@ -262,11 +266,19 @@ table, th, td {
     margin: 10px 30%; 
 }
 
-.list h2, .list h3 {
+.list h2, .list h3, .list h4 {
     text-align: center;
 }
 
-.list audio {
+.list h2 img {
+    width: 50%;
+}
+
+.list h3 img {
+    width: 35%;
+}
+
+.list img, .list audio {
     width: 100%;
 }
 
@@ -283,11 +295,11 @@ table, th, td {
     font-size: 1.25rem;
     margin: 10px 20%;
     line-height: 35px;
+    font-family: "dotmincho";
 }
 
 .verse {
     white-space: pre-wrap;
-    font-family: "dotgothic";
 }
 
 .prose h2, .verse h2, .prose h2 *, .verse h2 * {
