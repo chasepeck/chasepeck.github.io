@@ -136,25 +136,23 @@ ul {
     list-style-type: none;
 }
 
-#index-list h2 {
+#index-list h2, #index-list h3 {
     text-align: center;
     float: right;
     max-width: 500px;
-}
-
-#index-list h3 {
-    text-align: right;
-    float: right;
-    max-width: 500px;
+    color: var(--gray);
+    font-weight: normal;
 }
 
 #index-list h2 img {
-    width: 50%;
+    height: 5rem;
+    width: auto;
 }
 
 #index-list h3 img {
     filter: opacity(70%);
-    width: 50%;
+    height: 3rem;
+    width: auto;
 }
 
 #index-list a img {
