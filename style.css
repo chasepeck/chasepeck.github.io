@@ -138,10 +138,13 @@ ul {
 
 #index-list h2, #index-list h3 {
     text-align: center;
-    float: right;
     max-width: 500px;
     color: var(--gray);
     font-weight: normal;
+}
+
+#index-list h3 {
+    float: right;
 }
 
 #index-list h2 img {
