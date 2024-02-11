@@ -85,9 +85,11 @@ body {
 
     padding: 50px;
     background-color: var(--background);
-}
-
-body {
+    background-image: url("/assets/rainbowbg.png");
+    background-attachment: fixed;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: bottom;
     font-family: "dotgothic";
     color: var(--white);
 }
@@ -203,6 +205,10 @@ ul {
 }
 
 .sub-page h1 a {
+    background-color: rgba(0, 0, 0, 0);
+}
+
+.sub-page h1 a:hover img {
     background-color: var(--black);
 }
 
