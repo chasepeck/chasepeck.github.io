@@ -12,14 +12,46 @@
 	<meta name="description" content="Chase Peck: an incompetent lagomorph who will get us all killed">
 	<meta name="theme-color" content="#000000">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-</head><body style="overflow-x: hidden;">
+</head>
+<style>
+	body {
+    	padding: 50px;
+		background-image: url("/assets/indexbg.png");
+		border-image-source: url("/assets/star.png");
+		border-image-slice: 33%;
+		border-image-width: 30px;
+		border-image-outset: 10px;
+		border-image-repeat: round;
+	}
+
+	#index-list, #index-main p {
+		transform: rotate3d(.1, .5, 0, -30deg);
+	}
+</style>
+<body style="overflow-x: hidden;">
 	<div style="text-align: center;">
-		<img src="/assets/index/title.png" style="width: 50%;">
+		<img src="/assets/title.png" style="width: 50%;">
 	</div>
 
-	<div id="subtitle" style="margin: 50px -50px; text-align: center; background-color: darkred;"></div>
-
-	<div id="index-column" style="display: inline-block; float: left; width: 50%;">
+	<div id="index-main" class="sub-page">
+		<p>
+			<div style="color: var(--gray); text-align: center;">
+				<span style="color: red;">ﾁ</span>
+				<span style="color: orange;">ｪ</span>
+				<span style="color: yellow;">ｲ</span>
+				<span style="color: green;">ｽ</span>
+				・
+				<span style="color: blue;">ﾍﾟ</span>
+				<span style="color: indigo;">ｯ</span>
+				<span style="color: violet;">ｸ</span>
+			</div>
+		</p>
+		<p>
+		</p>
+		<p>
+		</p>
+	</div>
+	<div id="index-main">
 		<!--Programming-->
 		<ul class="sub-page" id="index-list">
 			<h2>games</h2>
@@ -56,10 +88,8 @@
 					<a href="writing/quotes">Quotes</a>
 				</li>
 		</ul>
-	</div>
 
-	<div id="index-column" style="display: inline-block; width: 50%; vertical-align: top;">
-		<hr id="optional-hr">
+		<hr>
 
 		<!--Music-->
 		<ul id="index-list">
@@ -69,38 +99,21 @@
 				</a>
 			</li>
 		</ul>
-
-		<hr>
-
+	</div>
+	<div id="index-main">
 		<ul id="index-list">
-			<h3><img src="assets/index/startower.png"></h3>
 			<pre id="acrostic" style="font-family: dotgothic; animation: rainbow 5s steps(2, end) 0s infinite forwards;"></pre>
 		</ul>
-
-		<hr>
 	</div>
 
 	<!--Footer-->
-	<ul class="sub-page" id="index-list" style="text-align: center; clear: left; color: var(--gray);">
-		<img src="assets/index/ink.png" style="max-width: 400px;">
+	<footer style="text-align: center; color: var(--gray);">
 		<div>
-			<a href="https://youtube.com/@chase_peck" target="_blank">yt</a>
-			・
-			<a href="https://github.com/chasepeck" target="_blank">gh</a>
-			・
-			<a href="assets/index/email.png" target="_blank">@</a>
+			<a id="img-link" href="https://youtube.com/@chase_peck" target="_blank"><img src="assets/links/youtube.gif"></a>
+			<a href="https://github.com/chasepeck" target="_blank"><img src="assets/links/github88x31.png"></a>
+			<a href="email.html" target="_blank"><img src="assets/links/email.gif"></a>
 		</div>
-		<div class="full-width-banner">an web-site made with love by<br>
-			<span style="color: red;">ﾁ</span>
-			<span style="color: orange;">ｪ</span>
-			<span style="color: yellow;">ｲ</span>
-			<span style="color: green;">ｽ</span>
-			・
-			<span style="color: blue;">ﾍﾟ</span>
-			<span style="color: indigo;">ｯ</span>
-			<span style="color: violet;">ｸ</span>
-		</div>
-	</ul>
+	</footer>
 	
 	<script>
 		// Random subtitle
@@ -138,7 +151,7 @@
 			"Open mic and see all his organs!",
 			"Yeow!"
 		];
-		document.getElementById("subtitle").innerHTML = subtitles[Math.floor(Math.random() * subtitles.length)];
+		//document.getElementById("subtitle").innerHTML = subtitles[Math.floor(Math.random() * subtitles.length)];
 
 		// Random acrostic
 		var acrostics = [

@@ -1,3 +1,4 @@
+/* Fonts */
 @font-face {
     font-family: "dotgothic";
     src: url("/assets/fonts/dotgothic/dotgothic.ttf");
@@ -12,8 +13,7 @@
     font-style: normal;
 }
 
-/*------------------------*/
-
+/* Animations */
 @keyframes rainbow {
     from { color: red; }
     25% { color: yellow; }
@@ -37,18 +37,9 @@
     to { transform: rotate3d(0, 1, .1, 360deg); }
 }
 
-@keyframes persp {
-    from { transform: rotate3d(0, 1, .5, -30deg); }
-    to { transform: rotate3d(0, 1, .5, 30deg); }
-}
-
-/*------------------------*/
-
+/* Variable screen sizes */
 @media (max-width: 800px) {                  
-    html, body {
-        padding: 20px 10px !important;
-    }
-    #index-column {
+    #index-main {
         width: 100% !important;
     }
     #index-grid {
@@ -64,13 +55,9 @@
     .list, .prose {
         margin: 10px 0px !important;
     }
-    #optional-hr {
-        display: block !important;
-    }
 }
 
-/*------------------------*/
-
+/* Generic */
 html, body, a {
     cursor: url("/assets/cursor.ico"), auto;
 }
@@ -83,13 +70,7 @@ body {
     --blue: blue;
     --gray: gray;
 
-    padding: 50px;
     background-color: var(--background);
-    background-image: url("/assets/rainbowbg.png");
-    background-attachment: fixed;
-    background-size: 100%;
-    background-repeat: no-repeat;
-    background-position: bottom;
     font-family: "dotgothic";
     color: var(--white);
 }
@@ -99,17 +80,19 @@ a {
     text-decoration: none;
 }
 
-a:hover, a:hover b {
+a:hover {
     color: var(--black) !important;
     background-color: var(--white);
     cursor: pointer;
 }
 
-a:hover img {
+a:hover:has(img) {
     filter: invert(75%);
+    background-color: rgba(0, 0, 0, 0);
 }
 
 ul {
+    color: var(--gray);
     list-style: square;
 }
 
@@ -121,24 +104,24 @@ ul {
     margin: auto;
 }
 
-#sectionbreak-inline {
-    margin-right: -4px;
-}
-
 .full-width-banner {
-    margin: 50px -50px;
+    margin: 50px 0px;
     text-align: center; 
 }
 
-/*------------------------*/
-
+/* Index */
 #index-list {
     margin: 0px;
     padding: 25px;
     list-style-type: none;
 }
 
+#index-list h2, #index-list h3 {
+    font-family: "dotmincho";
+}
+
 #index-list h2 {
+    color: var(--white);
     text-align: center;
     font-weight: normal;
 }
@@ -146,47 +129,26 @@ ul {
 #index-list h3 {
     text-align: left;
     max-width: 500px;
-    color: var(--gray);
     font-weight: normal;
 }
 
-#index-list h2 img {
-    height: 5rem;
-    width: auto;
+#index-main {
+    width: 50%;
+    margin: 50px auto;
+    background-color: rgba(0, 0, 0, .85);
+    border: 1px solid var(--gray);
+    border-radius: 10px;
 }
 
-#index-list h3 img {
-    filter: opacity(70%);
-    height: 3rem;
-    width: auto;
-}
-
-#index-list a img {
-    width: 100%;
-    max-width: 1000px;
-}
-
-#index-column hr {
+#index-main hr {
     border: 1px solid var(--gray);
 }
 
-#index-column img {
+#index-main img {
     width: 100%;
     display: inline-block;
-    max-width: 500px;
-    vertical-align: middle;
-}
-
-#index-column li img {
     max-width: 400px;
-}
-
-#index-column a:hover img {
-    background-color: var(--black);
-}
-
-#optional-hr {
-    display: none;
+    vertical-align: middle;
 }
 
 #subdirectory {
@@ -194,8 +156,7 @@ ul {
     font-style: italic;
 }
 
-/*------------------------*/
-
+/* Sub page */
 .sub-page {
     font-size: 1rem;
 }
@@ -266,8 +227,7 @@ ul {
     border-top: 1px dashed var(--gray);
 }
 
-/*------------------------*/
-
+/* Lists & tables */
 table, th, td {
     border: 1px solid var(--white);
     border-collapse: collapse;
@@ -302,8 +262,7 @@ table, th, td {
     border: 1px dashed var(--gray);
 }
 
-/*------------------------*/
-
+/* Prose & verse */
 .prose, .verse {
     font-size: 1.25rem;
     margin: 10px 20%;
