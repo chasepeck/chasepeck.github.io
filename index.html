@@ -24,16 +24,54 @@
 		border-image-repeat: round;
 	}
 
-	#index-list, #index-main p {
+	#main-content {
+		padding: 0px;
+	}
+
+	#main-content img {
+		width: 100%;
+		display: inline-block;
+		max-width: 400px;
+		vertical-align: middle;
+	}
+
+	#index-list, #main-content p {
 		transform: rotate3d(.1, .5, 0, -30deg);
+	}
+
+	#index-list {
+		margin: 0px;
+		padding: 25px;
+	}
+
+	#index-list h2, #index-list h3 {
+		font-family: "dotmincho";
+	}
+
+	#index-list h2 {
+		color: var(--white);
+		text-align: center;
+		font-weight: normal;
+	}
+
+	#index-list h3 {
+		color: var(--gray);
+		text-align: left;
+		max-width: 500px;
+		font-weight: normal;
+	}
+
+	#subdirectory {
+		color: purple;
+		font-style: italic;
 	}
 </style>
 <body style="overflow-x: hidden;">
 	<div style="text-align: center;">
-		<img src="/assets/name.gif" style="width: 50%;">
+		<img src="/assets/name.gif" style="width: 60%; min-width: 400px;">
 	</div>
 
-	<div id="index-main" class="sub-page">
+	<div id="main-content" class="sub-page">
 		<p>
 			<div style="color: var(--gray); text-align: center;">
 				<span style="color: red;">ﾁ</span>
@@ -53,7 +91,7 @@
 			If you liked that joke, continue to scroll down. There's plenty more where that came from!
 		</p>
 	</div>
-	<div id="index-main">
+	<div id="main-content">
 		<!--Programming-->
 		<ul class="sub-page" id="index-list">
 			<h2>games</h2>
@@ -102,7 +140,7 @@
 			</li>
 		</ul>
 	</div>
-	<div id="index-main">
+	<div id="main-content">
 		<ul id="index-list">
 			<pre id="acrostic" style="font-family: dotgothic; animation: rainbow 5s steps(2, end) 0s infinite forwards;"></pre>
 		</ul>

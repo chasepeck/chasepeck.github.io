@@ -39,8 +39,8 @@
 
 /* Variable screen sizes */
 @media (max-width: 800px) {                  
-    #index-main {
-        width: 100% !important;
+    #index-main, #main-content {
+        width: 90% !important;
     }
     #index-grid {
         display: block !important;
@@ -92,8 +92,7 @@ a:hover:has(img) {
 }
 
 ul {
-    color: var(--gray);
-    list-style: square;
+    list-style-image: url("/assets/bullet.png");
 }
 
 #sectionbreak {
@@ -109,51 +108,17 @@ ul {
     text-align: center; 
 }
 
-/* Index */
-#index-list {
-    margin: 0px;
-    padding: 25px;
-    list-style-type: none;
-}
-
-#index-list h2, #index-list h3 {
-    font-family: "dotmincho";
-}
-
-#index-list h2 {
-    color: var(--white);
-    text-align: center;
-    font-weight: normal;
-}
-
-#index-list h3 {
-    text-align: left;
-    max-width: 500px;
-    font-weight: normal;
-}
-
-#index-main {
+/* Main content */
+#main-content {
     width: 50%;
     margin: 50px auto;
     background-color: rgba(35, 10, 25, .85);
+	border: 1px solid var(--gray);
+    padding: 20px;
+}
+
+#main-content hr {
     border: 1px solid var(--gray);
-    border-radius: 10px;
-}
-
-#index-main hr {
-    border: 1px solid var(--gray);
-}
-
-#index-main img {
-    width: 100%;
-    display: inline-block;
-    max-width: 400px;
-    vertical-align: middle;
-}
-
-#subdirectory {
-    color: purple;
-    font-style: italic;
 }
 
 /* Sub page */
@@ -164,7 +129,8 @@ ul {
 .sub-page p {
     text-indent: 20pt;
     text-align: justify;
-    text-justify: inter-word;
+    font-family: "dotmincho";
+    font-size: 1.25rem;
 }
 
 .sub-page a {
@@ -216,7 +182,12 @@ ul {
     font-size: 1.15rem;
     text-align: justify;
     text-justify: inter-word;
-    padding: 20px;
+    padding: 5px;
+}
+
+.sub-page #header-img {
+    width: 100%;
+    border-bottom: 1px dashed var(--gray);
 }
 
 .sub-page header {
@@ -236,7 +207,11 @@ table, th, td {
 }
 
 .list {
-    margin: 10px 30%; 
+    margin: 10px 10%;
+}
+
+.list li {
+    font-family: "dotmincho";
 }
 
 .list h2, .list h3, .list h4 {
@@ -256,7 +231,6 @@ table, th, td {
 }
 
 .quote-list li {
-    font-size: 1.25rem;
     margin: 20px 0px;
     padding: 10px;
     border: 1px dashed var(--gray);
