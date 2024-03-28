@@ -113,7 +113,7 @@ ul {
     width: 50%;
     margin: 50px auto;
     background-color: rgba(35, 10, 25, .85);
-	border: 1px solid var(--gray);
+	border: 5px ridge var(--black);
     padding: 20px;
 }
 
