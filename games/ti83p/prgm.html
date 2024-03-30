@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>prgm</title>
+	
+	<link rel="stylesheet" href="/style.css">
+	<link rel="stylesheet" href="tistyle.css">
+	<link rel="icon" href="/assets/favicon/favicon.png" type="image/png">
+	<link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+	<link rel="manifest" href="/m.webmanifest">
+	<meta charset="UTF-8">
+	<meta name="description" content="ldprgm">
+	<meta name="theme-color" content="#000000">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<style>
+	@font-face {
+		src: url("tipixel.ttf");
+		font-family: "tipixel";
+	}
+
+	body {
+		font-family: "tipixel";
+	}
+</style>
+<body>
+	<div id="main">
+		<a href="index.html" id="back"></a><br>
+	</div>
+</body>
+<script>
+	const params = new URLSearchParams(window.location.search);
+	const url = params.get("url");
+	const name = params.get("name");
+	document.getElementById("back").innerHTML = "<span>PROGRAM:" + name + "</span>";
+	fetch(url)
+		.then( res => res.text() )
+		.then( text => {
+			var lines = text.replaceAll("ʟ", "ₗ").split("\n");
+			console.log(lines);
+			for(var i in lines) {
+				if(i != lines.length - 1)
+					document.getElementById("main").innerHTML += ":" + lines[i] + "<br>";
+			}
+		} );
+</script>
