@@ -31,7 +31,8 @@ function randomSubtitle() {
 	"As not black and white as gender isn't not!",
 	"naïve adolescent purple poetry",
 	"Open mic and see all his organs!",
-	"Yeow!"
+	"Yeow!",
+	"photophotophotogiftmap1"
   ];
   document.getElementById("subtitle").innerHTML = subtitles[Math.floor(Math.random() * subtitles.length)];
 }

@@ -71,6 +71,7 @@ body {
     --gray: gray;
 
     background-color: var(--background);
+	background-attachment: fixed;
     font-family: "dotgothic";
     color: var(--white);
 }
