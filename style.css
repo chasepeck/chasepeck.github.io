@@ -74,6 +74,11 @@ body {
 	background-attachment: fixed;
     font-family: "dotgothic";
     color: var(--white);
+    margin: 0px;
+}
+
+header, footer {
+	text-align: center;
 }
 
 a {
@@ -138,28 +143,6 @@ ul {
     font-weight: bold;
 }
 
-.sub-page h1 a {
-    background-color: rgba(0, 0, 0, 0);
-}
-
-.sub-page h1 a:hover img {
-    background-color: var(--black);
-}
-
-.sub-page h1 img {
-    margin-right: 25px;
-    max-width: 50%;
-}
-
-.sub-page h1 a {
-    color: var(--white);
-}
-
-.sub-page h4 {
-    color: var(--gray);
-    font-size: 1rem;
-}
-
 .sub-page hr {
     border: 2px dashed var(--gray);
 }
@@ -182,17 +165,14 @@ ul {
     font-style: italic;
     font-size: 1.15rem;
     text-align: justify;
-    text-justify: inter-word;
-    padding: 5px;
-}
-
-.sub-page #header-img {
-    width: 100%;
-    border-bottom: 1px dashed var(--gray);
 }
 
 .sub-page header {
     border-bottom: 1px dashed var(--gray);
+}
+
+.sub-page header img {
+    width: 100%;
 }
 
 .sub-page footer {
@@ -240,12 +220,13 @@ table, th, td {
 /* Prose & verse */
 .prose, .verse {
     font-size: 1.25rem;
-    margin: 10px 20%;
-    line-height: 35px;
     font-family: "dotmincho";
+    line-height: 2rem;
+	margin: auto;
 }
 
 .verse {
+	margin-top: 1rem;
     white-space: pre-wrap;
 }
 
