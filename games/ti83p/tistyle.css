@@ -1,8 +1,3 @@
-@font-face {
-    src: url("tipixel.ttf");
-    font-family: "tipixel";
-}
-
 @media(max-width: 800px) {
     div {
         width: 100% !important;

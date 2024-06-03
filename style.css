@@ -13,6 +13,11 @@
     font-style: normal;
 }
 
+@font-face {
+    src: url("/games/ti83p/tipixel.ttf");
+    font-family: "tipixel";
+}
+
 /* Animations */
 @keyframes rainbow {
     from { color: red; }
