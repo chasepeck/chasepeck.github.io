@@ -1,4 +1,8 @@
 /* Fonts */
+/* The FontStruction “Times New Roman Pixel” (https://fontstruct.com/fontstructions/show/622628) by 
+ * “jayiscool” is licensed under a Creative Commons Attribution No Derivatives license 
+ * (http://creativecommons.org/licenses/by-nd/3.0/).
+ */
 @font-face {
     font-family: "dotgothic";
     src: url("/assets/fonts/dotgothic/dotgothic.ttf");
@@ -9,6 +13,13 @@
 @font-face {
     font-family: "dotmincho";
     src: url("/assets/fonts/dotmincho/dotmincho.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "pixeltnr";
+    src: url("/assets/fonts/pixeltnr/pixeltnr.ttf");
     font-weight: normal;
     font-style: normal;
 }
@@ -176,6 +187,10 @@ ul {
     border-bottom: 1px dashed var(--gray);
 }
 
+.sub-page header h4 {
+    margin: 5px;
+}
+
 .sub-page header img {
     width: 100%;
 }
@@ -223,10 +238,10 @@ table, th, td {
 }
 
 /* Prose & verse */
-.prose, .verse {
-    font-size: 1.25rem;
-    font-family: "dotmincho";
-    line-height: 2rem;
+.prose p, .verse {
+    font-size: 1.5rem;
+    font-family: "pixeltnr";
+    line-height: 3rem;
 	margin: auto;
 }
 
