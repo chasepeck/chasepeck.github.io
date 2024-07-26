@@ -1,0 +1,23 @@
+@keyframes rainbow {
+    from { color: red; }
+    25% { color: yellow; }
+    50% { color: green; }
+    75% { color: blue; }
+    to { color: purple; }
+}
+
+@keyframes boogie {
+    from { padding-left: 0px; }
+    to { padding-left: 50px; }
+}
+
+@keyframes skew {
+    from { transform: skew(0deg); }
+    to { transform: skew(-30deg); }
+}
+
+@keyframes spin {
+    from { transform: rotate3d(0, 1, .1, 0deg); }
+    to { transform: rotate3d(0, 1, .1, 360deg); }
+}
+

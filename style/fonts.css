@@ -1,0 +1,29 @@
+/* The FontStruction “Times New Roman Pixel” (https://fontstruct.com/fontstructions/show/622628) by 
+ * “jayiscool” is licensed under a Creative Commons Attribution No Derivatives license 
+ * (http://creativecommons.org/licenses/by-nd/3.0/).
+ */
+@font-face {
+    font-family: "dotgothic";
+    src: url("/assets/fonts/dotgothic/dotgothic.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "dotmincho";
+    src: url("/assets/fonts/dotmincho/dotmincho.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "pixeltnr";
+    src: url("/assets/fonts/pixeltnr/pixeltnr.ttf");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    src: url("/games/ti83p/tipixel.ttf");
+    font-family: "tipixel";
+}

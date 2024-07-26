@@ -1,77 +1,6 @@
-/* Fonts */
-/* The FontStruction “Times New Roman Pixel” (https://fontstruct.com/fontstructions/show/622628) by 
- * “jayiscool” is licensed under a Creative Commons Attribution No Derivatives license 
- * (http://creativecommons.org/licenses/by-nd/3.0/).
- */
-@font-face {
-    font-family: "dotgothic";
-    src: url("/assets/fonts/dotgothic/dotgothic.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "dotmincho";
-    src: url("/assets/fonts/dotmincho/dotmincho.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: "pixeltnr";
-    src: url("/assets/fonts/pixeltnr/pixeltnr.ttf");
-    font-weight: normal;
-    font-style: normal;
-}
-
-@font-face {
-    src: url("/games/ti83p/tipixel.ttf");
-    font-family: "tipixel";
-}
-
-/* Animations */
-@keyframes rainbow {
-    from { color: red; }
-    25% { color: yellow; }
-    50% { color: green; }
-    75% { color: blue; }
-    to { color: purple; }
-}
-
-@keyframes boogie {
-    from { padding-left: 0px; }
-    to { padding-left: 50px; }
-}
-
-@keyframes skew {
-    from { transform: skew(0deg); }
-    to { transform: skew(-30deg); }
-}
-
-@keyframes spin {
-    from { transform: rotate3d(0, 1, .1, 0deg); }
-    to { transform: rotate3d(0, 1, .1, 360deg); }
-}
-
-/* Variable screen sizes */
-@media (max-width: 800px) {                  
-    #index-main, #main-content {
-        width: 90% !important;
-    }
-    #index-grid {
-        display: block !important;
-        margin: 10px 0px !important;
-    }
-    #index-grid ul {
-        margin: 10px !important; 
-    }
-    .sub-page figure img {
-        width: 95% !important;
-    }
-    .list, .prose {
-        margin: 10px 0px !important;
-    }
-}
+@import url("/style/fonts.css");
+@import url("/style/animations.css");
+@import url("/style/variable.css");
 
 /* Generic */
 html, body, a {
@@ -151,7 +80,7 @@ ul {
 .sub-page p {
     text-indent: 20pt;
     text-align: justify;
-    font-family: "dotmincho";
+    font-family: "pixeltnr";
     font-size: 1.25rem;
 }
 

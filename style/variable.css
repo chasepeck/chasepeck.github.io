@@ -1,0 +1,19 @@
+@media (max-width: 800px) {                  
+    #index-main, #main-content {
+        width: 90% !important;
+    }
+    #index-grid {
+        display: block !important;
+        margin: 10px 0px !important;
+    }
+    #index-grid ul {
+        margin: 10px !important; 
+    }
+    .sub-page figure img {
+        width: 95% !important;
+    }
+    .list, .prose {
+        margin: 10px 0px !important;
+    }
+}
+
