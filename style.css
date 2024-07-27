@@ -4,7 +4,7 @@
 
 /* Generic */
 html, body, a {
-    cursor: url("/assets/cursor.ico"), auto;
+    cursor: url("/assets/cursors/cursor.cur"), auto;
 }
 
 body {
@@ -34,7 +34,7 @@ a {
 a:hover {
     color: var(--black) !important;
     background-color: var(--white);
-    cursor: pointer;
+    cursor: url("/assets/cursors/select.cur"), pointer;
 }
 
 a:hover:has(img) {
