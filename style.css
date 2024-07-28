@@ -1,6 +1,7 @@
 @import url("/style/fonts.css");
 @import url("/style/animations.css");
-@import url("/style/variable.css");
+@import url("/style/responsive.css");
+@import url("/style/sidebar.css");
 
 /* Generic */
 html, body, a {
@@ -9,11 +10,15 @@ html, body, a {
 
 body {
     --background: black;
+	--content-bg: rgba(35, 10, 25, .85);
+	--sidebar-bg: black;
     
     --white: white;
     --black: black;
     --blue: blue;
     --gray: gray;
+
+	--sidebar-size: 15rem;
 
     background-color: var(--background);
 	background-attachment: fixed;
@@ -24,6 +29,10 @@ body {
 
 header, footer {
 	text-align: center;
+}
+
+header img {
+	width: 100%;
 }
 
 a {
@@ -60,51 +69,47 @@ ul {
 }
 
 /* Main content */
+.main {
+	margin-left: var(--sidebar-size);
+}
+
 #main-content {
-    width: 50%;
+    width: 90%;
     margin: 50px auto;
-    background-color: rgba(35, 10, 25, .85);
+    background-color: var(--content-bg);
 	border: 5px ridge var(--black);
     padding: 20px;
-}
-
-#main-content hr {
-    border: 1px solid var(--gray);
-}
-
-/* Sub page */
-.sub-page {
     font-size: 1rem;
 }
 
-.sub-page p {
+#main-content hr {
+    border-top: 2px dashed var(--gray);
+}
+
+#main-content p {
     text-indent: 20pt;
     text-align: justify;
     font-family: "pixeltnr";
     font-size: 1.25rem;
 }
 
-.sub-page a {
+#main-content a {
     font-weight: bold;
 }
 
-.sub-page hr {
-    border: 2px dashed var(--gray);
-}
-
-.sub-page figure {
+#main-content figure {
     text-align: center;
 }
 
-.sub-page figure img {
+#main-content figure img {
     width: 80%;
 }
 
-.sub-page figcaption {
+#main-content figcaption {
     font-style: italic;
 }
 
-.sub-page header, .sub-page footer {
+#main-content header, #main-content footer {
     color: var(--gray);
     font-family: "dotmincho";
     font-style: italic;
@@ -112,19 +117,19 @@ ul {
     text-align: justify;
 }
 
-.sub-page header {
+#main-content header {
     border-bottom: 1px dashed var(--gray);
 }
 
-.sub-page header h4 {
+#main-content header h4 {
     margin: 5px;
 }
 
-.sub-page header img {
+#main-content header img {
     width: 100%;
 }
 
-.sub-page footer {
+#main-content footer {
     border-top: 1px dashed var(--gray);
 }
 
@@ -168,9 +173,9 @@ table, th, td {
 
 /* Prose & verse */
 .prose p, .verse {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-family: "pixeltnr";
-    line-height: 3rem;
+    line-height: 2.5rem;
 	margin: auto;
 }
 

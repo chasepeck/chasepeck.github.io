@@ -1,0 +1,37 @@
+.sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    background-color: var(--sidebar-bg);
+    width: var(--sidebar-size);
+	font-family: "dotmincho";
+	font-size: 1rem;
+}
+
+.sidebar .sub {
+    display: none;
+}
+
+.sidebar a, p {
+	display: block;
+	padding: 10px;
+}
+
+.sidebar a span {
+	color: var(--white);
+}
+
+.sidebar a:hover span {
+	color: var(--black);
+}
+
+.sidebar #subtitle {
+    text-align: justify;
+    color: var(--gray);
+    font-style: italic;
+}
+
+.sidebar #subtitle:hover {
+    animation: rainbow 2s steps(2, end) forwards infinite;
+}

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>chasepeck</title>
+	<title>chasepeck.net</title>
 	
 	<link rel="stylesheet" href="/style.css">
 	<link rel="icon" href="/assets/favicon/favicon.png" type="image/png">
@@ -21,45 +21,7 @@
 	}
 
 	body {
-    	padding: 50px;
-		background-image: url("/assets/cloud.png");
-	}
-
-	#main-content {
-		padding: 0px;
-	}
-
-	#main-content img {
-		width: 100%;
-		display: inline-block;
-		max-width: 400px;
-		vertical-align: middle;
-	}
-
-	#index-list, #main-content p {
-		transform: rotate3d(.1, .5, 0, -30deg);
-	}
-
-	#index-list {
-		margin: 0px;
-		padding: 25px;
-	}
-
-	#index-list h2, #index-list h3 {
-		font-family: "dotmincho";
-	}
-
-	#index-list h2 {
-		color: var(--white);
-		text-align: center;
-		font-weight: normal;
-	}
-
-	#index-list h3 {
-		color: var(--gray);
-		text-align: left;
-		max-width: 500px;
-		font-weight: normal;
+		background-image: url("/assets/bg1.png");
 	}
 
 	#subdirectory {
@@ -67,102 +29,36 @@
 		font-style: italic;
 	}
 </style>
-<body style="overflow-x: hidden;">
-	<div style="text-align: center;">
-		<img id="title" src="/assets/name.gif" style="width: 60%;">
-	</div>
+<body name="home">
+	<div class="main">
+		<header>
+			<img id="title" src="/assets/name.gif">
+		</header>
 
-	<div id="main-content" class="sub-page">
-		<p>
-			<div id="subtitle" style="animation: rainbow 2s steps(2, end) 0s infinite forwards; text-align: center;">
-				<span style="color: red;">ﾁ</span>
-				<span style="color: orange;">ｪ</span>
-				<span style="color: yellow;">ｲ</span>
-				<span style="color: green;">ｽ</span>
-				・
-				<span style="color: blue;">ﾍﾟ</span>
-				<span style="color: indigo;">ｯ</span>
-				<span style="color: violet;">ｸ</span>
-			</div>
-		</p>
-		<p>
-			HEY!! What's a website without a web? A site!
-		</p>
-		<p>
-			If you liked that joke, continue to scroll down. There's plenty more where that came from!
-		</p>
-	</div>
-	<div id="main-content">
-		<!--Programming-->
-		<ul class="sub-page" id="index-list">
-			<h2>games</h2>
-			<li>
-				<a href="https://store.steampowered.com/app/1650790/Dot_Dash_Dot/">Dot Dash Dot</a>
-			</li>
-			<h3>more</h3>
-			<li>
-				<a href="games/ti83p" style="font-family: tipixel;">CALCULATOR GAMES</a>
-			</li>
-		</ul>
-
-		<hr>
-
-		<!--Writing-->
-		<ul class="sub-page" id="index-list">
-			<h2>writing</h2>
-			<h3>short stories</h3>
-				<li>
-					<a href="writing/keplerianvacation">Keplerian Vacation</a>
-				</li>
-				<li>
-					<a href="writing/psii">Psi-I</a>
-				</li>
-			<h3>poetry</h3>
-				<li>
-					<a href="writing/thedenunciationofmyhumanity">The Denunciation of My Humanity</a>
-				</li>
-				<li>
-					<a href="writing/superficial">Superficial</a>
-				</li>
-			<h3>lists</h3>
-				<li>
-					<a href="writing/bookcollection">Book collection
-					</a>
-				</li>
-				<li>
-					<a href="writing/quotes">Quotes</a>
-				</li>
-		</ul>
-
-		<hr>
-
-		<!--Music-->
-		<ul id="index-list">
-			<h2>music</h2>
-			<li>
-				<a href="writing/musicfolder">
-					<img src="assets/titles/musicfolder.png" style="padding: 10px;">
-				</a>
-			</li>
-		</ul>
-	</div>
-	<div id="main-content">
-		<ul id="index-list">
-			<pre id="acrostic" style="font-family: dotgothic; animation: rainbow 5s steps(2, end) 0s infinite forwards;"></pre>
-		</ul>
-	</div>
-
-	<footer>
-		<div>
-			<a id="img-link" href="https://youtube.com/@chase_peck" target="_blank"><img src="assets/links/youtube.gif"></a>
-			<a href="https://github.com/chasepeck" target="_blank"><img src="assets/links/github88x31.png"></a>
-			<a href="email.html" target="_blank"><img src="assets/links/email.gif"></a>
+		<div id="main-content" class="sub-page">
+			<p>
+				Under construction ;-)
+			</p>
 		</div>
-	</footer>
+
+		<div id="main-content">
+			<ul id="index-list">
+				<pre id="acrostic" style="font-family: dotgothic; animation: rainbow 5s steps(2, end) 0s infinite forwards;"></pre>
+			</ul>
+		</div>
+
+		<footer>
+			<div>
+				<a id="img-link" href="https://youtube.com/@chase_peck" target="_blank"><img src="assets/links/youtube.gif"></a>
+				<a href="https://github.com/chasepeck" target="_blank"><img src="assets/links/github88x31.png"></a>
+				<a href="email.html" target="_blank"><img src="assets/links/email.gif"></a>
+			</div>
+		</footer>
+	</div>
 	
+	<script src="sidebar.js"></script>
 	<script src="silly.js"></script>
 	<script>
-		randomSubtitle();
 		randomAcrostic();
 	</script>
 </body>
