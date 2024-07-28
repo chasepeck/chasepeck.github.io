@@ -71,6 +71,7 @@ ul {
 /* Main content */
 .main {
 	margin-left: var(--sidebar-size);
+	max-width: 1000px;
 }
 
 #main-content {
