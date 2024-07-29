@@ -1,72 +1,8 @@
-@import url("/style/fonts.css");
-@import url("/style/animations.css");
-@import url("/style/responsive.css");
+@import url("/style/generic.css");
 @import url("/style/sidebar.css");
-
-/* Generic */
-html, body, a {
-    cursor: url("/assets/cursors/cursor.cur"), auto;
-}
-
-body {
-    --background: black;
-	--content-bg: rgba(35, 10, 25, .85);
-	--sidebar-bg: black;
-
-    --white: white;
-    --black: black;
-    --blue: blue;
-    --gray: gray;
-
-	--sidebar-size: 15rem;
-
-    background-color: var(--background);
-	background-attachment: fixed;
-    font-family: "dotgothic";
-    color: var(--white);
-    margin: 0px;
-}
-
-header, footer {
-	text-align: center;
-}
-
-header img {
-	width: 100%;
-}
-
-a {
-    color: var(--blue);
-    text-decoration: none;
-}
-
-a:hover {
-    color: var(--black) !important;
-    background-color: var(--white);
-    cursor: url("/assets/cursors/select.cur"), pointer;
-}
-
-a:hover:has(img) {
-    filter: invert(75%);
-    background-color: rgba(0, 0, 0, 0);
-}
-
-ul {
-    list-style-image: url("/assets/bullet.png");
-}
-
-#sectionbreak {
-    width: 50%;
-    max-width: 200px;
-    padding: 10px;
-    display: block;
-    margin: auto;
-}
-
-.full-width-banner {
-    margin: 50px 0px;
-    text-align: center;
-}
+@import url("/style/animations.css");
+@import url("/style/fonts.css");
+@import url("/style/responsive.css");
 
 /* Main content */
 .main {
