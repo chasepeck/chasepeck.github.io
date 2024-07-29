@@ -7,6 +7,7 @@
     width: var(--sidebar-size);
 	font-family: "dotmincho";
 	font-size: 1rem;
+    overflow: auto;
 }
 
 .sidebar .sub {

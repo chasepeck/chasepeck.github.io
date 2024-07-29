@@ -60,4 +60,3 @@ fetch("/sidebar.html")
 		} catch {}
 		randomSubtitle();
 	});
-
