@@ -1,0 +1,36 @@
+table, th, td {
+    border: 1px solid var(--white);
+    border-collapse: collapse;
+    padding: 5px 10px;
+    font-weight: normal;
+}
+
+.list {
+    margin: 10px 10%;
+}
+
+.list li {
+    font-family: "dotmincho";
+}
+
+.list h2, .list h3, .list h4 {
+    text-align: center;
+}
+
+.list h2 img {
+    width: 50%;
+}
+
+.list h3 img {
+    width: 35%;
+}
+
+.list img, .list audio {
+    width: 100%;
+}
+
+.quote-list li {
+    margin: 20px 0px;
+    padding: 10px;
+    border: 1px dashed var(--gray);
+}

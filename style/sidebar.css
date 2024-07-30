@@ -14,7 +14,7 @@
     display: none;
 }
 
-.sidebar a, p {
+.sidebar a, .sidebar p {
 	display: block;
 	padding: 10px;
 }

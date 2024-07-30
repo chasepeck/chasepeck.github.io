@@ -1,0 +1,62 @@
+/* Main content */
+.main {
+	margin-left: var(--sidebar-size);
+	max-width: 1000px;
+}
+
+#main-content {
+    width: 90%;
+    margin: 50px auto;
+    background-color: var(--content-bg);
+	border: 5px ridge var(--black);
+    padding: 20px;
+    line-height: 2.5rem;
+}
+
+#main-content hr {
+    border-top: 2px dashed var(--gray);
+}
+
+#main-content p {
+    text-indent: 20pt;
+    text-align: justify;
+	margin: auto;
+}
+
+#main-content a {
+    font-weight: bold;
+}
+
+#main-content figure {
+    text-align: center;
+}
+
+#main-content figure img {
+    width: 80%;
+}
+
+#main-content figcaption {
+    font-style: italic;
+}
+
+#main-content header, #main-content footer {
+    color: var(--gray);
+    font-family: "dotmincho";
+    font-style: italic;
+    font-size: 1.15rem;
+    text-align: justify;
+}
+
+#main-content header {
+    border-bottom: 1px dashed var(--gray);
+}
+
+#main-content footer {
+    border-top: 1px dashed var(--gray);
+}
+
+/* Prose & verse */
+.prose h2, .verse h2 {
+    text-align: center;
+    font-variant: small-caps;
+}

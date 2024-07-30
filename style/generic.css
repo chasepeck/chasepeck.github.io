@@ -17,7 +17,8 @@ body {
     background-color: var(--background);
 	background-attachment: fixed;
     background-size: cover;
-    font-family: "dotgothic";
+    font-family: "pixeltnr";
+    font-size: 1.25rem;
     color: var(--white);
     margin: 0px;
 }
@@ -54,6 +55,11 @@ a:hover:has(img) {
 
 ul {
     list-style-image: url("/assets/bullet.png");
+}
+
+pre {
+	font-family: "dotmincho";
+    white-space: pre-wrap;
 }
 
 #sectionbreak {
