@@ -33,7 +33,9 @@ function randomSubtitle() {
 	"Open mic and see all his organs!",
 	"Yeow!",
 	"photophotophotogiftmap1",
-	"What's the data, theta?"
+	"What's the data, theta?",
+	"穃粫挧橸膤袮閠妛暃椦軅鵈恷碵駲墸壥彁蟐",
+	"⍼⍼⍼⍼⍼⍼⍼⍼⍼⍼⍼⍼⍼"
   ];
   document.getElementById("subtitle").innerHTML = subtitles[Math.floor(Math.random() * subtitles.length)];
 }

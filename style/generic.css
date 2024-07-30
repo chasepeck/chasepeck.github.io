@@ -4,8 +4,8 @@ html, body, a {
 
 body {
     --background: black;
-	--content-bg: rgba(35, 10, 25, .85);
-	--sidebar-bg: black;
+	--content-bg: rgba(35, 10, 25, .9);
+	--sidebar-bg: rgba(0, 0, 0, .9);
 
     --white: white;
     --black: black;
@@ -16,6 +16,7 @@ body {
 
     background-color: var(--background);
 	background-attachment: fixed;
+    background-size: cover;
     font-family: "dotgothic";
     color: var(--white);
     margin: 0px;
