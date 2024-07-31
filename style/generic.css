@@ -12,7 +12,7 @@ body {
     --blue: blue;
     --gray: gray;
 
-	--sidebar-size: 15rem;
+	--sidebar-size: min(20%, 15rem);
 
     background-color: var(--background);
 	background-attachment: fixed;

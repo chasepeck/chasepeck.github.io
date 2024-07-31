@@ -27,6 +27,10 @@
 	color: var(--black);
 }
 
+.sidebar img {
+    margin: 20px 0px;
+}
+
 .sidebar #subtitle {
     text-align: justify;
     color: var(--gray);

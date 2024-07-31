@@ -1,7 +1,7 @@
 /* Main content */
 .main {
 	margin-left: var(--sidebar-size);
-	max-width: 1000px;
+	max-width: max(1000px, 70%);
 }
 
 #main-content {
