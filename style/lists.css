@@ -34,3 +34,12 @@ table, th, td {
     padding: 10px;
     border: 1px dashed var(--gray);
 }
+
+#buttonwall {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#buttonwall img {
+	flex: 10%;
+}
