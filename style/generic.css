@@ -23,13 +23,16 @@ body {
     margin: 0px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+	font-family: "dotmincho";
+}
+
 img {
     max-width: 100%;
     image-rendering: pixelated;
 }
 
 header, footer {
-    margin: 1rem 0;
 	text-align: center;
 }
 

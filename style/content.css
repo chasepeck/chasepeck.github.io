@@ -4,7 +4,7 @@
 	max-width: max(1000px, 70%);
 }
 
-#main-content {
+.main-content {
     width: 90%;
     margin: 50px auto;
     background-color: var(--content-bg);
@@ -13,33 +13,33 @@
     line-height: 2.5rem;
 }
 
-#main-content hr {
+.main-content hr {
     border-top: 2px dashed var(--gray);
 }
 
-#main-content p {
+.main-content p {
     text-indent: 20pt;
     text-align: justify;
 	margin: auto;
 }
 
-#main-content a {
+.main-content a {
     font-weight: bold;
 }
 
-#main-content figure {
+.main-content figure {
     text-align: center;
 }
 
-#main-content figure img {
+.main-content figure img {
     width: 80%;
 }
 
-#main-content figcaption {
+.main-content figcaption {
     font-style: italic;
 }
 
-#main-content header, #main-content footer {
+.main-content header, .main-content footer {
     color: var(--gray);
     font-family: "dotmincho";
     font-style: italic;
@@ -47,12 +47,14 @@
     text-align: justify;
 }
 
-#main-content header {
+.main-content header {
     border-bottom: 1px dashed var(--gray);
+    margin-bottom: 1rem;
 }
 
-#main-content footer {
+.main-content footer {
     border-top: 1px dashed var(--gray);
+    margin-top: 1rem;
 }
 
 /* Prose & verse */

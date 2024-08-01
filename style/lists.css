@@ -9,14 +9,6 @@ table, th, td {
     margin: 10px 10%;
 }
 
-.list li {
-    font-family: "dotmincho";
-}
-
-.list h2, .list h3, .list h4 {
-    text-align: center;
-}
-
 .list h2 img {
     width: 50%;
 }
