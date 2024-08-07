@@ -58,6 +58,15 @@ a:hover:has(img) {
 
 ul {
     list-style-image: url("/assets/bullet.png");
+	width: 80%;
+	margin: auto;
+}
+
+table, th, td {
+    border: 1px solid var(--white);
+    border-collapse: collapse;
+    padding: 5px 10px;
+    font-weight: normal;
 }
 
 pre {
@@ -71,4 +80,13 @@ pre {
     padding: 10px;
     display: block;
     margin: auto;
+}
+
+#buttonwall {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+#buttonwall img {
+	flex: 10%;
 }
