@@ -74,6 +74,10 @@ ul {
 	margin: auto;
 }
 
+ul a + i {
+   margin-left: 1rem;
+}
+
 table, th, td {
     border: 1px solid var(--white);
     border-collapse: collapse;
