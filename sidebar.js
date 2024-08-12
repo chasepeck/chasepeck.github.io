@@ -53,14 +53,16 @@ fetch("/sidebar.html")
 
 		// Enable subelements
 		document.querySelectorAll(".sidebar .sub").forEach(function(elem) {
-			if(elem.getAttribute("name") == document.body.getAttribute("name")) {
+			if(elem.getAttribute("sub") == document.body.getAttribute("name")) {
 				elem.style = "display: block;";
 			}
 		});
 
 		// Highlight current page
 		try {
+			document.getElementById(document.body.getAttribute("sub")).style = "display: block; color: var(--white);";
+		} catch {
 			document.getElementById(document.body.getAttribute("name")).style = "color: var(--white);";
-		} catch {}
+		}
 		randomSubtitle();
 	});
