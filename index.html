@@ -13,10 +13,37 @@
 	<meta name="theme-color" content="#000000">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-		body { background-image: url("/assets/bg/tree.png"); }
+		body {
+			background-image: url("/assets/bg/stars.png");
+			background-size: 300px;
+		}
+
+		#hi {
+			width: 100%;
+			margin: auto;
+			display: inline-grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-areas:
+				"a a b"
+				"a a c"
+				"d d d";
+			background-size: 500px;
+		}
+
+		#hi > div {
+			margin: 10px;
+    		padding: 20px;
+			border: 5px ridge var(--bg);
+    		background-color: var(--content-bg);
+		}
+
+		#identity img {
+			width: 100%;
+			margin: 0px;
+		}
 
 		@media (max-width: 800px) {
-			#hi { columns: 1 !important; }
+			#hi { grid-template-areas: "a a a" "b b b" "c c c" "d d d" !important; }
 		}
 	</style>
 </head>
@@ -27,13 +54,27 @@
 			<img id="title" src="/assets/name/cheisu.png" style="width: 80%;">
 		</header>
 
-		<div id="hi" class="main-content" style="columns: 2;">
-			<div>
-				<img src="/assets/favicon/favicon.png">
-			</div>
-			<div>
-				<p>i'm gropulon, skrigulor, smixalot, grofton, and smook.</p>
-				<p><a>Read more.</a></p>
+		<div style="background-image: url('/assets/bg/matrix.gif');" class="main-content">
+			<div id="hi">
+				<div style="grid-area: a;">
+					<img src="/assets/favicon/favicon.png">
+				</div>
+				<div style="grid-area: b;">
+					<p>i'm gropulon, skrigulor, smixalot, grofton, and smook.</p>
+					<p><a>Read more.</a></p>
+				</div>
+				<div id="identity" style="grid-area: c;">
+					<div>
+						<img src="/assets/blinkies/lagomorph.gif">
+						<img src="/assets/blinkies/they.gif">
+						<img src="/assets/blinkies/gay.gif">
+						<img src="/assets/blinkies/autism.gif">
+						<img src="/assets/blinkies/virgin.gif">
+					</div>
+				</div>
+				<div style="grid-area: d;">
+					hey
+				</div>
 			</div>
 		</div>
 

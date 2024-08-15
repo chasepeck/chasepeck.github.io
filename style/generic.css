@@ -8,7 +8,7 @@ body {
 	--sidebar-bg: rgba(0, 0, 0, .9);
 
     --fg: white;
-    --accent: cyan;
+    --accent: deepskyblue;
     --accent2: gray;
 
 	--sidebar-size: min(20%, 15rem);
