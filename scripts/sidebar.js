@@ -60,10 +60,10 @@ fetch("/sidebar.html")
 
 		// Highlight current page
 		try {
-			document.getElementById(document.body.getAttribute("sub")).style = "display: block; color: var(--white);";
+			document.getElementById(document.body.getAttribute("sub")).style = "display: block; color: var(--fg);";
 		} catch {
 			try {
-				document.getElementById(document.body.getAttribute("name")).style = "color: var(--white);";
+				document.getElementById(document.body.getAttribute("name")).style = "color: var(--fg);";
 			} catch {}
 		}
 		randomSubtitle();

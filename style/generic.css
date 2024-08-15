@@ -3,23 +3,22 @@ html, body, a {
 }
 
 body {
-    --background: black;
+    --bg: black;
 	--content-bg: rgba(35, 10, 25, .9);
 	--sidebar-bg: rgba(0, 0, 0, .9);
 
-    --white: white;
-    --black: black;
-    --blue: blue;
-    --gray: gray;
+    --fg: white;
+    --accent: cyan;
+    --accent2: gray;
 
 	--sidebar-size: min(20%, 15rem);
 
-    background-color: var(--background);
+    background-color: var(--bg);
 	background-attachment: fixed;
     background-size: cover;
     font-family: "pixeltnr";
     font-size: 1.25rem;
-    color: var(--white);
+    color: var(--fg);
     margin: 0px;
 }
 
@@ -36,7 +35,7 @@ h2 i {
     font-weight: normal;
     font-size: 1.25rem;
     margin-left: 1rem;
-    color: var(--gray);
+    color: var(--accent2);
 }
 
 img {
@@ -53,13 +52,13 @@ header img {
 }
 
 a {
-    color: var(--blue);
+    color: var(--accent);
     text-decoration: none;
 }
 
 a:hover {
-    color: var(--black) !important;
-    background-color: var(--white);
+    color: var(--bg) !important;
+    background-color: var(--fg);
     cursor: url("/assets/cursors/select.cur"), pointer;
 }
 
@@ -79,7 +78,7 @@ ul a + i {
 }
 
 table, th, td {
-    border: 1px solid var(--white);
+    border: 1px solid var(--fg);
     border-collapse: collapse;
     padding: 5px 10px;
     font-weight: normal;

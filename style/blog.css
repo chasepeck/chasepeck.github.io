@@ -1,7 +1,11 @@
 .blog {
     background-image: url("/assets/bg/macos.png");
     background-size: 128px;
-    color: var(--black);
+    color: black;
+}
+
+.blog .main a {
+    color: blue;
 }
 
 #bloghead {
