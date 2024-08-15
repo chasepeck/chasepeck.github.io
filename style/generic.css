@@ -48,6 +48,10 @@ header, footer {
 	text-align: center;
 }
 
+header {
+	margin-top: 1rem;
+}
+
 header img {
 	width: 100%;
 }
