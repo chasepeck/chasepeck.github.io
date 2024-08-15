@@ -5,7 +5,7 @@ html, body, a {
 body {
     --bg: black;
 	--content-bg: rgba(35, 10, 25, .9);
-	--sidebar-bg: rgba(0, 0, 0, .9);
+	--sidebar-bg: linear-gradient(rgba(0, 0, 0, .9), var(--content-bg));
 
     --fg: white;
     --accent: deepskyblue;

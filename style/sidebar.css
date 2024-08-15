@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    background-color: var(--sidebar-bg);
+    background: var(--sidebar-bg);
     width: var(--sidebar-size);
 	font-family: "dotmincho";
 	font-size: 1rem;
