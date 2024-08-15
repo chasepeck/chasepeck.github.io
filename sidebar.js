@@ -62,7 +62,9 @@ fetch("/sidebar.html")
 		try {
 			document.getElementById(document.body.getAttribute("sub")).style = "display: block; color: var(--white);";
 		} catch {
-			document.getElementById(document.body.getAttribute("name")).style = "color: var(--white);";
+			try {
+				document.getElementById(document.body.getAttribute("name")).style = "color: var(--white);";
+			} catch {}
 		}
 		randomSubtitle();
 	});
