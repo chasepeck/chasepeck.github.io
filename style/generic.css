@@ -4,8 +4,8 @@ html, body, a {
 
 body {
     --bg: black;
-	--content-bg: rgba(35, 10, 25, .9);
-	--sidebar-bg: linear-gradient(rgba(0, 0, 0, .9), var(--content-bg));
+	--content-bg: linear-gradient(rgba(0, 0, 0, .9), rgba(35, 10, 25, .9));
+	--sidebar-bg: var(--content-bg);
 
     --fg: white;
     --accent: deepskyblue;
@@ -13,7 +13,7 @@ body {
 
 	--sidebar-size: min(20%, 15rem);
 
-    background-color: var(--bg);
+    background: var(--bg);
 	background-attachment: fixed;
     background-size: cover;
     font-family: "pixeltnr";
@@ -41,6 +41,7 @@ h2 i {
 img {
     max-width: 100%;
     image-rendering: pixelated;
+    vertical-align: text-bottom;
 }
 
 header, footer {
@@ -58,13 +59,13 @@ a {
 
 a:hover {
     color: var(--bg) !important;
-    background-color: var(--fg);
+    background: var(--fg);
     cursor: url("/assets/cursors/select.cur"), pointer;
 }
 
 a:hover:has(img) {
     filter: invert(75%);
-    background-color: rgba(0, 0, 0, 0);
+    background: rgba(0, 0, 0, 0);
 }
 
 ul {

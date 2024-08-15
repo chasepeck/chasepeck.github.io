@@ -7,7 +7,7 @@
 .main-content {
     width: 90%;
     margin: 50px auto;
-    background-color: var(--content-bg);
+    background: var(--content-bg);
 	border: 5px ridge var(--bg);
     padding: 20px;
     line-height: 2.5rem;

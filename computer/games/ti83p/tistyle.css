@@ -5,7 +5,7 @@
 }
 
 body {
-    background-color: rgb(178, 188, 169);
+    background: rgb(178, 188, 169);
     font-family: "tipixel";
     font-size: 2rem;
     color: black;
@@ -23,10 +23,10 @@ a {
 }
 
 a:hover {
-    background-color: rgb(178, 188, 169) !important;
+    background: rgb(178, 188, 169) !important;
 }
 
 a:hover span, .hover {
     color: rgb(178, 188, 169) !important;
-    background-color: black;
+    background: black;
 }
