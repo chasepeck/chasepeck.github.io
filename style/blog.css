@@ -8,7 +8,13 @@
     color: blue;
 }
 
+.blog .main-content {
+	margin-top: 0px;
+	background: var(--fg);
+	border: 2px solid var(--bg);
+}
+
 #bloghead {
-    width: calc(90% + 47px);
+    width: calc(90% + 45px);
     margin: 0px auto -5px auto;
 }
