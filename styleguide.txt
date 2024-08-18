@@ -1,0 +1,11 @@
+=== style guide ===
+rules only apply to any text written specially for the website
+
+[text]
+- write in all lowercase except Proper Nouns or Emphasis
+- only use periods for complete sentences
+  - require question/exclamation marks
+
+[links]
+- no links open in a new tab
+  - the user can decide for themselves

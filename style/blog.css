@@ -9,9 +9,13 @@
 }
 
 .blog .main-content {
+    background: white;
 	margin-top: 0px;
-	background: var(--fg);
-	border: 2px solid var(--bg);
+	border: 2px solid black;
+}
+
+.blog .main-content header, .blog .main-content footer {
+    color: black;
 }
 
 #bloghead {
