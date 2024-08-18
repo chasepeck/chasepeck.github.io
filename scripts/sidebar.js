@@ -37,7 +37,8 @@ function randomSubtitle() {
 	"穃粫挧橸膤袮閠妛暃椦軅鵈恷碵駲墸壥彁蟐",
 	"⍼⍼⍼⍼⍼⍼⍼⍼⍼⍼⍼⍼⍼",
 	"Grant, what're we drinkin'?",
-	"chase peck: an incompetent lagomorph who will get us all killed"
+	"chase peck: an incompetent lagomorph who will get us all killed",
+	"i take all credit. nothing is plundered."
   ];
   document.getElementById("subtitle").innerHTML = subtitles[Math.floor(Math.random() * subtitles.length)];
 }

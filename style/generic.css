@@ -52,6 +52,10 @@ header {
 	margin-top: 1rem;
 }
 
+header p:first-of-type, footer p:first-of-type {
+    text-indent: 0px;
+}
+
 header img {
 	width: 100%;
 }
