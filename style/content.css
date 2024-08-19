@@ -11,6 +11,7 @@
 	border: 5px ridge var(--bg);
     padding: 20px;
     line-height: 2.5rem;
+	box-shadow: 5px 5px 5px black;
 }
 
 .main-content hr {
