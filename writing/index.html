@@ -14,6 +14,19 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 		body { background-image: url("/assets/bg/tree.png"); }
+
+		#grid {
+			margin: auto;
+			width: 90%;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media (max-width: 1200px) {
+			#grid {
+				display: block !important;
+			}
+		}
 	</style>
 </head>
 <body name="writing">
@@ -22,11 +35,25 @@
 			writing
 		</header>
 
-		<div class="main-content">
-			<img src="/assets/construction.gif">
+		<div id="grid">
+			<div class="main-content" style="grid-column: 1;">
+				<h2>latest fiction</h2>
+				<ul id="latestfiction"></ul>
+				<a href="fiction">more...</a>
+			</div>
+			<div class="main-content" style="grid-column: 2;">
+				<h2>latest poetry</h2>
+				<ul id="latestpoetry"></ul>
+				<a href="poetry">more...</a>
+			</div>
 		</div>
 	</div>
 
 	<script src="/scripts/sidebar.js"></script>
+	<script src="/scripts/recent.js"></script>
+	<script>
+		recent("latestfiction", "recent", "fiction", 10);
+		recent("latestpoetry", "recent", "poetry", 10);
+	</script>
 </body>
 </html>
