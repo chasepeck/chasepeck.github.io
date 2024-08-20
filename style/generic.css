@@ -4,7 +4,7 @@ html, body, a {
 
 body {
     --bg: black;
-	--content-bg: linear-gradient(rgba(0, 0, 0, .9), rgba(35, 10, 25, .9));
+	--content-bg: linear-gradient(rgba(0, 0, 0, .8), rgba(35, 10, 25, .8));
 	--sidebar-bg: var(--content-bg);
 
     --fg: white;
