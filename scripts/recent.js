@@ -5,7 +5,7 @@ function recent(dest, id, url, limit) {
 			var doc = document.implementation.createHTMLDocument().documentElement;
 			doc.innerHTML = text;
 			var items = [];
-			doc.querySelectorAll("#" + id + " li a").forEach(function(item) {
+			doc.querySelectorAll("#" + id + " a").forEach(function(item) {
 				items.push(item);
 			});
 			items.sort(function(a, b) { return parseInt(b.getAttribute("num")) - parseInt(a.getAttribute("num")); });
