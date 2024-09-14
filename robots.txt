@@ -1,0 +1,7 @@
+# stop AI abuse
+
+User-agent: *
+Disallow: /assets/
+Disallow: /sidebar.html
+Disallow: /404.html
+Disallow: /email.html

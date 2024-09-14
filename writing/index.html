@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>writing</title>
+	<title>chasepeck.net / writing</title>
 
 	<link rel="stylesheet" href="/style/main.css">
 	<link rel="icon" href="/assets/favicon/favicon.png" type="image/png">
@@ -13,7 +13,20 @@
 	<meta name="theme-color" content="#000000">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-		body { background-image: url("/assets/bg/waterfall.png"); }
+		body { background-image: url("/assets/bg/tree.png"); }
+
+		#grid {
+			margin: auto;
+			width: 90%;
+			display: grid;
+			grid-template-columns: 1fr 1fr;
+		}
+
+		@media (max-width: 1200px) {
+			#grid {
+				display: block !important;
+			}
+		}
 	</style>
 </head>
 <body name="writing">
@@ -22,37 +35,25 @@
 			writing
 		</header>
 
-		<div class="main-content">
-			<ul class="sub-page" id="index-list">
-				<h3>short stories</h3>
-					<li>
-						<a href="/writing/keplerianvacation">Keplerian Vacation</a>
-					</li>
-					<li>
-						<a href="/writing/psii">Psi-I</a>
-					</li>
-				<h3>poetry</h3>
-					<li>
-						<a href="/writing/sausagelyhesoars">Sausagely he soars</a>
-					</li>
-					<li>
-						<a href="/writing/thedenunciationofmyhumanity">The Denunciation of My Humanity</a>
-					</li>
-					<li>
-						<a href="/writing/superficial">Superficial</a>
-					</li>
-				<h3>lists</h3>
-					<li>
-						<a href="/writing/bookcollection">Book collection
-						</a>
-					</li>
-					<li>
-						<a href="/writing/quotes">Quotes</a>
-					</li>
-			</ul>
+		<div id="grid">
+			<div class="main-content" style="grid-column: 1;">
+				<h2>latest fiction</h2>
+				<ul id="latestfiction"></ul>
+				<a href="fiction">more...</a>
+			</div>
+			<div class="main-content" style="grid-column: 2;">
+				<h2>latest poetry</h2>
+				<ul id="latestpoetry"></ul>
+				<a href="poetry">more...</a>
+			</div>
 		</div>
 	</div>
 
-	<script src="/sidebar.js"></script>
+	<script src="/scripts/sidebar.js"></script>
+	<script src="/scripts/recent.js"></script>
+	<script>
+		recent("latestfiction", "recent", "fiction", 10);
+		recent("latestpoetry", "recent", "poetry", 10);
+	</script>
 </body>
 </html>

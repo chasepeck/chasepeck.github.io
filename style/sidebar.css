@@ -3,7 +3,7 @@
     top: 0;
     left: 0;
     height: 100%;
-    background-color: var(--sidebar-bg);
+    background: var(--sidebar-bg);
     width: var(--sidebar-size);
 	font-family: "dotmincho";
 	font-size: 1rem;
@@ -20,11 +20,11 @@
 }
 
 .sidebar a span {
-	color: var(--white);
+	color: var(--fg);
 }
 
 .sidebar a:hover span {
-	color: var(--black);
+	color: var(--bg);
 }
 
 .sidebar img {
@@ -33,7 +33,7 @@
 
 .sidebar #subtitle {
     text-align: justify;
-    color: var(--gray);
+    color: var(--accent2);
     font-style: italic;
 }
 

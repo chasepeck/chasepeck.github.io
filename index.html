@@ -13,28 +13,89 @@
 	<meta name="theme-color" content="#000000">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
-		body { background-image: url("/assets/bg/tree.png"); }
+		body {
+			background-image: url("/assets/bg/stars.png");
+			background-size: 300px;
+		}
+
+		#hi {
+			width: 100%;
+			margin: auto;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-areas:
+				"a a b"
+				"a a c"
+				"d d d";
+		}
+
+		#hi > div {
+			margin: 10px;
+    		padding: 20px;
+			border: 5px ridge var(--bg);
+    		background: var(--content-bg);
+		}
+
+		#identity img {
+			width: 100%;
+			margin: 0px;
+		}
+
+		@media (max-width: 800px) {
+			#hi { grid-template-areas: "a a a" "b b b" "c c c" "d d d" !important; }
+		}
 	</style>
 </head>
 <body name="home">
-	<audio id="autoplay" src="/assets/audio/jungle.mp3" volume="0.5" loop></audio>
 	<div class="main">
 		<header>
 			<img id="title" src="/assets/name/cheisu.png" style="width: 80%;">
 		</header>
 
-		<div class="main-content">
-			<img src="/assets/construction.gif" style="width: 100%;">
+		<div style="background-image: url('/assets/bg/matrix.gif');" class="main-content">
+			<div id="hi">
+				<div style="grid-area: a;">
+					<img src="/assets/favicon/favicon.png">
+				</div>
+				<div style="grid-area: b;">
+					<div style="text-align: center;">
+						<img src="/assets/gifs/rabbit.gif" style="filter: invert(100%);">
+					</div>
+					<p>welcome! one of my names is <b>Chase</b> <i>(they/them)</i>. i'm a bun
+						<a href="https://web.archive.org/web/20240418062145/https://lgbtqia.wiki/wiki/Bunnygender"><img src="/assets/bunnygender.png" style="width: 2rem;"></a>
+						<!--self-written bunnygender page?-->
+						proficient in computer programming. i am the <a href="https://faxrabb.it">Faxrabbit</a> when developing games.
+					</p>
+					<p><i>gnussles and vole~!</i></p>
+					<p><a href="/meta">Read more.</a></p>
+				</div>
+				<div id="identity" style="grid-area: c;">
+					<img src="/assets/blinkies/lagomorph.gif">
+					<img src="/assets/blinkies/they.gif">
+					<img src="/assets/blinkies/gay.gif">
+					<img src="/assets/blinkies/autienby.gif">
+					<img src="/assets/blinkies/virgin.gif">
+				</div>
+				<div style="grid-area: d; text-align: center;">
+					<a href="https://youtube.com/@chase_peck"><img src="/assets/links/youtube.gif"></a>
+					<a href="https://github.com/chasepeck"><img src="/assets/links/github.png"></a>
+					<a href="/email.html"><img src="/assets/links/mail.png"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-content" style="text-align: center;">
+			<!--TREE OF INTERESTS-->
+			<img src="/assets/construction.gif">
 		</div>
 
 		<div class="main-content">
-			<pre id="acrostic" style="font-family: dotgothic; animation: rainbow 5s steps(2, end) 0s infinite forwards;"></pre>
+			<pre id="acrostic" style="font-family: dotgothic; animation: rainbow 5s steps(2, end) 0s infinite forwards;" onclick="randomAcrostic();"></pre>
 		</div>
 	</div>
 
-	<script src="sidebar.js"></script>
-	<script src="audio.js"></script>
-	<script src="silly.js"></script>
+	<script src="/scripts/sidebar.js"></script>
+	<script src="/scripts/silly.js"></script>
 	<script>
 		randomAcrostic();
 	</script>

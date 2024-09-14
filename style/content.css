@@ -7,14 +7,15 @@
 .main-content {
     width: 90%;
     margin: 50px auto;
-    background-color: var(--content-bg);
-	border: 5px ridge var(--black);
+    background: var(--content-bg);
+	border: 5px ridge var(--bg);
     padding: 20px;
     line-height: 2.5rem;
+	box-shadow: 5px 5px 5px black;
 }
 
 .main-content hr {
-    border-top: 2px dashed var(--gray);
+    border-top: 2px dashed var(--accent2);
 }
 
 .main-content p {
@@ -40,7 +41,7 @@
 }
 
 .main-content header, .main-content footer {
-    color: var(--gray);
+    color: var(--accent2);
     font-family: "dotmincho";
     font-style: italic;
     font-size: 1.15rem;
@@ -48,12 +49,12 @@
 }
 
 .main-content header {
-    border-bottom: 1px dashed var(--gray);
+    border-bottom: 1px dashed var(--accent2);
     margin-bottom: 1rem;
 }
 
 .main-content footer {
-    border-top: 1px dashed var(--gray);
+    border-top: 1px dashed var(--accent2);
     margin-top: 1rem;
 }
 
@@ -61,4 +62,11 @@
 .prose h2, .verse h2 {
     text-align: center;
     font-variant: small-caps;
+}
+
+/* Lists */
+.quote-list li {
+    margin: 20px 0px;
+    padding: 10px;
+    border: 1px dashed var(--accent2);
 }
