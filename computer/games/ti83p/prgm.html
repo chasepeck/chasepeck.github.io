@@ -32,10 +32,9 @@
 </body>
 <script>
 	const params = new URLSearchParams(window.location.search);
-	const url = params.get("url");
 	const name = params.get("name");
 	document.getElementById("back").innerHTML = "<span>PROGRAM:" + name + "</span>";
-	fetch(url)
+	fetch("https://raw.githubusercontent.com/chasepeck/ti83p/main/" + name)
 		.then( res => res.text() )
 		.then( text => {
 			var lines = text.replaceAll("ʟ", "ₗ").split("\n");
