@@ -1,13 +1,19 @@
 .sidebar {
-    position: fixed;
-    top: 0;
-    left: 0;
-    height: 100%;
+	grid-column: 1;
+	position: sticky;
+	top: 10px;
+	right: 0px;
+	width: 100%;
+	height: min-content;
     background: var(--sidebar-bg);
-    width: var(--sidebar-size);
 	font-family: "dotmincho";
 	font-size: 1rem;
     overflow: auto;
+	margin: 25px auto;
+
+	/* copy from main-content */
+	border: 5px ridge var(--bg);
+	box-shadow: 5px 5px 5px black;
 }
 
 .sidebar .sub {
@@ -28,7 +34,7 @@
 }
 
 .sidebar img {
-    margin: 20px 0px;
+    margin: 10px auto;
 }
 
 .sidebar #subtitle {

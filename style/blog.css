@@ -4,21 +4,15 @@
     color: black;
 }
 
-.blog .main a {
+.blog .main-content a {
     color: blue;
 }
 
 .blog .main-content {
     background: white;
-	margin-top: 0px;
 	border: 2px solid black;
 }
 
 .blog .main-content header, .blog .main-content footer {
     color: black;
-}
-
-#bloghead {
-    width: calc(90% + 45px);
-    margin: 0px auto -5px auto;
 }
