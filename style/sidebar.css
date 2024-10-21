@@ -3,7 +3,7 @@
 	position: sticky;
 	top: 10px;
 	right: 0px;
-	width: 100%;
+	width: 90%;
 	height: min-content;
     background: var(--sidebar-bg);
 	font-family: "dotmincho";

@@ -1,1 +1,12 @@
-/* :~) */
+@media (max-width: 800px) {
+	.sidebar {
+		grid-column: 1 / 3 !important;
+		position: relative !important;
+		width: 85%         !important;
+	}
+
+	.main-content {
+		grid-column: 1 / 3 !important;
+		width: 80%         !important;
+	}
+}
