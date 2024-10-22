@@ -14,8 +14,9 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<style>
 		body {
-			background-image: url("/assets/bg/stars.png");
-			background-size: 300px;
+			background-image: url("/assets/bg/tree.png");
+			background-size: cover;
+			background-position: bottom;
 		}
 
 		#hi {
@@ -93,13 +94,12 @@
 			<img src="/assets/construction.gif">
 		</div>
 
-		<div class="main-content">
-			<pre id="acrostic" style="font-family: dotgothic; animation: rainbow 5s steps(2, end) 0s infinite forwards;" onclick="randomAcrostic();"></pre>
+		<div class="main-content" style="text-align: center;">
+			<img src="/assets/labels.png" style="width: 80%;"><br>
 		</div>
 	</div>
 
 	<script src="/scripts/sidebar.js"></script>
-	<script src="/scripts/silly.js"></script>
 	<script>
 		randomAcrostic();
 	</script>

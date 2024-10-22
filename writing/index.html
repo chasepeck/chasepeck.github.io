@@ -22,23 +22,29 @@
 			writing
 		</header>
 
-		<div class="main-content">
+		<div class="main-content" style="width: 80%;">
 			<h2>latest fiction</h2>
 			<ul id="latestfiction"></ul>
 			<a href="fiction">more...</a>
 		</div>
-		<div class="main-content" style="grid-column: 3;">
+		<div class="main-content" style="grid-column: 3; width: 80%;">
 			<h2>latest poetry</h2>
 			<ul id="latestpoetry"></ul>
 			<a href="poetry">more...</a>
+		</div>
+
+		<div class="main-content" style="grid-column: 2 / 4;">
+			<pre id="acrostic" style="font-family: dotgothic; animation: rainbow 5s steps(2, end) 0s infinite forwards;" onclick="randomAcrostic();"></pre>
 		</div>
 	</div>
 
 	<script src="/scripts/sidebar.js"></script>
 	<script src="/scripts/recent.js"></script>
+	<script src="/scripts/silly.js"></script>
 	<script>
 		recent("latestfiction", "recent", "fiction", 10);
 		recent("latestpoetry", "recent", "poetry", 10);
+		randomAcrostic();
 	</script>
 </body>
 </html>
