@@ -1,18 +1,18 @@
-.blog {
+.journal {
     background-image: url("/assets/bg/macos.png");
     background-size: 128px;
     color: black;
 }
 
-.blog .main-content a {
+.journal .main-content a {
     color: blue;
 }
 
-.blog .main-content {
+.journal .main-content {
     background: white;
 	border: 2px solid black;
 }
 
-.blog .main-content header, .blog .main-content footer {
+.journal .main-content header, .journal .main-content footer {
     color: black;
 }
