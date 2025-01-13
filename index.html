@@ -89,9 +89,9 @@
 			</div>
 		</div>
 
-		<div class="main-content" style="text-align: center;">
-			<!--TREE OF INTERESTS-->
-			<img src="/assets/construction.gif">
+		<div class="main-content" id="date-list">
+			<h2>latest</h2>
+			<ul id="latest"></ul>
 		</div>
 
 		<div class="main-content" style="text-align: center;">
@@ -100,8 +100,9 @@
 	</div>
 
 	<script src="/scripts/sidebar.js"></script>
+	<script src="/scripts/recent.js"></script>
 	<script>
-		randomAcrostic();
+		recent("latest", "journal-link", "journal", 10);
 	</script>
 </body>
 </html>

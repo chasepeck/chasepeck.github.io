@@ -8,6 +8,10 @@
     color: blue;
 }
 
+.journal .main-content a i, #date-list i {
+	margin-right: 1rem;
+}
+
 .journal .main-content {
     background: white;
 	border: 2px solid black;
