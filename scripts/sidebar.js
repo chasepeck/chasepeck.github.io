@@ -48,10 +48,13 @@ fetch("/sidebar.html")
 	.then(text => {
 		// Create sidebar
 		var sidebar = document.createElement("div");
-		var firstContent = document.getElementsByClassName("main-content");
+		var content = document.getElementsByClassName("main-content");
 		sidebar.innerHTML = text;
 		sidebar.classList.add("sidebar");
-		firstContent[0].parentNode.insertBefore(sidebar, firstContent[0]);
+		if(window.screen.width < 800)
+			content[content.length - 1].parentNode.insertBefore(sidebar, content[content.length - 1].nextSibling);
+		else
+			content[0].parentNode.insertBefore(sidebar, content[0]);
 
 		// Enable subelements
 		document.querySelectorAll(".sidebar .sub").forEach(function(elem) {
