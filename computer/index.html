@@ -26,10 +26,15 @@
 		</header>
 
 		<div class="main-content">
-			<img src="/assets/construction.gif">
+			<h2>latest projects</h2>
+			<ul id="latestprojects"></ul>
 		</div>
 	</div>
 
 	<script src="/scripts/sidebar.js"></script>
+	<script src="/scripts/recent.js"></script>
+	<script>
+		recent("latestprojects", "recent", "projects", 10);
+	</script>
 </body>
 </html>

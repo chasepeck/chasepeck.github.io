@@ -60,6 +60,10 @@ header img {
 	width: 100%;
 }
 
+header h1 span {
+	background-color: black;
+}
+
 a {
     color: var(--accent);
     text-decoration: none;
