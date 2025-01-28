@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>chasepeck.net</title>
+
+	<link rel="stylesheet" href="/style/main.css">
+	<link rel="icon" href="/assets/favicon/favicon.png" type="image/png">
+	<link rel="icon" href="/assets/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" sizes="180x180" href="/assets/favicon/apple-touch-icon.png">
+	<link rel="manifest" href="/m.webmanifest">
+	<meta charset="UTF-8">
+	<meta name="description" content="Chase Peck: an incompetent lagomorph who will get us all killed">
+	<meta name="theme-color" content="#000000">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<style>
+		body {
+			background-image: url("/assets/bg/tree.png");
+			background-size: cover;
+			background-position: bottom;
+		}
+
+		#hi {
+			width: 100%;
+			margin: auto;
+			display: grid;
+			grid-template-columns: 1fr 1fr 1fr;
+			grid-template-areas:
+				"a a b"
+				"a a c"
+				"d d d";
+		}
+
+		#hi > div {
+			margin: 10px;
+    		padding: 20px;
+			border: 5px ridge var(--bg);
+    		background: var(--content-bg);
+		}
+
+		#identity {
+			padding: 0px !important;
+			line-height: 0px;
+		}
+
+		#identity img {
+			width: 100%;
+			margin: 0px;
+		}
+
+		@media (max-width: 800px) {
+			#hi { grid-template-areas: "a a a" "b b b" "c c c" "d d d" !important; }
+		}
+	</style>
+</head>
+<body name="home">
+	<div class="main">
+		<header>
+			<img id="title" src="/assets/name/cheisu.png" style="width: 80%;">
+		</header>
+
+		<div class="main-content">
+			<div id="hi">
+				<div style="grid-area: a;">
+					<img src="/assets/favicon/favicon.png" style="width: 100%; image-rendering: auto;">
+				</div>
+				<div style="grid-area: b;">
+					<div style="text-align: center;">
+						<img src="/assets/gifs/rabbit.gif" style="filter: invert(100%);">
+					</div>
+					<p>welcome! one of my names is <b>Chase</b>. i'm a bun
+						proficient in computer programming. i am the <a href="https://faxrabb.it">Faxrabbit</a> when developing games.
+					</p>
+					<p><i>gnussles and vole~!</i></p>
+					<p><a href="/meta">Read more.</a></p>
+				</div>
+				<div id="identity" style="grid-area: c;">
+					<img src="/assets/blinkies/lagomorph.gif">
+					<img src="/assets/blinkies/they.gif">
+					<img src="/assets/blinkies/trans.png">
+					<img src="/assets/blinkies/gay.gif">
+					<img src="/assets/blinkies/libsoc.png">
+					<img src="/assets/blinkies/autism.gif">
+				</div>
+				<div style="grid-area: d; text-align: center;">
+					<a href="https://youtube.com/@bubbyribbit"><img src="/assets/links/youtube.gif"></a>
+					<a href="https://github.com/chasepeck"><img src="/assets/links/github.png"></a>
+					<a href="/email.html"><img src="/assets/links/mail.png"></a>
+				</div>
+			</div>
+		</div>
+
+		<div class="main-content" id="date-list">
+			<h2>latest</h2>
+			<ul id="latest"></ul>
+		</div>
+	</div>
+
+	<script src="/scripts/sidebar.js"></script>
+	<script src="/scripts/recent.js"></script>
+	<script>
+		recent("latest", "journal-link", "/journal", 10);
+	</script>
+</body>
+</html>
