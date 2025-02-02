@@ -64,6 +64,14 @@ header h1 span {
 	background-color: black;
 }
 
+.big-header {
+	margin-top: 0px;
+	background: var(--content-bg);
+	width: 100%;
+	padding: 20px 0px;
+	border-bottom: 5px ridge var(--bg);
+}
+
 a {
     color: var(--accent);
     text-decoration: none;
