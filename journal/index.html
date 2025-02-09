@@ -19,6 +19,12 @@
 			<h1><span style="color: white;">journal</span></h1>
 		</header>
 		<div class="main-content">
+			<b>filter:</b>
+			<a onclick="filter('journal-link', null);">NONE</a>,
+			<a onclick="filter('journal-link', 'media log');">media log</a>,
+			<a onclick="filter('journal-link', 'project');">project</a>,
+			<a onclick="filter('journal-link', 'short story');">short story</a>,
+			<a onclick="filter('journal-link', 'poem');">poem</a>
 			<ul id="journal-link">
 				<h2>2025</h2>
 				<li><a href="https://chasepeck.net/acsl"><i>2025-01-23</i> project: ACSL study materials</a></li>
@@ -37,6 +43,7 @@
 		</div>
 	</div>
 
+	<script src="/scripts/filter.js"></script>
 	<script src="/scripts/sidebar.js"></script>
 </body>
 </html>
