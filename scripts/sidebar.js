@@ -1,13 +1,12 @@
 function randomSubtitle() {
   var subtitles = [
-	"GRAND AMAZINGNESS OF THE AMAZING™",
 	"HA HA HA! YOU'VE FALLEN FOR MY TRAP! PREPARE FOR ECZEMA!",
 	"i'm not a WEEB i'm a GLOBAL CITIZEN",
 	"♪ na-na-na 塊魂 ♪",
 	"go back to the trees",
 	"fun with HTML",
 	"Live Fast Die Slow; Live Slow Die Fast",
-	"Everything is Everything<br>is what you're just about to say",
+	"Everything is Everything is what you're just about to say",
 	"ニャ〜♥ (*´ω｀*)",
 	"no, not HIM",
 	"MN-8537 Fluxional Dual-rod Nanorefractor",
@@ -38,7 +37,9 @@ function randomSubtitle() {
 	"⍼⍼⍼⍼⍼⍼⍼⍼⍼⍼⍼⍼⍼",
 	"Grant, what're we drinkin'?",
 	"chase peck: an incompetent lagomorph who will get us all killed",
-	"i take all credit. nothing is plundered."
+	"i take all credit. nothing is plundered.",
+	"\"based socialist\"",
+	"Megamerica"
   ];
   document.getElementById("subtitle").innerHTML = subtitles[Math.floor(Math.random() * subtitles.length)];
 }
